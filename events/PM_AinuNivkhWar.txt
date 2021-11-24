@@ -1,0 +1,240 @@
+ ###########################
+# Ainu Nivkh War Events
+###########################
+
+add_namespace = ainunivkh
+
+country_event = {
+	id = ainunivkh.1 # The Yuan Empire Collapses - Ainu
+    	title = ainunivkh.1.t
+    	desc = ainunivkh.1.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = ainunivkh.1.a # A Showdown is Imminent
+		hidden_effect = {
+			country_event = {
+				id = ainunivkh.3
+				days = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ainunivkh.2 # The Yuan Empire Collapses - Nivkh
+    	title = ainunivkh.2.t
+    	desc = ainunivkh.2.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = ainunivkh.2.a # A Showdown is Inevitable
+		custom_effect_tooltip = ainunivkh_inevitable_tt
+
+	}
+}
+
+country_event = {
+	id = ainunivkh.3 # Attack the Nivkh!
+    	title = ainunivkh.3.t
+    	desc = ainunivkh.3.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = ainunivkh.3.a # A Showdown is Imminent
+		add_war_support = 0.25
+		declare_war_on = {
+    			target = NIV
+    			type = annex_everything
+		}
+		hidden_effect = {
+			NIV = {
+				country_event = {
+					id = ainunivkh.5
+				}
+			}
+			news_event = {
+				id = ainunivkh.4
+				days = 3
+			}
+			add_ideas = ainunivkh_nosurrender_idea
+			NIV = {
+				add_ideas = ainunivkh_nosurrender_idea
+			}
+
+			add_equipment_to_stockpile = {
+    				type = infantry_equipment
+    				amount = 100
+    				producer = AIN
+			}
+			NIV = {
+				add_equipment_to_stockpile = {
+    					type = infantry_equipment
+    					amount = 100
+    					producer = NIV
+				}
+			}
+
+
+			set_global_flag = ainunivkh_war_flag
+
+			655 = {
+				create_unit = {
+    					division = "name = \"Sakhalin Nivkh Militia\" division_template = \"Tribal Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+    					owner = NIV
+					prioritize_location = 1742
+				}
+			}
+			537 = {
+				create_unit = {
+    					division = "name = \"Sakhalin Ainu Militia\" division_template = \"Tribal Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+    					owner = AIN
+					prioritize_location = 1755
+				}
+			}
+
+
+		}
+	}
+}
+
+news_event = {
+	id = ainunivkh.4 #News - Ainu Nivkh
+    title = ainunivkh.4.t
+    desc = ainunivkh.4.d
+	picture = GFX_event_ITA_news_mussolini_deposto
+
+	is_triggered_only = yes 
+	major = yes
+
+	option = { 
+		name = ainunivkh.4.a # Our pax mongolia crumbles to dust
+		trigger = {
+			tag = YUA
+		}
+
+
+	}
+
+	option = { 
+		name = ainunivkh.4.b # ok
+		trigger = {
+			NOT = {
+				OR = {
+					tag = YUA
+					tag = NIV
+					tag = AIN
+				}
+
+			}
+		}
+
+
+	}
+	option = { 
+		name = ainunivkh.4.c # Sakhaln will be ours!
+		trigger = {
+			OR = {
+				tag = NIV
+				tag = AIN
+			}
+
+		}
+
+
+	}
+    
+}
+
+country_event = {
+	id = ainunivkh.5 # Ainu attacks us Niv
+    	title = ainunivkh.5.t
+    	desc = ainunivkh.5.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = ainunivkh.5.a # A Showdown is Imminent
+		add_war_support = 0.25
+
+		
+	}
+}
+
+country_event = {
+	id = ainunivkh.6 # Ainu offer truce with Japan threat
+    	title = ainunivkh.6.t
+    	desc = ainunivkh.6.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = ainunivkh.6.a # Makes sense
+		white_peace = AIN
+
+		
+	}
+}
+country_event = {
+	id = ainunivkh.7 # Ainu victorious over Nivkh
+    	title = ainunivkh.7.t
+    	desc = ainunivkh.7.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = ainunivkh.7.a # Great!
+		white_peace = NIV
+		transfer_state = 655
+		add_state_core = 655
+		add_war_support = 0.1
+		add_stability = -0.1
+	}
+}
+country_event = {
+	id = ainunivkh.8 # Nivkh victorious over Ainu
+    	title = ainunivkh.8.t
+    	desc = ainunivkh.8.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = ainunivkh.8.a # Great!
+		white_peace = AIN
+		transfer_state = 537
+		add_state_core = 537
+		add_war_support = 0.1
+		add_stability = -0.1
+	}
+}

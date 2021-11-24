@@ -1,0 +1,95 @@
+ideas = {
+	
+	country = { # Tibet and XZY
+		XZY_the_bureau = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.01
+				stability_factor = 0.05
+				political_power_gain = 0.25
+
+
+			}
+		}
+		XZY_rebellion_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.05
+				conscription_factor = -0.60
+				army_speed_factor = -0.2
+				attrition = 0.2
+				army_org_factor = -0.2
+				surrender_limit = 0.25
+
+				
+
+			}
+		}
+		TBE_rebellion_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.02
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1	
+				acclimatization_cold_climate_gain_factor = 0.33
+				surrender_limit = 0.25
+
+
+
+			}
+		}
+		TBE_archaic_industry = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.66
+				industrial_capacity_factory = -0.66
+				industrial_capacity_dockyard = -0.66
+				production_factory_max_efficiency_factor = -0.66
+				research_speed_factor = -0.66
+
+			}
+		}
+
+	}
+
+}

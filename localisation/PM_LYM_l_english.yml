@@ -1,0 +1,44 @@
+﻿l_english:
+ #Liaoyang Ming 
+ 
+  LYM_fascism: "Northern Expedition"
+ LYM_fascism_DEF: "The Northern Expedition"
+ LYM_neutrality: "Northern Expedition"
+ LYM_neutrality_DEF: "The Northern Expedition"
+ LYM_democratic: "Northern Expedition"
+ LYM_democratic_DEF: "The Northern Expedition"
+ LYM_communism: "Northern Expedition"
+ LYM_communism_DEF: "The Northern Expedition"
+ LYM_fascism_ADJ: "Northern Expedition"
+ LYM_neutrality_ADJ: "Northern Expedition"
+ LYM_democratic_ADJ: "Northern Expedition"
+ LYM_communism_ADJ: "Northern Expedition"
+ 
+ LYM_liberal:0 "Northern Expedition"
+ LYM_liberal_DEF:0 "The Northern Expedition"
+ LYM_liberal_ADJ:0 "Northern Expedition"
+ LYM_nomadic:0 "Northern Expedition"
+ LYM_nomadic_DEF:0 "The Northern Expedition"
+ LYM_nomadic_ADJ:0 "Northern Expedition"
+
+ 
+ 
+ LYM_liaoyang_province_fascism: "Liaodong"
+ LYM_liaoyang_province_fascism_DEF: "Liaodong"
+ LYM_liaoyang_province_neutrality: "Liaodong"
+ LYM_liaoyang_province_neutrality_DEF: "Liaodong"
+ LYM_liaoyang_province_democratic: "Liaodong"
+ LYM_liaoyang_province_democratic_DEF: "Liaodong"
+ LYM_liaoyang_province_communism: "Liaodong"
+ LYM_liaoyang_province_communism_DEF: "Liaodong"
+ LYM_liaoyang_province_fascism_ADJ: "Liaodong"
+ LYM_liaoyang_province_neutrality_ADJ: "Liaodong"
+ LYM_liaoyang_province_democratic_ADJ: "Liaodong"
+ LYM_liaoyang_province_communism_ADJ: "Liaodong"
+ 
+ LYM_liaoyang_province_liberal:0 "Liaodong"
+ LYM_liaoyang_province_liberal_DEF:0 "Liaodong"
+ LYM_liaoyang_province_liberal_ADJ:0 "Liaodong"
+ LYM_liaoyang_province_nomadic:0 "Liaodong"
+ LYM_liaoyang_province_nomadic_DEF:0 "Liaodong"
+ LYM_liaoyang_province_nomadic_ADJ:0 "Liaodong"

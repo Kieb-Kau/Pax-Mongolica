@@ -1,0 +1,177 @@
+
+division_template = {
+	name = "Infantry Division"				# Imperial Guards 
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "Western Modelled Division"				# Imperial Guards 
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+
+	}
+	support = {
+      	 	engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+
+	}
+}
+
+division_template = {
+	name = "Chagatayid Tumen"				# Mongol Cavalry 
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 3 y = 0 }
+		cavalry = { x = 3 y = 1 }
+		cavalry = { x = 4 y = 0 }
+		cavalry = { x = 4 y = 1 }
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "Militia Division"				# Militia 
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 0 y = 3 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 1 y = 3 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		militia = { x = 2 y = 2 }
+		militia = { x = 2 y = 3 }
+	}
+}
+
+
+
+units = {
+	##### Armies #####
+	division= {	
+		name = "Chagatayid Royal Division"
+		location = 12601
+		division_template = "Western Modelled Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "1. Infantry Division"
+		location = 10737 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "2. Infantry Division"
+		location = 10671 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "3. Infantry Division"
+		location = 12656 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "4. Infantry Division"
+		location = 1970 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "5. Infantry Division"
+		location = 10187 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "6. Infantry Division"
+		location = 12161 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "8. Infantry Division"
+		location = 1591 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		name = "7. Infantry Division"
+		location = 10674 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "1. Chagatayid Tumen"
+		location = 4788 
+		division_template = "Chagatayid Tumen"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "2. Chagatayid Tumen"
+		location = 10547 
+		division_template = "Chagatayid Tumen"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "3. Chagatayid Tumen"
+		location = 12340 
+		division_template = "Chagatayid Tumen"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "4. Chagatayid Tumen"
+		location = 12526 
+		division_template = "Chagatayid Tumen"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+
+}

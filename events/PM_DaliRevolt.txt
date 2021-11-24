@@ -1,0 +1,379 @@
+###########################
+# Events for the Dali revolt
+###########################
+
+add_namespace = dalirevolt
+
+country_event = {
+	id = dalirevolt.1 #The Revolt begins!
+    title = dalirevolt.1.t
+    desc = dalirevolt.1.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Damn them!
+		name = dalirevolt.1.a
+		custom_effect_tooltip = dali_revolt_tt
+		add_stability = -0.1
+		add_war_support = -0.1
+		hidden_effect = {
+			news_event = {
+				id = dalirevolt.2
+				days = 2
+			}
+			MAO = {	
+				country_event = {
+					id = dalirevolt.7
+					days = 12
+				}
+			}
+			DAL = {
+				transfer_state = 40
+				add_state_core = 40
+				transfer_state = 324
+				add_state_core = 324
+				transfer_state = 747
+				add_state_core = 747
+				load_oob = "DAL_war"	
+				add_ideas = DAL_thousand_years	
+				add_ideas = DAL_archaic_industry	
+				add_ideas = dali_no_surrender_idea			
+				add_ideas = extensive_conscription
+
+		
+		
+			}
+			add_ideas = dali_no_surrender_idea			
+
+
+		}
+		declare_war_on = {
+    			target = DAL	
+    			type = annex_everything
+		}
+
+
+	}
+    
+}
+
+news_event = {
+	id = dalirevolt.2 #News - Dali revolt
+    title = dalirevolt.2.t
+    desc = dalirevolt.2.d
+	picture = GFX_event_ITA_news_mussolini_deposto
+
+	is_triggered_only = yes 
+	major = yes
+
+	option = { 
+		name = dalirevolt.2.a # to war we go!
+		trigger = {
+			tag = DAL
+
+		}
+
+
+	}
+	option = { 
+		name = dalirevolt.2.b # to war we go!
+		trigger = {
+			tag = YNC
+		}
+
+
+	}
+
+	option = { 
+		name = dalirevolt.2.c # ok
+		trigger = {
+			NOT = {
+				OR = {
+					tag = DAL
+					tag = YNC
+				}
+
+			}
+		}
+
+
+	}
+    
+}
+
+country_event = {
+	id = dalirevolt.3 #The Revolt victorious! - YNC
+    title = dalirevolt.3.t
+    desc = dalirevolt.3.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Damn them!
+		name = dalirevolt.3.a
+		add_stability = -0.2
+		add_war_support = -0.2
+		add_political_power = -200
+		DAL = {
+			country_event = {
+				id = dalirevolt.4
+			}
+		}
+	}
+    
+}
+
+country_event = {
+	id = dalirevolt.4 #The Revolt victorious! - DAL
+    title = dalirevolt.4.t
+    desc = dalirevolt.4.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Damn them!
+		name = dalirevolt.4.a
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_political_power = 50
+		white_peace = YNC
+		transfer_state = 751
+		add_state_core = 751
+		hidden_effect = {
+			remove_ideas = dali_no_surrender_idea
+			YNC = {
+				remove_ideas = dali_no_surrender_idea
+
+			}
+		}
+	}
+    
+}
+
+country_event = {
+	id = dalirevolt.5 #WE LOSE Dali
+    title = dalirevolt.5.t
+    desc = dalirevolt.5.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Damn them!
+		name = dalirevolt.5.a
+		add_stability = -0.2
+		add_war_support = -0.2
+		add_political_power = -200
+		YNC = {
+			country_event = {
+				id = dalirevolt.4
+			}
+		}
+	}
+    
+}
+
+country_event = {
+	id = dalirevolt.6 #The Revolt lost! - YNC
+    title = dalirevolt.6.t
+    desc = dalirevolt.6.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Good.
+		name = dalirevolt.6.a
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_political_power = 50
+		white_peace = DAL
+		transfer_state = 40
+		remove_state_core = 40
+		transfer_state = 324
+		remove_state_core = 324
+		transfer_state = 747
+		remove_state_core = 747		
+		
+
+		hidden_effect = {
+			remove_ideas = dali_no_surrender_idea
+			DAL = {
+				remove_ideas = dali_no_surrender_idea
+
+			}
+		}
+	}
+    
+}
+
+country_event = {
+	id = dalirevolt.7 #Huguang - Intervention in Yunnan
+    title = dalirevolt.7.t
+    desc = dalirevolt.7.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Support the Yunnan Clique
+		name = dalirevolt.7.a
+		ai_chance = {
+			factor = 75
+		}
+		add_manpower = -8000
+		YNC = {
+			country_event = {
+				id = dalirevolt.8
+			}
+		}
+	}
+	option = {  # Invade Yunnan
+		name = dalirevolt.7.b
+		ai_chance = {
+			factor = 25
+		}
+		declare_war_on = {
+    			target = YNC
+    			type = annex_everything
+		}
+		every_state = {
+			limit = {
+				is_owned_by = YNC
+			}
+			add_claim_by = MAO
+
+		}
+		YNC = {
+			country_event = {
+				id = dalirevolt.9
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = dalirevolt.10
+				days = 3
+			}
+		}
+	}
+	option = {  # t pose
+		name = dalirevolt.7.c
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = -5
+	}
+    
+}
+
+country_event = {
+	id = dalirevolt.8 #Huguang sends aid to us
+    title = dalirevolt.8.t
+    desc = dalirevolt.8.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Thx m8
+		name = dalirevolt.8.a
+
+
+		division_template = {
+    			name = "Huguang Volunteers"
+    			is_locked = yes
+
+    			regiments = {
+        			infantry = { x = 0 y = 0 }
+        			infantry = { x = 0 y = 1 }
+        			infantry = { x = 0 y = 2 }
+        			infantry = { x = 0 y = 3 }
+        			infantry = { x = 1 y = 0 }
+        			infantry = { x = 1 y = 1 }
+        			infantry = { x = 1 y = 2 }
+        			infantry = { x = 1 y = 3 }
+    			}
+    			support = { 
+    			} 
+		}
+		325 = {
+			create_unit = {
+    				division = "name = \"Huguang Volunteers\" division_template = \"Huguang Volunteers\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+    				owner = YNC
+			}
+		}
+	}
+
+}
+
+country_event = {
+	id = dalirevolt.9 #Huguang f*ing invades us
+    title = dalirevolt.9.t
+    desc = dalirevolt.9.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # ode to joy
+		name = dalirevolt.9.a
+		add_stability = -0.05
+		add_war_support = -0.05
+
+	}
+
+}
+
+country_event = {
+	id = dalirevolt.10 #What of dali?
+    title = dalirevolt.10.t
+    desc = dalirevolt.10.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # them too!
+		name = dalirevolt.10.a
+		declare_war_on = {
+    			target = DAL
+    			type = annex_everything
+		}
+		every_state = {
+			limit = {
+				is_owned_by = DAL
+			}
+			add_claim_by = MAO
+
+		}
+
+	}
+	option = {  # no you!
+		name = dalirevolt.10.b
+
+
+	}
+
+}

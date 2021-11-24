@@ -1,0 +1,461 @@
+###########################
+# jochid khanate Events
+###########################
+
+add_namespace = jochid
+
+country_event = {
+	id = jochid.1 # The aftermath
+	title = jochid.1.t
+    	desc = jochid.1.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	fire_only_once = yes 
+
+	option = { 
+		name = jochid.1.a #
+		add_stability = -0.15
+		add_war_support = -0.15
+		add_political_power = -150
+		remove_ideas = jochid_no_surrender_idea
+		remove_ideas = jochid_shock_of_the_east
+
+		hidden_effect = {
+			country_event = {
+				id = jochid.2
+				days = 53
+				random = 20
+			}
+		}
+	}
+}
+country_event = {
+	id = jochid.2 # Jochid royal family found dead! incl. arigh khan! He has no heir
+	title = jochid.2.t
+    	desc = jochid.2.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	fire_only_once = yes 
+
+	option = { 
+		name = jochid.2.a # For the first time, jochidia has no khan
+		add_stability = -0.2
+		add_war_support = -0.2
+		add_political_power = -200
+		kill_country_leader = yes
+
+		create_country_leader = {
+			name = "Great Khural" # 
+			desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+			picture = "Portrait_China_Chiang_Kai_Shek.dds"
+			expire = "1965.1.1"
+			ideology = khanism
+			traits = {
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = jochid.3
+				days = 15
+			}
+		}
+	}
+}
+
+country_event = {
+	id = jochid.3 # Jochid Khural Convenes
+	title = jochid.3.t
+    	desc = jochid.3.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	fire_only_once = yes 
+
+	option = { 
+		name = jochid.3.a # elect the line of batu-ulagchi (line has governed in the east)
+		ai_chance = {
+			base = 33
+		}
+		create_country_leader = {
+			name = "Ibak Khan" # 
+			desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+			picture = "Portrait_China_Chiang_Kai_Shek.dds"
+			expire = "1965.1.1"
+			ideology = khanism
+			traits = {
+			}
+		}
+		set_country_flag = ulagchid_chosen
+		hidden_effect = {
+			country_event = {
+				id = jochid.4
+				days = 90
+			}
+		}
+	}
+	option = { 
+		name = jochid.3.b # elect the line of teval-nogay (line has governed in the west)
+		ai_chance = {
+			base = 33
+		}
+		create_country_leader = {
+			name = "Torai Khan" # a muslim from the west
+			desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+			picture = "Portrait_China_Chiang_Kai_Shek.dds"
+			expire = "1965.1.1"
+			ideology = khanism
+			traits = {
+			}
+		}
+		set_country_flag = nogayid_chosen
+		hidden_effect = {
+			country_event = {
+				id = jochid.4
+				days = 90
+			}
+		}
+
+	}
+	option = { 
+		name = jochid.3.c # elect the line of tangad-cherik (cherikhid khanate) political unknown, but seen as a good balance to the other two
+		ai_chance = {
+			base = 34
+		}
+		create_country_leader = {
+			name = "Majar Khan" # 
+			desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+			picture = "Portrait_China_Chiang_Kai_Shek.dds"
+			expire = "1965.1.1"
+			ideology = khanism
+			traits = {
+			}
+		}
+		set_country_flag = cherikhid_chosen
+		hidden_effect = {
+			country_event = {
+				id = jochid.5
+				days = 100
+			}
+		}
+
+	}
+}
+
+country_event = {
+	id = jochid.4 # Military coup ousts the Khan!
+	title = jochid.4.t
+    	desc = jochid.4.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	fire_only_once = yes 
+
+	option = { 
+		name = jochid.4.a #
+		create_country_leader = {
+			name = "Kuchariin Boroldai" # 
+			desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+			picture = "Portrait_China_Chiang_Kai_Shek.dds"
+			expire = "1965.1.1"
+			ideology = khanism
+			traits = {
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = jochid.5
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = jochid.5 # Far west and Transurals in Turmoil
+	title = jochid.5.t
+    	desc = jochid.5.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	fire_only_once = yes 
+
+	option = { 
+		name = jochid.5.a # Civil War is on the horizon.
+		add_stability = -0.1
+		add_war_support = -0.1
+		hidden_effect = {
+			country_event = {
+				id = jochid.6
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = jochid.6 # The Jochid Civil War!
+	title = jochid.6.t
+    	desc = jochid.6.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	option = { 
+		name = jochid.6.a # Civil War is here
+
+		hidden_effect = {
+			division_template = {
+				name = "Loyalist Infantry Division" 
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+				}
+			}
+			delete_unit_template_and_units = {
+    				division_template = "Jochid Infantry Division"
+    				disband = no 
+			}
+			delete_unit_template_and_units = {
+    				division_template = "Western-Modelled Division"
+    				disband = no 
+			}
+			delete_unit_template_and_units = {
+    				division_template = "Kheshig"
+    				disband = no 
+			}
+			delete_unit_template_and_units = {
+    				division_template = "Tumen"
+    				disband = no 
+			}
+			delete_unit_template_and_units = {
+    				division_template = "Militia"
+    				disband = no 
+			}
+			load_oob = "JOC_WAR"
+
+			ULA = {
+				transfer_state = 406
+				add_state_core = 406
+				transfer_state = 582
+				add_state_core = 582
+				transfer_state = 402
+				add_state_core = 402
+				transfer_state = 653
+				add_state_core = 653
+				transfer_state = 403
+				add_state_core = 403
+				transfer_state = 572
+				add_state_core = 572
+				transfer_state = 571
+				add_state_core = 571
+				transfer_state = 590
+				add_state_core = 590
+				transfer_state = 404
+				add_state_core = 404
+				transfer_state = 588
+				add_state_core = 588
+				transfer_state = 570
+				add_state_core = 570
+				transfer_state = 590
+				add_state_core = 590
+				transfer_state = 651
+				add_state_core = 651
+				transfer_state = 652
+				add_state_core = 652
+				transfer_state = 407
+				add_state_core = 407
+				declare_war_on = {
+    					target = JOC
+    					type = annex_everything
+				}
+				load_oob = "ULA_WAR"
+
+
+
+			}
+			NOG = {
+				transfer_state = 137
+				add_state_core = 137
+				transfer_state = 196
+				add_state_core = 196
+				transfer_state = 200
+				add_state_core = 200
+				transfer_state = 197
+				add_state_core = 197
+				transfer_state = 203
+				add_state_core = 203
+				transfer_state = 259
+				add_state_core = 259
+				transfer_state = 226
+				add_state_core = 226
+				transfer_state = 227
+				add_state_core = 227
+				transfer_state = 192
+				add_state_core = 192
+				transfer_state = 198
+				add_state_core = 198
+				transfer_state = 78
+				add_state_core = 78
+				transfer_state = 79
+				add_state_core = 79
+				transfer_state = 221
+				add_state_core = 221
+				transfer_state = 245
+				add_state_core = 245
+
+
+				declare_war_on = {
+    					target = JOC
+    					type = annex_everything
+				}
+				declare_war_on = {
+    					target = ULA
+    					type = annex_everything
+				}
+				load_oob = "NOG_WAR"
+
+
+			}
+
+
+
+
+			country_event = {
+				id = jochid.7
+				days = 1
+			}
+			ULA = {
+				country_event = {
+					id = jochid.7
+					days = 1
+				}
+			}
+			NOG = {
+				country_event = {
+					id = jochid.7
+					days = 1
+				}
+			}
+
+			country_event = {
+				id = jochid.9
+				days = 10
+			}
+			news_event = {
+				id = jochid.8
+				days = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = jochid.7 # The Jochid Civil War!
+	title = jochid.7.t
+    	desc = jochid.7.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	option = { 
+		name = jochid.7.a # We will win.
+		add_political_power = 150
+		IF = {
+			limit = {
+				tag = JOC
+			}
+			add_stability = 0.4
+			add_war_support = 0.4
+
+
+		}
+		add_war_support = 0.2
+
+	}
+}
+
+news_event = {
+	id = jochid.8 #News - Jochid Civil War
+    title = jochid.8.t
+    desc = jochid.8.d
+	picture = GFX_event_ITA_news_mussolini_deposto
+
+	is_triggered_only = yes 
+	major = yes
+
+	option = { 
+		name = jochid.8.a # to war we go!
+		trigger = {
+			OR = {
+				tag = JOC
+				tag = NOG
+				tag = ULA
+			}
+		}
+
+
+	}
+
+
+	option = { 
+		name = jochid.8.b # ok
+		trigger = {
+			NOT = {
+				OR = {
+					tag = JOC
+					tag = NOG
+					tag = ULA
+
+				}
+
+			}
+		}
+
+
+	}
+    
+}
+
+country_event = {
+	id = jochid.9 # Khwarezmian independence
+	title = jochid.9.t
+    	desc = jochid.9.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	option = { 
+		name = jochid.9.a # Ugh.
+		KHW = { #
+			transfer_state = 583
+			transfer_state = 585
+			transfer_state = 587
+			add_state_core = 583
+			add_state_core = 585
+			add_state_core = 587
+			load_oob = KHW_1936
+			add_manpower = 25000
+		}
+		CHK = {
+			country_event = {
+				id = chagatai.1
+				days = 15
+			}
+		}
+	}
+}
+

@@ -1,0 +1,45 @@
+ideas = {
+	
+	country = {
+		JUR_nation_divided = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.25
+				war_support_factor = 0.2
+				conscription = 0.1
+			}
+			targeted_modifier = {
+				tag = LIA
+				army_attack_factor = 0.1
+			}
+		}
+		JUR_unsure_about_yuan = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.25
+				stabiliy_factor = -0.1
+			}
+		}
+	}
+	
+}

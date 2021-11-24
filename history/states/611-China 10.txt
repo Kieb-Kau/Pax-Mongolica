@@ -1,0 +1,25 @@
+
+state={
+	id=611
+	name="STATE_611"
+
+	history={
+		owner = YUA
+		add_core_of = YUA
+		buildings = {
+			infrastructure = 3
+
+		}
+		victory_points = {
+			11752 3 
+		}
+
+	}
+
+	provinces={
+		828 881 952 1489 1590 3955 4495 4612 6904 7048 7158 7545 7631 7674 9768 9776 10397 10424 11752 12403
+	}
+	manpower=2330000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

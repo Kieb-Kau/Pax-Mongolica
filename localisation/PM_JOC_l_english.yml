@@ -1,0 +1,25 @@
+﻿l_english:
+ #The Jochid Khanate (Golden Horde)
+ JOC_fascism:0 "Jochid Khanate"
+ JOC_fascism_DEF:0 "The Jochid Khanate"
+ JOC_neutrality:0 "Jochid Khanate"
+ JOC_neutrality_DEF:0 "The Jochid Khanate"
+ JOC_democratic:0 "Jochid Khanate"
+ JOC_democratic_DEF:0 "The Jochid Khanate"
+ JOC_communism:0 "Jochid Khanate"
+ JOC_communism_DEF:0 "The Jochid Khanate"
+ JOC_fascism_ADJ:0 "Jochid"
+ JOC_neutrality_ADJ:0 "Jochid"
+ JOC_democratic_ADJ:0 "Jochid"
+ JOC_communism_ADJ:0 "Jochid"
+ 
+  
+ JOC_liberal:0 "Jochid Khanate"
+ JOC_liberal_DEF:0 "The Jochid Khanate"
+ JOC_liberal_ADJ:0 "Jochid"
+ JOC_nomadic:0 "Jochid Khanate"
+ JOC_nomadic_DEF:0 "The Jochid Khanate"
+ JOC_nomadic_ADJ:0 "Jochid"
+ 
+ jochid_no_surrender_idea:0 "The War of the Pact of Kozelsk"
+ jochid_no_surrender_idea_desc:0 "The fate of the Mongol West relies on our victory in this war! We will fight to the end! \n\n§CThis idea is used due to the §YWar of the Pact of Kozelsk§C utilizing §YScripted Peace Deals.§!"

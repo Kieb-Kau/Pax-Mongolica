@@ -1,0 +1,22 @@
+﻿l_english:
+ #Naimans
+ NAI_fascism:0 "Naiman Khanate"
+ NAI_fascism_DEF:0 "The Naiman Khanate"
+ NAI_neutrality:0 "Naiman Khanate"
+ NAI_neutrality_DEF:0 "The Naiman Khanate"
+ NAI_democratic:0 "Naiman Khanate"
+ NAI_democratic_DEF:0 "The Naiman Khanate"
+ NAI_communism:0 "Naiman Khanate"
+ NAI_communism_DEF:0 "The Naiman Khanate"
+ NAI_fascism_ADJ:0 "Naiman"
+ NAI_neutrality_ADJ:0 "Naiman"
+ NAI_democratic_ADJ:0 "Naiman"
+ NAI_communism_ADJ:0 "Naiman"
+ 
+ NAI_liberal:0 "Naiman Khanate"
+ NAI_liberal_DEF:0 "The Naiman Khanate"
+ NAI_liberal_ADJ:0 "Naiman"
+ NAI_nomadic:0 "Naiman Khanate"
+ NAI_nomadic_DEF:0 "The Naiman Khanate"
+ NAI_nomadic_ADJ:0 "Naiman"
+ 

@@ -1,0 +1,84 @@
+ideas = {
+	
+	country = {
+
+		ILK_rump_state = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.25
+				stability_factor = -0.1
+			}
+		}
+		ILK_strong_independent_governors = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.25
+				mobilization_speed = -0.25
+				recruitable_population_factor = -0.5
+			}
+		}
+		ILK_chagatai_supported = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = 0.05
+			}
+		}
+		ILK_archaic_industry = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.66
+				industrial_capacity_factory = -0.66
+				industrial_capacity_dockyard = -0.66
+				production_factory_max_efficiency_factor = -0.66
+				research_speed_factor = -0.66
+			}
+		}
+
+	}
+	
+
+
+
+
+}

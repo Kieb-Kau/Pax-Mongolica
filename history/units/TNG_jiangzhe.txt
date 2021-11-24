@@ -1,0 +1,38 @@
+
+units = {
+	##### Divisions #####
+	division= {	
+		name = "1. Jiangzhe Infantry Division"
+		location = 7191
+		division_template = "Western Model Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "2. Jiangzhe Infantry Division"
+		location = 4196
+		division_template = "Traditional Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		name = "1. Jiangzhe Militia"
+		location = 7174
+		division_template = "Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		name = "2. Jiangzhe Militia"
+		location = 1066
+		division_template = "Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+
+
+}

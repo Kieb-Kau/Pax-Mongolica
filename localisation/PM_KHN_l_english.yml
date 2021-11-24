@@ -1,0 +1,22 @@
+﻿l_english:
+ #Khanbaliq
+ KHN_fascism: "Khanbaliq Government"
+ KHN_fascism_DEF: "The Khanbaliq Government"
+ KHN_neutrality: "Khanbaliq Government"
+ KHN_neutrality_DEF: "The Khanbaliq Government"
+ KHN_democratic: "Khanbaliq Government"
+ KHN_democratic_DEF: "The Khanbaliq Government"
+ KHN_communism: "Khanbaliq Government"
+ KHN_communism_DEF: "The Khanbaliq Government"
+ KHN_fascism_ADJ: "Khanbaliq"
+ KHN_neutrality_ADJ: "Khanbaliq"
+ KHN_democratic_ADJ: "Khanbaliq"
+ KHN_communism_ADJ: "Khanbaliq"
+ 
+ KHN_liberal:0 "Khanbaliq Government"
+ KHN_liberal_DEF:0 "The Khanbaliq Government"
+ KHN_liberal_ADJ:0 "Khanbaliq"
+ KHN_nomadic:0 "Khanbaliq Government"
+ KHN_nomadic_DEF:0 "The Khanbaliq Government"
+ KHN_nomadic_ADJ:0 "Khanbaliq"
+ 

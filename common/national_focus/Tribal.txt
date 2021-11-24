@@ -1,0 +1,45 @@
+focus_tree = {
+	id = Tribal_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			OR = {
+				tag = SEV
+				tag = BRY
+				tag = TUM
+				tag = AIN
+				tag = NIV
+				tag = ALT
+				tag = SBW
+				tag = UDE
+				tag = NAN
+
+
+			}
+		}
+
+	}
+	default = no
+	continuous_focus_position = { x = 80 y = 3000 }
+	shared_focus = Tribal_focus
+
+}
+
+shared_focus = {
+	id = Tribal_focus # Does nothing for now
+	icon = GFX_focus_Grab_Money
+	x = 1
+	y = 0
+	cost = 10000
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}	
+	bypass = {
+	}
+	completion_reward = {
+	}
+}

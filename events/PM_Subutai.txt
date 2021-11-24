@@ -1,0 +1,470 @@
+###########################
+# Subutai's Tuvan Events
+###########################
+
+add_namespace = subutai
+
+country_event = {
+	id = subutai.1 #The Tuvan Empire
+    title = subutai.1.t
+    desc = subutai.1.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = subutai.1.a
+		set_cosmetic_tag = TUV_subutais_empire
+		hidden_effect = {
+			news_event = {
+				id = subutai.2
+				days = 5
+			}
+			set_country_flag = subutais_recruitment_flag
+		}
+		custom_effect_tooltip = subutai_recruit_from_tribes_tt
+
+	}
+	
+}
+
+news_event = {
+	id = subutai.2 #News - TUVAN EMPIRE
+    title = subutai.2.t
+    desc = subutai.2.d
+	picture = GFX_event_ITA_news_mussolini_deposto
+
+	is_triggered_only = yes 
+	major = yes
+
+	option = { 
+		name = subutai.2.a # oh deary me.
+		trigger = {
+			tag = TUV
+		}
+
+
+	}
+
+	option = { 
+		name = subutai.2.b # ok
+		trigger = {
+			NOT = {
+
+				tag = TUV
+
+			}
+		}
+
+
+	}
+    
+}
+
+# SUBUTAI EVENT CHAIN
+
+country_event = {
+	id = subutai.3 # Uriankhai Intertribal Conflicts
+    title = subutai.3.t
+    desc = subutai.3.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = subutai.3.a
+		add_ideas = TUV_tribal_fights
+
+		add_stability = -0.1
+		add_war_support = -0.1
+		add_political_power = -300
+		hidden_effect = {
+			country_event = {
+				id = subutai.4
+				days = 75
+			}
+		}
+
+	}
+	
+}
+
+country_event = {
+	id = subutai.4 # Tribes rally armies
+    title = subutai.4.t
+    desc = subutai.4.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = subutai.4.a
+		add_stability = -0.1
+		hidden_effect = {
+			country_event = {
+				id = subutai.10
+				days = 75
+			}
+		}
+
+	}
+	
+}
+
+country_event = {
+	id = subutai.5 # Battle of the Kaa-Khem river
+    title = subutai.5.t
+    desc = subutai.5.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = subutai.5.a
+
+		hidden_effect = {
+			country_event = {
+				id = subutai.6
+				days = 1
+			}
+		}
+
+	}
+	
+}
+
+country_event = {
+	id = subutai.6 # Battle of the Kaa-Khem river
+    title = subutai.6.t
+    desc = subutai.6.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = subutai.6.a
+		ai_chance = {
+			factor = 75
+			modifier = {
+				has_game_rule = { rule = Tuva_path option = TUVA_SUBUTAI }
+				factor = 0
+			}
+			
+
+		}
+		hidden_effect = {
+			country_event = {
+				id = subutai.7
+				days = 1
+			}
+		}
+
+
+	}
+	option = { 
+		name = subutai.6.b
+		ai_chance = {
+			factor = 25
+			modifier = {
+				has_game_rule = { rule = Tuva_path option = TUVA_OCHIR_KHAN }
+				factor = 0
+			}
+			
+		}
+		custom_effect_tooltip = TUV_subutai_wins_tt
+		hidden_effect = {
+			country_event = {
+				id = subutai.8
+				days = 1
+			}
+		}
+
+
+	}
+	
+}
+
+country_event = {
+	id = subutai.7 # The Uriankhai united once more
+    title = subutai.7.t
+    desc = subutai.7.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = subutai.7.a
+		add_stability = 0.2
+		329 = {
+			add_manpower = -7238
+		}
+		create_country_leader = {
+			name = "Ochir Khan"
+			desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+			picture = "Portrait_China_Chiang_Kai_Shek.dds"
+			expire = "1965.1.1"
+			ideology = hordeism
+			traits = {
+		
+			}
+		}
+
+
+	}
+
+	
+}
+
+country_event = {
+	id = subutai.8 # A Heroic Victory
+    title = subutai.8.t
+    desc = subutai.8.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = subutai.8.a
+		add_stability = 0.1
+		329 = {
+			add_manpower = -9747
+		}
+		hidden_effect = {
+			country_event = {
+				id = subutai.9
+				days = 10
+			}
+		}
+
+
+	}
+
+	
+}
+
+country_event = {
+	id = subutai.9 # The rise of subutai
+    title = subutai.9.t
+    desc = subutai.9.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = subutai.9.a
+		add_stability = 0.1
+		add_war_support = 0.25
+		add_political_power = 100
+		hidden_effect = {
+			complete_national_focus = TUV_the_rise_of_subutai
+			create_corps_commander = {
+				name = "Subutai"
+				picture = ""
+				traits = { subutai_trait }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 1
+				planning_skill = 4
+				logistics_skill = 4
+			}
+		}
+		create_country_leader = {
+			name = "Subutai"
+			desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+			picture = "Portrait_China_Chiang_Kai_Shek.dds"
+			expire = "1965.1.1"
+			ideology = khanism
+			traits = {
+		
+			}
+		}
+
+
+	}
+
+	
+}
+
+country_event = {
+	id = subutai.10 # BONUS EVENT - Skirmish
+    title = subutai.10.t
+    desc = subutai.10.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = subutai.10.a
+		329 = {
+			add_manpower = -127
+		}
+		hidden_effect = {
+			country_event = {
+				id = subutai.5
+				days = 75
+			}
+		}
+
+	}
+	
+}
+
+country_event = {
+	id = subutai.11 # Subutai addresses the horde
+    title = subutai.11.t
+    desc = subutai.11.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = subutai.11.a
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_political_power = 50
+	}
+	
+}
+
+country_event = {
+	id = subutai.12 # Southern tribes rally to TUV
+    title = subutai.12.t
+    desc = subutai.12.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = subutai.12.a
+		add_stability = 0.025
+		add_political_power = 25
+		remove_ideas = TUV_tribal_fights
+	}
+	
+}
+
+country_event = {
+	id = subutai.13 # TUV wants confederate us
+    title = subutai.13.t
+    desc = subutai.13.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+
+	option = { 
+		name = subutai.13.a
+		ai_chance = {
+			factor = 95
+		}
+		TUV = {
+			country_event = {
+				id = subutai.14
+				days = 2
+			}
+			
+		}
+	}
+	option = { 
+		name = subutai.13.b
+		ai_chance = {
+			factor = 5
+		}
+
+		TUV = {
+			country_event = {
+				id = subutai.15
+				days = 2
+			}
+		}
+	}
+	
+}
+
+country_event = {
+	id = subutai.14 # Annexes tags 
+    title = subutai.14.t
+    desc = subutai.14.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+
+	option = { 
+		name = subutai.14.a
+		TUV = {
+		
+			annex_country = {
+    				target = FROM
+    				transfer_troops = no
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = FROM
+			}
+			add_core_of = TUV
+		}
+	}
+	
+}
+
+country_event = {
+	id = subutai.15 # War it is then! 
+    title = subutai.15.t
+    desc = subutai.15.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	option = { 
+		name = subutai.15.a
+		create_wargoal = {
+   		 	type = annex_everything
+    			target = FROM
+		}
+		every_state = {
+			limit = {
+				is_core_of = FROM
+			}
+			add_core_of = TUV
+		}
+	}
+	
+}

@@ -1,0 +1,23 @@
+################
+##### Nomadic Recruitment ######
+################
+
+nomadic_recruitment_cat = {
+	allowed = {
+		OR = {
+			tag = SEV
+			tag = BRY
+			tag = TUM
+			tag = ALT
+			tag = TUV
+
+		}
+	}
+	icon = generic_industry
+	visible_when_empty = yes
+	visible = {
+		has_war = yes
+		
+	}
+}
+

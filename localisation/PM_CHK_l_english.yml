@@ -1,0 +1,28 @@
+﻿l_english:
+ #The Chagatayid Khanate
+ CHK_fascism:0 "Chagatai Khanate"
+ CHK_fascism_DEF:0 "The Chagatai Khanate"
+ CHK_neutrality:0 "Chagatai Khanate"
+ CHK_neutrality_DEF:0 "The Chagatai Khanate"
+ CHK_democratic:0 "Chagatai Khanate"
+ CHK_democratic_DEF:0 "The Chagatai Khanate"
+ CHK_communism:0 "Chagatai Khanate"
+ CHK_communism_DEF:0 "The Chagatai Khanate"
+ CHK_fascism_ADJ:0 "Chagatayid"
+ CHK_neutrality_ADJ:0 "Chagatayid"
+ CHK_democratic_ADJ:0 "Chagatayid"
+ CHK_communism_ADJ:0 "Chagatayid"
+ 
+  
+ CHK_liberal:0 "Chagatai Khanate"
+ CHK_liberal_DEF:0 "The Chagatai Khanate"
+ CHK_liberal_ADJ:0 "Chagatayid"
+ CHK_nomadic:0 "Chagatai Khanate"
+ CHK_nomadic_DEF:0 "The Chagatai Khanate"
+ CHK_nomadic_ADJ:0 "Chagatayid"
+ 
+ CHK_stable_khanate:0 "Stable Domain"
+ CHK_stable_khanate_desc:0 "Comparing us to the other Mongol successors in our day, the Chagatai Khanate appears relatively stable. Despite the loss of India one hundred years ago, the Chagatayid realm has enjoyed relative prosperity, and with a strong alliance with the Ilkhanid remnants, has been able to restore something resembling of a Pax Mongolica over Central Asia."
+ CHK_legacy_of_temur:0 "Legacy of Timur"
+ CHK_legacy_of_temur_desc:0 "Over five hundred years ago, the Chagatayid warlord Timur was able to seize effective control over the decaying Khanate. His expeditions reconquering parts of China, India, and Europe singlehandedly revived the Pax Mongolica for two hundred more years. His legacy lives on in our realm."
+ CHK_backwards_industry:0 "Backwards Industry"

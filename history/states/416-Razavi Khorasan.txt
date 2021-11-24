@@ -1,0 +1,29 @@
+
+state={
+	id=416
+	name="STATE_416"
+
+	history={
+		owner = ILK
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			1957 10 
+		}
+		victory_points = {
+			5029 1 
+		}
+		add_core_of = ILK
+
+	}
+
+	provinces={
+		1521 1888 1957 2000 5029 5073 7491 7573 10351 10510 10806 12333 
+	}
+	manpower=1459739
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

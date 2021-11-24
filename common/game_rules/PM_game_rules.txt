@@ -1,0 +1,43 @@
+Tuva_path = {
+	name = "TUVA_PATH"
+	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_wargoals"
+	option = {
+		name = "TUVA_NORMAL"
+		text = "RULE_OPTION_TUVA_NORMAL"
+		desc = "RULE_OPTION_TUVA_NORMAL_DESC"
+	}
+	option = {
+		name = "TUVA_SUBUTAI"
+		text = "RULE_OPTION_SUBUTAI"
+		desc = "RULE_OPTION_SUBUTAI_DESC"
+	}
+	option = {
+		name = "TUVA_OCHIR_KHAN"
+		text = "RULE_OPTION_OCHIR_KHAN"
+		desc = "RULE_OPTION_OCHIR_KHAN_DESC"
+	}
+
+}
+
+Jurchen_path = {
+	name = "JURCHEN_PATH"
+	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_wargoals"
+	option = {
+		name = "JURCHEN_NORMAL"
+		text = "RULE_OPTION_JURCHEN_NORMAL"
+		desc = "RULE_OPTION_JURCHEN_NORMAL_DESC"
+	}
+	option = {
+		name = "JURCHEN_YUAN_SUBJECT"
+		text = "RULE_OPTION_JURCHEN_YUAN_SUBJECT"
+		desc = "RULE_OPTION_JURCHEN_YUAN_SUBJECT_DESC"
+	}
+	option = {
+		name = "JURCHEN_JIN_DYNASTY"
+		text = "RULE_OPTION_JURCHEN_JIN_DYNASTY"
+		desc = "RULE_OPTION_JURCHEN_JIN_DYNASTY_DESC"
+	}
+
+}

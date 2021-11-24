@@ -1,0 +1,26 @@
+
+state={
+	id=421
+	name="STATE_421"
+	manpower = 680278
+	
+	state_category = rural
+
+	history={
+		owner = PRS
+		victory_points = {
+			4943 5
+		}
+		victory_points = {
+			5098 3
+		}
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = PRS
+	}
+
+	provinces={
+		1922 4943 5050 5098 9816 12773 
+	}
+}

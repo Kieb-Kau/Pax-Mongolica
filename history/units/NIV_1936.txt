@@ -1,0 +1,41 @@
+
+division_template = {
+	name = "Tribal Militia"				# Militia 
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+
+
+	}
+	is_locked = yes
+}
+division_template = {
+	name = "Nurgan Garrison"				# Militia 
+
+	regiments = {
+		garrison = { x = 0 y = 0 }
+	}
+	is_locked = yes
+}
+units = {
+	##### Tribal Militia #####
+	division= {	
+		name = "Nivkh Tribal Militia"
+		location = 7868
+		division_template = "Tribal Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		name = "Nurgan Garrison"
+		location = 7868
+		division_template = "Nurgan Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+
+
+}

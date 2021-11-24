@@ -1,0 +1,23 @@
+
+
+units = {
+	##### Divisions #####
+	division= {	
+		name = "3. Sichuan Infantry Division"
+		location = 2045
+		division_template = "Traditional Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+
+	division= {	
+		name = "5. Sichuan Militia"
+		location = 12141
+		division_template = "Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+
+}

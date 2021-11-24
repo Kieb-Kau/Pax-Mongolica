@@ -1,0 +1,31 @@
+
+state={
+	id=188
+	name="STATE_188"
+
+	history={
+		victory_points = {
+			3963 1 
+		}
+		owner = YUA
+		buildings = {
+			infrastructure = 1
+
+
+		}
+		add_core_of = YUA
+		1939.3.22 = {
+			owner = GER
+			controller = GER
+
+		}
+
+	}
+
+	provinces={
+		1267 1325 1343 3963 4404 7249 7309 9733 12136 
+	}
+	manpower=55293
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

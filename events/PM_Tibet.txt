@@ -1,0 +1,347 @@
+###########################
+# Tibet Events
+###########################
+
+add_namespace = tibet_xzy
+
+country_event = {
+	id = tibet_xzy.1 #Sanjiang
+    title = tibet_xzy.1.t
+    desc = tibet_xzy.1.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = tibet_xzy.1.a # We must take matters into our own hands 
+		hidden_effect = {
+			white_peace = SJR
+			drop_cosmetic_tag = yes
+			country_event = {
+				id = tibet_xzy.2
+				days = 50
+			}
+
+		}
+		YUA = {
+			end_puppet = ROOT
+		}
+		add_stability = -0.05
+		add_war_support = -0.05
+	}
+    
+}
+
+country_event = {
+	id = tibet_xzy.2 #Tibetans congregate in rural areas
+    title = tibet_xzy.2.t
+    desc = tibet_xzy.2.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = tibet_xzy.2.a # They are planning something 
+		hidden_effect = {
+			country_event = {
+				id = tibet_xzy.3
+				days = 15
+			}
+
+		}
+		add_political_power = -30
+		add_stability = -0.03
+	}
+    
+}
+
+country_event = {
+	id = tibet_xzy.3 #Tibetan Rebellion
+    title = tibet_xzy.3.t
+    desc = tibet_xzy.3.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = tibet_xzy.3.a # Oh god 
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = XZY
+				}
+				add_core_of = TBE
+			}
+			
+			delete_unit_template_and_units = {
+    				division_template = "Mongol Infantry"
+   				disband = no
+			}
+			delete_unit_template_and_units = {
+    				division_template = "Tribal Militia"
+   				disband = no
+			}
+			load_oob = XZY_rebellion
+			add_ideas = XZY_rebellion_idea	
+			add_manpower = 10000
+
+			TBE = {
+
+				add_ideas = TBE_rebellion_idea
+				add_ideas = TBE_archaic_industry
+
+				transfer_state = 434
+				transfer_state = 799
+				transfer_state = 759
+				transfer_state = 755
+				transfer_state = 604
+				transfer_state = 601
+				transfer_state = 752
+				transfer_state = 754
+				transfer_state = 322
+				set_province_controller = 2098
+				set_province_controller = 7926
+				set_province_controller = 4994
+				set_province_controller = 2014
+				set_province_controller = 4900
+				set_province_controller = 8121
+				set_province_controller = 12807
+				set_province_controller = 2093
+				set_province_controller = 10802
+				set_province_controller = 12884
+				set_province_controller = 8005
+				set_province_controller = 7273
+
+				set_cosmetic_tag = TBE_Rebellion
+				country_event = {
+					id = tibet_xzy.4
+				}
+
+			}
+			
+			set_province_controller = 4973
+			set_province_controller = 4999
+
+
+		
+
+		}
+		add_political_power = -100
+		add_stability = -0.1
+		TBE = {
+			declare_war_on = {
+    				target = XZY
+    				type = annex_everything
+			}
+		}
+
+	}
+    
+}
+
+country_event = {
+	id = tibet_xzy.4 #oob for tbe
+    title = tibet_xzy.4.t
+    desc = tibet_xzy.4.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = tibet_xzy.4.a # Avante! 
+		set_capital = 601
+		load_oob = TBE_revolution
+		add_stability = 0.1
+		add_war_support = 0.1
+		hidden_effect = {
+			news_event = {
+				id = tibet_xzy.5
+				days = 1
+			}
+		}
+	}
+    
+}
+
+news_event = {
+	id = tibet_xzy.5 #Tibetan rebellion
+    title = tibet_xzy.5.t
+    desc = tibet_xzy.5.d
+	picture = GFX_event_ITA_news_mussolini_deposto
+
+	is_triggered_only = yes 
+	major = yes
+
+
+	option = { 
+		name = tibet_xzy.5.a
+		trigger = {
+			tag = XZY
+		}
+
+	}
+	option = { 
+		name = tibet_xzy.5.b
+		trigger = {
+			tag = TBE
+		}
+
+
+	}
+	option = { 
+		name = tibet_xzy.5.c
+		trigger = {
+			tag = YUA
+		}
+
+
+	}
+	option = { 
+		name = tibet_xzy.5.e
+		trigger = {
+			NOT = {
+				OR = {
+					tag = XZY
+					tag = TBE
+					tag = YUA
+
+
+				}
+			}
+		}
+
+
+	}
+    
+}
+
+country_event = {
+	id = tibet_xzy.6 #We win! TBE
+    title = tibet_xzy.6.t
+    desc = tibet_xzy.6.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = tibet_xzy.6.a # We return from the dead! 
+		set_capital = 757
+		drop_cosmetic_tag = yes
+		add_stability = 0.1
+		add_war_support = 0.1
+		remove_ideas = TBE_rebellion_idea
+		hidden_effect = {
+			news_event = {
+				id = tibet_xzy.8
+				days = 1
+			}
+		}
+	}
+    
+}
+
+country_event = {
+	id = tibet_xzy.7 #We win! XZY
+    title = tibet_xzy.7.t
+    desc = tibet_xzy.7.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = tibet_xzy.7.a # Phew 
+		set_capital = 757
+		set_cosmetic_tag = XZY_Secretariat
+		add_stability = 0.1
+		add_war_support = 0.1
+		remove_ideas = XZY_rebellion_idea	
+
+		hidden_effect = {
+			news_event = {
+				id = tibet_xzy.9
+				days = 1
+			}
+		}
+	}
+    
+}
+
+news_event = {
+	id = tibet_xzy.8 #Great tibet news
+    title = tibet_xzy.8.t
+    desc = tibet_xzy.8.d
+	picture = GFX_event_ITA_news_mussolini_deposto
+
+	is_triggered_only = yes 
+	major = yes
+
+
+	option = { 
+		name = tibet_xzy.8.a
+		trigger = {
+			tag = TBE
+		}
+
+	}
+
+	option = { 
+		name = tibet_xzy.8.b
+		trigger = {
+			NOT = {
+				tag = TBE
+			}
+		}
+
+
+	}
+    
+}
+
+news_event = {
+	id = tibet_xzy.9 #Governate of Tibet
+    title = tibet_xzy.9.t
+    desc = tibet_xzy.9.d
+	picture = GFX_event_ITA_news_mussolini_deposto
+
+	is_triggered_only = yes 
+	major = yes
+
+
+	option = { 
+		name = tibet_xzy.9.a
+		trigger = {
+			tag = XZY
+		}
+
+	}
+
+	option = { 
+		name = tibet_xzy.9.b # Perhaps not is all lost
+		trigger = {
+			tag = YUA
+		}
+
+	}
+
+	option = { 
+		name = tibet_xzy.8.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = XZY
+					tag = YUA
+
+				}
+			}
+		}
+
+
+	}
+    
+}

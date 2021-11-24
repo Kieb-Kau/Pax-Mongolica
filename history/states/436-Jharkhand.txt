@@ -1,0 +1,24 @@
+
+state={
+	id=436
+	name="STATE_436"
+	resources={
+	}
+
+	history={
+		owner = GAR
+		add_core_of = GAR
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		1510 2005 4045 4410 4953 5040 5096 7497 7938 8120 10332 10801 12375 12480 
+	}
+	manpower=7123100
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

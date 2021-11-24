@@ -1,0 +1,34 @@
+
+state={
+	id=401
+	name="STATE_401"
+	resources={
+
+	}
+
+	history={
+		owner = JOC
+		buildings = {
+			infrastructure = 3
+			9680 = {
+				naval_base = 5
+
+			}
+
+		}
+		set_demilitarized_zone = yes
+
+		add_core_of = JOC
+		victory_points = {
+			9680 5 
+		}
+
+	}
+
+	provinces={
+		9677 9680 
+	}
+	manpower=327795
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

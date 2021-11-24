@@ -1,0 +1,192 @@
+ideas = {
+	
+	country = {
+		JOC_shock_of_the_east = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = -0.25
+				monthly_population = -0.25
+				political_power_factor = -0.25
+			}
+		}
+		MOS_russian_revanchism = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		Russian_war_fevror = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.15
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+			}
+		}
+		Unpopular_war = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = -0.25
+				army_attack_factor = -0.25
+				army_defence_factor = -0.25
+				army_speed_factor = -0.25
+			}
+		}
+		JOC_Jochid_collapse = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = -0.1
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				army_speed_factor = -0.1
+				army_org_factor = -0.1
+
+			}
+		}
+		JOC_immient_collapse = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.8
+				army_defence_factor = -0.8
+				army_speed_factor = -0.4
+				ai_focus_defense_factor = 10.0
+
+			}
+		}
+		JOC_unequal_treaties = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.33
+				stability_factor = -0.05
+			}
+		}
+		JOC_the_land_divide = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = -0.05
+				conscription_factor = -0.15
+				production_speed_buildings_factor = -0.15
+			}
+		}
+		JOC_the_mission = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+
+			}
+		}
+		JOC_backwards_industry = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.33
+				industrial_capacity_factory = -0.33
+				industrial_capacity_dockyard = -0.33
+				production_factory_max_efficiency_factor = -0.33
+				research_speed_factor = -0.33
+			}
+		}
+	}
+}

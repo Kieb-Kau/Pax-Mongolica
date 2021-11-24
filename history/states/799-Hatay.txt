@@ -1,0 +1,28 @@
+
+state={
+	id=799 # Transhimalayan Tibet
+	name="STATE_799"
+
+	history={
+		owner = XZY
+		add_core_of = XZY
+
+		buildings = {
+			infrastructure = 1
+
+		}
+		1938.9.30 = {
+			owner = TUR
+			controller = TUR
+
+		}
+
+	}
+
+	provinces={
+		1129 1898 3989 4435 10825 10910 12892 
+	}
+	manpower=203129
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

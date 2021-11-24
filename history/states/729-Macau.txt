@@ -1,0 +1,31 @@
+
+state={
+	id=729
+	name="STATE_729"
+
+	history={
+		owner = GOR
+		add_core_of = GOR
+		victory_points = {
+			7125 3
+		}
+		victory_points = {
+			12040 10
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+
+
+		}
+
+	}
+
+	provinces={
+		1003 4004 4107 7070 7125 7155 9981 11915 12040 
+	}
+	manpower=2357805
+	buildings_max_level_factor=1.000
+	state_category=town
+}

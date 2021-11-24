@@ -1,0 +1,25 @@
+
+state={
+	id=728
+	name="STATE_728"
+
+	history={
+		owner = YUA
+		add_core_of = YUA
+		buildings = {
+			infrastructure = 1
+
+
+		}
+		victory_points = {
+			10563 3
+		}
+	}
+
+	provinces={
+		1725 1728 1774 1781 1855 4697 4777 4858 7799 7864 7870 10560 10563 10634 10695 12520 12541 12544 12614 12675 
+	}
+	manpower=1292000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,31 @@
+﻿l_english:
+ #Mao - Huguang
+ MAO_fascism:0 "Huguang"
+ MAO_fascism_DEF:0 "Huguang"
+ MAO_neutrality:0 "Huguang"
+ MAO_neutrality_DEF:0 "Huguang"
+ MAO_democratic:0 "Huguang"
+ MAO_democratic_DEF:0 "Huguang"
+ MAO_communism:0 "Huguang"
+ MAO_communism_DEF:0 "Huguang"
+ MAO_fascism_ADJ:0 "Huguang"
+ MAO_neutrality_ADJ:0 "Huguang"
+ MAO_democratic_ADJ:0 "Huguang"
+ MAO_communism_ADJ:0 "Huguang"
+ 
+ MAO_liberal:0 "Huguang"
+ MAO_liberal_DEF:0 "Huguang"
+ MAO_liberal_ADJ:0 "Huguang"
+ MAO_nomadic:0 "Huguang"
+ MAO_nomadic_DEF:0 "Huguang"
+ MAO_nomadic_ADJ:0 "Huguang"
+ 
+ MAO_exerted_influence:0 "De Facto Independence"
+ MAO_exerted_influence_desc:0 "For the past five hundred years, the Italian orgininating Polo family has governed Huguang province within the Yuan Empire. The family's influence in the province is substantial, and they have in the past prevented all attempts to partition it or topple their rule. By now, Huguang is only a province of the Yuan Empire in name..."
+ MAO_industry_in_china:0 "Industrial Pioneer"
+ MAO_industry_in_china_desc:0 "Following the European Industrial Revolution, Italian immigrants financed by the Polos moved to Huguang, bringing their developments with them. As a result, Huguang has become a rare glimmer of western modernization in the entirety of the old Mongol Empire."
+ MAO_socialist_guerillas:0 "Socialist Guerillas"
+ MAO_socialist_guerillas_desc:0 "With our recent industrial development, the peasant populace in Huguang has become increasingly upset. Some have even begun a guerilla war in parts of the province. If Huguang is to realize its destiny, they must be eliminated."
+ 
+ western_minded_polo:0 "Western Educated"
+ nongminist_beacon:0 "Nongminist Leader"

@@ -1,0 +1,248 @@
+ideas = {
+	
+	country = {
+		KAT_modernization_program = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				planning_speed = 0.1
+			}
+		}
+		KAT_upstart_empire = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		KAT_princes_and_rajahs = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.33
+				conscription_factor = -0.33
+				stability_factor = -0.05
+			}
+		}
+		KAT_semi_backwards_industry = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.2
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+				production_factory_max_efficiency_factor = -0.2
+			}
+		}
+		GAR_the_garhs = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = 0.25
+				stability_factor = 0.15
+				ai_focus_defense_factor = 10.0
+			}
+		}
+		GAR_buffer_state = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.25
+				war_support_factor = -0.15
+			}
+		}
+		GAR_backwards_industry = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.66
+				industrial_capacity_factory = -0.66
+				industrial_capacity_dockyard = -0.66
+				production_factory_max_efficiency_factor = -0.66
+				research_speed_factor = -0.66
+			}
+		}
+		BEN_the_two_treaties = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = -0.1
+				stability_factor = 0.05
+				army_core_defence_factor = 0.05
+				army_attack_factor = -0.25
+			}
+		}
+		BEN_traditionalist_army = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.5
+				army_speed_factor = -0.25
+				army_org_factor = -0.25
+				army_morale_factor = -0.25
+			}
+		}
+		BEN_backwards_industry = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.5
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = -0.5
+				production_factory_max_efficiency_factor = -0.5
+				research_speed_factor = -0.5
+			}
+		}
+		DEL_defeatist_regime = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				war_support_factor = -0.2
+			}
+		}
+		DEL_the_lodis = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.2
+				conscription_factor = -0.33
+				political_power_factor = -0.33
+
+
+			}
+		}
+		DEL_backwards_industry = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.5
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = -0.5
+				production_factory_max_efficiency_factor = -0.5
+				research_speed_factor = -0.5
+			}
+		}
+	}
+	
+
+
+
+
+}

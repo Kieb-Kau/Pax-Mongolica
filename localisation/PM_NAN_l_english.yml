@@ -1,0 +1,22 @@
+﻿l_english:
+ #Nanai
+ NAN_fascism: "Nanai"
+ NAN_fascism_DEF: "Nanai"
+ NAN_neutrality: "Nanai"
+ NAN_neutrality_DEF: "Nanai"
+ NAN_democratic: "Nanai"
+ NAN_democratic_DEF: "Nanai"
+ NAN_communism: "Nanai"
+ NAN_communism_DEF: "Nanai"
+ NAN_fascism_ADJ: "Nanai"
+ NAN_neutrality_ADJ: "Nanai"
+ NAN_democratic_ADJ: "Nanai"
+ NAN_communism_ADJ: "Nanai"
+ 
+ NAN_liberal:0 "Nanai"
+ NAN_liberal_DEF:0 "Nanai"
+ NAN_liberal_ADJ:0 "Nanai"
+ NAN_nomadic:0 "Nanai"
+ NAN_nomadic_DEF:0 "Nanai"
+ NAN_nomadic_ADJ:0 "Nanai"
+ 

@@ -1,0 +1,22 @@
+
+state={
+	id=195
+	name="STATE_195"
+	manpower = 750158
+	
+	state_category = rural
+
+	history={
+		owner = FIN
+
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = FIN
+
+	}
+
+	provinces={
+		149 3151 
+	}
+}

@@ -1,0 +1,297 @@
+ ###########################
+# Japanese Events
+###########################
+
+add_namespace = japanese_empire
+
+country_event = {
+	id = japanese_empire.1 # The Yuan Empire Collapses - Japan
+    	title = japanese_empire.1.t
+    	desc = japanese_empire.1.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = japanese_empire.1.a # The Sulde falls...
+		set_country_flag = JPN_bypass_initial
+		hidden_effect = {
+			country_event = {
+				id = japanese_empire.5
+				days = 3
+			}
+		}
+	}
+}
+country_event = {
+	id = japanese_empire.2 # The Heian Proclamation
+    	title = japanese_empire.2.t
+    	desc = japanese_empire.2.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = japanese_empire.2.a # The Yuan Empire is dead! Long live Japan!
+		add_political_power = 100
+		add_opinion_modifier = {
+    			target = YUA
+    			modifier = JPN_YUA_heian
+		}
+		reverse_add_opinion_modifier = {
+    			target = YUA
+    			modifier = JPN_YUA_heian
+		}
+	}
+}
+country_event = {
+	id = japanese_empire.3 # The Sun rises
+    	title = japanese_empire.3.t
+    	desc = japanese_empire.3.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = japanese_empire.3.a # Japan will be great, or nothing at all!
+		add_war_support = 0.15
+	}
+}
+country_event = {
+	id = japanese_empire.4 # The Sun rises
+    	title = japanese_empire.4.t
+    	desc = japanese_empire.4.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = japanese_empire.4.a # Japan will be great, or nothing at all!
+		add_war_support = 0.15
+	}
+}
+country_event = {
+	id = japanese_empire.5 # The Ezo treaty - signed with Japan's independence from YUA
+    	title = japanese_empire.5.t
+    	desc = japanese_empire.5.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = japanese_empire.5.a # We are bound by the treaty...
+		diplomatic_relation = {
+    			country = AIN
+    			relation = non_aggression_pact
+   			active = yes
+		}
+		add_political_power = -25
+		custom_effect_tooltip = JPN_ezo_treaty_tt
+	}
+}
+country_event = {
+	id = japanese_empire.6 # The Ezo treaty broken and JPN demands puppet
+    	title = japanese_empire.6.t
+    	desc = japanese_empire.6.d
+	picture = GFX_report_event_ITA_mussolini_1
+	is_triggered_only = yes 
+
+	option = { 
+		name = japanese_empire.6.a # We must submit to Japan...
+		ai_chance = {
+			base = 80 # 
+		}
+		add_political_power = 50
+		add_stability = 0.05
+		add_war_support = 0.05
+
+		JPN = {
+			country_event = {
+				id = japanese_empire.7
+			}
+		}
+	}
+	option = { 
+		name = japanese_empire.6.b # We must submit to Japan...
+		ai_chance = {
+			base = 20 # 
+		}
+		add_political_power = -100
+		add_stability = -0.1
+		add_war_support = -0.1
+
+		white_peace = NIV
+		JPN = {
+			country_event = {
+				id = japanese_empire.8
+			}
+		}
+	}
+}
+country_event = {
+	id = japanese_empire.7 # Ainu doesn't care
+    	title = japanese_empire.7.t
+    	desc = japanese_empire.7.d
+	picture = GFX_report_event_ITA_mussolini_1
+	is_triggered_only = yes 
+
+	option = { 
+		name = japanese_empire.7.a # We must prepare war plans 
+		set_country_flag = JPN_ainu_rejected_puppet
+	}
+
+}
+country_event = {
+	id = japanese_empire.8 # Ainu submit to japan - a surprise!
+    	title = japanese_empire.8.t
+    	desc = japanese_empire.8.d
+	picture = GFX_report_event_ITA_mussolini_1
+	is_triggered_only = yes 
+
+	option = { 
+		name = japanese_empire.8.a # A surprise, but a welcome one
+		puppet = AIN
+		add_political_power = 50
+		set_country_flag = JPN_ainu_accepted_puppet
+
+		hidden_effect = {
+			AIN = {
+				set_cosmetic_tag = AIN_JPN_puppet
+				set_popularities = {
+					democratic = 1
+					liberal = 0
+					communism = 1
+					fascism = 0
+					neutrality = 8
+					nomadic = 90
+				}
+				set_politics = {
+					ruling_party = neutrality
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = japanese_empire.9 # The tsugaru straits incident
+    	title = japanese_empire.9.t
+    	desc = japanese_empire.9.d
+	picture = GFX_report_event_ITA_mussolini_1
+	is_triggered_only = yes 
+
+	option = { 
+		name = japanese_empire.9.a # Wait! We didn't do that
+		JPN = {
+			country_event = {
+				id = japanese_empire.10
+			}
+		}
+		hidden_effect = {
+			NIV = {
+				country_event = {
+					id = ainunivkh.6
+				}	
+			}
+		}
+	}
+}
+country_event = {
+	id = japanese_empire.10 # The tsugaru straits incident - Japan
+    	title = japanese_empire.10.t
+    	desc = japanese_empire.10.d
+	picture = GFX_report_event_ITA_mussolini_1
+	is_triggered_only = yes 
+
+	option = { 
+		name = japanese_empire.10.a # Oh no! a disaster! The Ainu must be destroyed!
+		add_manpower = -27
+		add_stability = -0.005
+		declare_war_on = {
+    			target = AIN
+    			type = annex_everything
+		}
+		add_state_claim = 536
+		add_state_claim = 555
+
+	}
+}
+country_event = {
+	id = japanese_empire.11 # Victory in Ezo!
+    	title = japanese_empire.11.t
+    	desc = japanese_empire.11.d
+	picture = GFX_report_event_ITA_mussolini_1
+	is_triggered_only = yes 
+
+	option = { 
+		name = japanese_empire.11.a # Great!
+		add_political_power = 50
+		transfer_state = 536
+		transfer_state = 555
+		white_peace = AIN
+
+	}
+}
+
+country_event = {
+	id = japanese_empire.12 # Victory in Nurgan! - Nivkh capitulate
+    	title = japanese_empire.12.t
+    	desc = japanese_empire.12.d
+	picture = GFX_report_event_ITA_mussolini_1
+	is_triggered_only = yes 
+
+	option = { 
+		name = japanese_empire.12.a # Lets Annex the Nivkh Lands! 
+		ai_chance = {
+			base = 20 # 
+		}
+		add_political_power = 50
+
+	}
+	option = { 
+		name = japanese_empire.12.b # Protectorate of Nurgan
+		ai_chance = {
+			base = 20 # 
+		}
+		white_peace = NIV
+		add_political_power = 50
+		puppet = NIV
+
+		hidden_effect = {
+			NIV = {
+				set_cosmetic_tag = NIV_JPN_puppet
+				set_popularities = {
+					democratic = 1
+					liberal = 0
+					communism = 1
+					fascism = 0
+					neutrality = 8
+					nomadic = 90
+				}
+				set_politics = {
+					ruling_party = neutrality
+				}
+			}
+			IF = {
+				limit = {
+					owns_state = 537
+				}
+				transfer_state = 655
+			}
+		}		
+	}
+}

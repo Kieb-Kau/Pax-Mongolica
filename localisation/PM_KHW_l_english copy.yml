@@ -1,0 +1,22 @@
+﻿l_english:
+ #Khwarezmia
+
+ KHW_fascism:0 "Khwarezmia"
+ KHW_fascism_DEF:0 "Khwarezmia"
+ KHW_neutrality:0 "Khwarezmia"
+ KHW_neutrality_DEF:0 "Khwarezmia"
+ KHW_democratic:0 "Khwarezmia"
+ KHW_democratic_DEF:0 "Khwarezmia"
+ KHW_communism:0 "Khwarezmia"
+ KHW_communism_DEF:0 "Khwarezmia"
+ KHW_liberal:0 "Khwarezmia"
+ KHW_liberal_DEF:0 "Khwarezmia"
+ KHW_nomadic:0 "Khwarezmia"
+ KHW_nomadic_DEF:0 "Khwarezmia"
+ KHW_fascism_ADJ:0 "Khwarezmian"
+ KHW_neutrality_ADJ:0 "Khwarezmian"
+ KHW_democratic_ADJ:0 "Khwarezmian"
+ KHW_communism_ADJ:0 "Khwarezmian"  
+ KHW_liberal_ADJ:0 "Khwarezmian"
+ KHW_nomadic_ADJ:0 "Khwarezmian"
+

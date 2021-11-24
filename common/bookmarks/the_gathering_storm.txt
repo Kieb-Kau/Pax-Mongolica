@@ -1,0 +1,87 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "YUA"
+		default = yes
+		"JOC"={
+			history = "JOC_GATHERING_STORM_DESC"
+			ideology = nomadic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"CHK"={
+			history = "CHK_GATHERING_STORM_DESC"
+			ideology = nomadic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"YUA"={
+			history = "YUA_GATHERING_STORM_DESC"
+			ideology = nomadic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"MOS"={ # change
+			history = "MOS_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"MIN"={
+			history = "MIN_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}	
+			focuses = {
+
+			}		
+		}
+		"JPN"={
+			history = "JPN_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+
+			}	
+		}
+		"XZY"={ # change - obviously
+			history = "XZY_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}	
+			focuses = {
+
+			}			
+		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+
+		# minors from DLC ####
+	}
+}

@@ -1,0 +1,152 @@
+
+division_template = {
+	name = "Infantry Division"				# Imperial Guards 
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+
+
+	}
+	support = {
+      	 	engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+
+	}
+}
+
+division_template = {
+	name = "Cavalry Division"				# Imperial Guards 
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+
+
+	}
+	support = {
+      	 	engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+
+	}
+}
+
+
+division_template = {
+	name = "Transitional Division"				# Imperial Guards 
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		light_armor = { x = 1 y = 3 }
+	}
+	is_locked = yes
+	support = {
+      	 	engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	##### Divisions #####
+	division= {	
+		name = "1. Princely Infantry Division"
+		location = 378
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "2. Princely Infantry Division"
+		location = 378
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "3. Princely Infantry Division"
+		location = 378
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "4. Princely Infantry Division"
+		location = 378
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "5. Princely Infantry Division"
+		location = 378
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "6. Princely Infantry Division"
+		location = 11375
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "7. Princely Infantry Division"
+		location = 11375
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "Cavalry Division"
+		location = 378
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "1st Transitional Division"
+		location = 11375
+		division_template = "Transitional Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "2nd Transitional Division"
+		location = 378
+		division_template = "Transitional Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+
+	}
+
+
+}

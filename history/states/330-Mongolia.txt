@@ -1,0 +1,32 @@
+
+state={
+	id=330
+	name="STATE_330"
+	resources={
+
+	}
+
+	history={
+		owner = YUA
+		victory_points = {
+			4732 25
+		}
+		victory_points = {
+			4801 3
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = YUA
+
+	}
+
+	provinces={
+		1798 1859 1868 4729 4732 4766 4801 4862 7749 7752 7806 7823 7881 7885 10554 10623 10704 12507 12533 12605 12669 12686 
+	}
+	manpower=4272000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

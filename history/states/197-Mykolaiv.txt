@@ -1,0 +1,22 @@
+
+state={
+	id=197
+	name="STATE_197"
+	manpower = 156311
+	
+	state_category = pastoral
+
+	history={
+
+		owner = JOC
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = JOC
+
+	}
+
+	provinces={
+		409 574 3403 3755 6423 6451 6597 9419 9433 9573 11422 11437 11546 11561 11683 11715
+	}
+}

@@ -1,0 +1,16 @@
+################
+##### Generic decision for weapons production ######
+################
+
+GEN_make_weapons = {
+	allowed = {
+		num_of_military_factories < 1
+
+	}
+	icon = generic_industry
+	visible_when_empty = yes
+	visible = {
+		num_of_military_factories < 1
+	}
+}
+

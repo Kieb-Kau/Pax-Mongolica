@@ -1,0 +1,59 @@
+capital = 729 # Macau - acts as Kaesong
+
+oob = "ZHE_1936"
+
+
+set_stability = 0.3
+set_war_support = 0.6
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	tech_support = 1
+
+
+}
+add_ideas = {
+	extensive_conscription
+	ZHE_one_government_now
+	ZHE_bad_ethnic_tension
+	ZHE_archaic_industry
+}
+
+set_politics = {
+	ruling_party = nomadic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 8
+	liberal = 0
+	communism = 7
+	fascism = 10
+	neutrality = 43
+	nomadic = 32
+}
+
+create_country_leader = {
+	name = "Guyugiin Luvsan" # Obviously change this later
+	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+	picture = "Portrait_China_Chiang_Kai_Shek.dds"
+	expire = "1965.1.1"
+	ideology = established_government_horde
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Guyugiin Luvsan" # Obviously change this later
+	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+	picture = "Portrait_China_Chiang_Kai_Shek.dds"
+	expire = "1965.1.1"
+	ideology = established_government_horde
+	traits = {
+		
+	}
+}

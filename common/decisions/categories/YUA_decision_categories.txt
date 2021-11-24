@@ -1,0 +1,19 @@
+################
+##### YUA ######
+################
+
+YUA_sanjiang_defence = {
+	allowed = {
+		tag = YUA
+	}
+	icon = generic_industry
+	visible_when_empty = yes
+	visible = {
+		OR = {
+			has_war_with = SJR
+			has_war_with = MIN
+		}
+		
+	}
+}
+

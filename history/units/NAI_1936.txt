@@ -1,0 +1,66 @@
+division_template = {
+	name = "Naiman Infantry Division"				# Imperial Guards 
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+
+
+	}
+	is_locked = yes
+
+}
+
+division_template = {
+	name = "Naiman Tumen"				# Mongol Cavalry 
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 3 y = 0 }
+		cavalry = { x = 3 y = 1 }
+		cavalry = { x = 4 y = 0 }
+		cavalry = { x = 4 y = 1 }
+
+	}
+}
+
+units = {
+	##### Suwei #####
+	division= {	
+		name = "Naiman Infantry Division"
+		location = 10563
+		division_template = "Naiman Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "1. Naiman Tumen"
+		location = 4704
+		division_template = "Naiman Tumen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		name = "2. Naiman Tumen"
+		location = 12541
+		division_template = "Naiman Tumen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+
+
+
+}

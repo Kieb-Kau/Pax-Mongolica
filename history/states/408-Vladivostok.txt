@@ -1,0 +1,29 @@
+
+state={
+	id=408
+	name="STATE_408"
+	resources={
+	}
+
+	history={
+		owner = NIV
+		victory_points = {
+			7868 3
+		}
+
+		buildings = {
+			infrastructure = 1
+
+
+		}
+		add_core_of = NIV
+
+	}
+
+	provinces={
+		3664 4841 4844 7868 10571 12559 
+	}
+	manpower=181465
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

@@ -1,0 +1,23 @@
+ideas = {
+	
+	country = {
+		TUV_tribal_fights = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.33
+				army_morale_factor = -0.33
+
+			}
+		}
+	}
+}

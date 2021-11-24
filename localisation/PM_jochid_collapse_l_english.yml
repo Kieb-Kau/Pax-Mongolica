@@ -1,0 +1,43 @@
+﻿l_english:
+ #Jochid Collapse Splinter nations
+
+ ULA_fascism:0 "Ulagchid Khanate"
+ ULA_fascism_DEF:0 "The Ulagchid Khanate"
+ ULA_neutrality:0 "Ulagchid Khanate"
+ ULA_neutrality_DEF:0 "The Ulagchid Khanate"
+ ULA_democratic:0 "Ulagchid Khanate"
+ ULA_democratic_DEF:0 "The Ulagchid Khanate"
+ ULA_communism:0 "Ulagchid Khanate"
+ ULA_communism_DEF:0 "The Ulagchid Khanate"
+ ULA_liberal:0 "Ulagchid Khanate"
+ ULA_liberal_DEF:0 "The Ulagchid Khanate"
+ ULA_nomadic:0 "Ulagchid Khanate"
+ ULA_nomadic_DEF:0 "The Ulagchid Khanate"
+ ULA_fascism_ADJ:0 "Ulagchid"
+ ULA_neutrality_ADJ:0 "Ulagchid"
+ ULA_democratic_ADJ:0 "Ulagchid"
+ ULA_communism_ADJ:0 "Ulagchid"  
+ ULA_liberal_ADJ:0 "Ulagchid"
+ ULA_nomadic_ADJ:0 "Ulagchid"
+
+ NOG_fascism:0 "Nogayid Khanate"
+ NOG_fascism_DEF:0 "The Nogayid Khanate"
+ NOG_neutrality:0 "Nogayid Khanate"
+ NOG_neutrality_DEF:0 "The Nogayid Khanate"
+ NOG_democratic:0 "Nogayid Khanate"
+ NOG_democratic_DEF:0 "The Nogayid Khanate"
+ NOG_communism:0 "Nogayid Khanate"
+ NOG_communism_DEF:0 "The Nogayid Khanate"
+ NOG_liberal:0 "Nogayid Khanate"
+ NOG_liberal_DEF:0 "The Nogayid Khanate"
+ NOG_nomadic:0 "Nogayid Khanate"
+ NOG_nomadic_DEF:0 "The Nogayid Khanate"
+ NOG_fascism_ADJ:0 "Nogayid"
+ NOG_neutrality_ADJ:0 "Nogayid"
+ NOG_democratic_ADJ:0 "Nogayid"
+ NOG_communism_ADJ:0 "Nogayid"  
+ NOG_liberal_ADJ:0 "Nogayid"
+ NOG_nomadic_ADJ:0 "Nogayid"
+ 
+ 
+ 

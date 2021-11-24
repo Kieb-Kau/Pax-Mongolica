@@ -1,0 +1,101 @@
+subutayid_recruitment = {
+	raise_tumed_tumen = {
+		icon = eng_propaganda_campaigns
+		visible = {
+			has_country_flag = subutais_recruitment_flag
+		}
+		available = {
+			controls_state = 566
+		}
+		fire_only_once = yes
+		highlight_states = {
+			state = 566
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 10000
+
+		}
+		days_remove = 5
+		complete_effect = {
+		}
+       	 	remove_effect = {
+			custom_effect_tooltip = subutai_tumen_recruiting_tt
+			hidden_effect = {
+				566 = {
+					create_unit = {
+    						division = "name = \"Tumed Tumen\" division_template = \"Uriankhai Tumen\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    						owner = TUV
+					}
+				}
+
+			}
+        	}
+	}
+	raise_altai_tumen = {
+		icon = eng_propaganda_campaigns
+		visible = {
+			has_country_flag = subutais_recruitment_flag
+		}
+		available = {
+			controls_state = 654
+		}
+		fire_only_once = yes
+		highlight_states = {
+			state = 654
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 10000
+
+		}
+		days_remove = 5
+		complete_effect = {
+		}
+       	 	remove_effect = {
+			custom_effect_tooltip = subutai_tumen_recruiting_tt
+			hidden_effect = {
+				654 = {
+					create_unit = {
+    						division = "name = \"Altaic Tumen\" division_template = \"Uriankhai Tumen\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    						owner = TUV
+					}
+				}
+
+			}
+        	}
+	}
+	raise_buryat_tumen = {
+		icon = eng_propaganda_campaigns
+		visible = {
+			has_country_flag = subutais_recruitment_flag
+		}
+		available = {
+			controls_state = 564
+		}
+		fire_only_once = yes
+		highlight_states = {
+			state = 564
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 10000
+
+		}
+		days_remove = 5
+		complete_effect = {
+		}
+       	 	remove_effect = {
+			custom_effect_tooltip = subutai_tumen_recruiting_tt
+			hidden_effect = {
+				564 = {
+					create_unit = {
+    						division = "name = \"Buryat Tumen\" division_template = \"Uriankhai Tumen\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    						owner = TUV
+					}
+				}
+
+			}
+        	}
+	}
+}

@@ -1,0 +1,41 @@
+
+state={
+	id=597
+	name="STATE_597"
+
+	history={
+		owner = YUA
+		add_core_of = YUA
+		victory_points = {
+			1069 5 
+		}
+		victory_points = {
+			1104 3 
+		}
+		victory_points = {
+			4071 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			4205 = {
+				naval_base = 1
+
+
+			}
+
+		}
+		1938.10.25 = {
+			controller = JAP
+
+		}
+
+	}
+
+	provinces={
+		1029 1069 1104 1124 1154 1184 1200 4037 4071 4089 4157 4181 4186 4205 7025 7055 7089 7105 7200 9956 9971 10000 10018 10043 10072 10102 11973 12015 12045 12055 12069 12074 
+	}
+	manpower=11373200
+	buildings_max_level_factor=1.000
+	state_category=town
+}

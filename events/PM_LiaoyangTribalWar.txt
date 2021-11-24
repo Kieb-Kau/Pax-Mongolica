@@ -1,0 +1,651 @@
+###########################
+# Events for the Nanai/Udege revolts 
+###########################
+
+add_namespace = liaoyangtribal
+
+country_event = {
+	id = liaoyangtribal.1 #The Revolt begins!
+    title = liaoyangtribal.1.t
+    desc = liaoyangtribal.1.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # We will be victorious!
+		name = liaoyangtribal.1.a
+		custom_effect_tooltip = nanai_udege_remove_cav_tt
+
+		hidden_effect = {
+			delete_unit_template_and_units = {
+    				division_template = "Tribal Cavalry"
+    				disband = no #will refund equipment and manpower
+			}
+			UDE = {
+				transfer_state = 805
+				add_state_core = 805
+				transfer_state = 163
+				add_state_core = 163
+				load_oob = "udege_war"
+				add_ideas = {
+					tribal_undeveloped_industry
+					tribal_nomadic_army
+	
+				}
+				
+			}
+			NAN = {
+				transfer_state = 188
+				add_state_core = 188
+				load_oob = "nanai_war"
+
+				add_ideas = {
+					tribal_undeveloped_industry
+					tribal_nomadic_army
+	
+				}
+
+			}
+			UDE = {
+				puppet = NAN
+
+			}
+			NAN = {
+				add_popularity = {
+    					ideology = nomadic
+    					popularity = 1.0
+				}
+			}
+		}
+		declare_war_on = {
+    			target = UDE	
+    			type = annex_everything
+		}
+
+		
+		
+
+		hidden_effect = {
+
+			news_event = {
+				id = liaoyangtribal.2
+				days = 3
+			}
+			GOR = {
+				country_event = {	
+					id = liaoyangtribal.3
+					days = 30
+				}
+			}
+
+		}
+
+
+	}
+    
+}
+
+news_event = {
+	id = liaoyangtribal.2 #News - Tribal revolt
+    title = liaoyangtribal.2.t
+    desc = liaoyangtribal.2.d
+	picture = GFX_event_ITA_news_mussolini_deposto
+
+	is_triggered_only = yes 
+	major = yes
+
+	option = { 
+		name = liaoyangtribal.2.a # to war we go!
+		trigger = {
+			OR = {
+				tag = NAN
+				tag = UDE
+
+			}
+		}
+
+
+	}
+	option = { 
+		name = liaoyangtribal.2.b # to war we go!
+		trigger = {
+			tag = LIA
+		}
+
+
+	}
+
+	option = { 
+		name = liaoyangtribal.2.c # ok
+		trigger = {
+			NOT = {
+				OR = {
+					tag = LIA
+					tag = UDE
+					tag = NAN
+
+
+				}
+
+			}
+		}
+
+
+	}
+    
+}
+
+country_event = {
+	id = liaoyangtribal.3 # Korea joins the war?
+    title = liaoyangtribal.3.t
+    desc = liaoyangtribal.3.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # We will Take back the north!
+		name = liaoyangtribal.3.a
+		ai_chance = {
+			base = 90 # change to 70
+		}
+		declare_war_on = {
+    			target = LIA	
+    			type = annex_everything
+		}
+		add_state_core = 662
+		hidden_effect = {
+			LIA = {
+				country_event = {
+					id = liaoyangtribal.4
+					days = 1
+				}
+			}
+			MIN = {
+				set_country_flag = MIN_liaoyang_invasion_flag
+
+			}
+			LIA = {
+				add_ideas = liao_kor_no_surrender_idea
+			}
+			GOR = {
+				add_ideas = liao_kor_no_surrender_idea
+			}
+
+		}
+
+		
+
+	}
+	option = {  # We have enough.
+		name = liaoyangtribal.3.b
+		ai_chance = {
+			base = 10 # change to 30
+		}
+		add_stability = -0.05
+		add_war_support = -0.05
+
+	}
+    
+}
+country_event = {
+	id = liaoyangtribal.4 # Korea joins the war on us!
+    title = liaoyangtribal.4.t
+    desc = liaoyangtribal.4.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Damnation!
+		name = liaoyangtribal.4.a
+		add_state_claim = 326
+		add_state_claim = 527
+
+	}
+    
+}
+
+
+country_event = {
+	id = liaoyangtribal.5 # Ming opperunity
+    title = liaoyangtribal.5.t
+    desc = liaoyangtribal.5.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Support this
+		name = liaoyangtribal.5.a
+		ai_chance = {
+			base = 70 
+		}
+		add_manpower = -80000
+		custom_effect_tooltip = liaoyang_intervention_ming_tt
+		hidden_effect = {
+			country_event = {
+				id = liaoyangtribal.6
+				days = 30
+			}
+		}
+
+	}
+	option = {  # n0
+		name = liaoyangtribal.5.b
+		ai_chance = {
+			base = 0 # change to 30
+		}	
+		add_political_power = 5	
+
+	}
+    
+}
+
+country_event = {
+	id = liaoyangtribal.6 # Spawns LYM
+    title = liaoyangtribal.6.t
+    desc = liaoyangtribal.6.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	trigger = {
+		LIA = {
+			exists = yes
+		}
+	}
+	fire_only_once = yes 
+
+	option = {  # Support this
+		name = liaoyangtribal.6.a
+		LYM = {
+			transfer_state = 118
+			declare_war_on = {
+    				target = LIA
+    				type = annex_everything
+			}
+			load_oob = "LYM_war"
+		}
+		every_state = {
+			limit = {
+				is_core_of = LIA
+			}
+			add_core_of = LYM
+		}
+		hidden_effect = {
+			LIA = {
+				country_event = {
+					id = liaoyangtribal.7
+					days = 1
+				}
+			}
+			716 = {
+				create_unit = {
+    					division = "name = \"1. Liaoyang Loyalist Militia\" division_template = \"Liaoyang Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+    					owner = LIA
+					prioritize_location = 11764
+				}
+				create_unit = {
+    					division = "name = \"2. Liaoyang Loyalist Militia\" division_template = \"Liaoyang Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+    					owner = LIA
+					prioritize_location = 6981
+				}
+			}
+		}
+
+	}
+    
+}
+
+country_event = {
+	id = liaoyangtribal.7 # Ming joins the war on us!
+    title = liaoyangtribal.7.t
+    desc = liaoyangtribal.7.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # oh deary deary me
+		name = liaoyangtribal.7.a
+		add_stability = -0.15
+		add_war_support = -0.15
+		add_political_power = -150
+		hidden_effect = {
+			news_event = {
+				id = liaoyangtribal.15
+				days = 1
+			}
+		}
+
+	}
+    
+}
+
+country_event = {
+	id = liaoyangtribal.8 # Defeated by the koreans!
+    title = liaoyangtribal.8.t
+    desc = liaoyangtribal.8.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Aiya we lost!
+		name = liaoyangtribal.8.a
+		add_stability = -0.05
+		add_war_support = -0.05
+
+		GOR = {
+			country_event = {
+				id = liaoyangtribal.9
+				days = 1
+			}
+		}
+
+	}
+    
+}
+
+country_event = {
+	id = liaoyangtribal.9 # We win!
+    title = liaoyangtribal.9.t
+    desc = liaoyangtribal.9.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Good for us
+		name = liaoyangtribal.9.a
+		add_stability = 0.05
+		white_peace = LIA
+		transfer_state = 662
+		hidden_effect = {
+			LIA = {
+				remove_state_core = 662
+				remove_state_claim = 527
+				remove_state_claim = 326
+			}
+			remove_ideas = liao_kor_no_surrender_idea
+		}
+	
+		
+
+
+
+	}
+    
+}
+
+country_event = {
+	id = liaoyangtribal.10 # Victory over korea - korea!
+    title = liaoyangtribal.10.t
+    desc = liaoyangtribal.10.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Aiya we lost!
+		name = liaoyangtribal.10.a
+		add_stability = -0.25
+		add_war_support = -0.25
+
+		LIA = {
+			country_event = {
+				id = liaoyangtribal.11
+				days = 1
+			}
+		}
+		hidden_effect = { 
+			remove_ideas = liao_kor_no_surrender_idea
+		}
+
+	}
+    
+}
+
+country_event = {
+	id = liaoyangtribal.11 # We win!
+    title = liaoyangtribal.11.t
+    desc = liaoyangtribal.11.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Good for us
+		name = liaoyangtribal.11.a
+		add_stability = 0.05
+		white_peace = GOR
+		transfer_state = 527
+		transfer_state = 326
+	}
+    
+}
+
+country_event = {
+	id = liaoyangtribal.12 # We lost to the ming expeditionary force!
+    title = liaoyangtribal.12.t
+    desc = liaoyangtribal.12.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Aiya we lost!
+		name = liaoyangtribal.12.a
+		add_stability = -0.25
+		add_war_support = -0.25
+
+		IF = {
+			limit = {
+				LYM = {
+					exists = yes
+				}
+			}
+			LYM = {
+				country_event = {
+					id = liaoyangtribal.13
+					days = 1
+				}
+			}
+			set_cosmetic_tag = LIA_yongming_clique
+
+		}
+
+		hidden_effect = { 
+			remove_ideas = liao_kor_no_surrender_idea
+			white_peace = GOR
+			white_peace = NAN
+			white_peace = UDE
+			GOR = {
+				remove_ideas = liao_kor_no_surrender_idea
+			}
+			IF = {
+				limit = {
+					LIA = {
+						owns_state = 662
+					}
+				}
+				GOR = {
+					transfer_state = 662
+					transfer_state = 527
+					transfer_state = 326
+
+				}
+			}
+		}
+
+	}
+    
+}
+
+country_event = {
+	id = liaoyangtribal.13 # We win!
+    title = liaoyangtribal.13.t
+    desc = liaoyangtribal.13.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Good for us
+		name = liaoyangtribal.13.a
+		add_stability = 0.1
+		add_war_support = 0.1
+		transfer_state = 716
+		transfer_state = 328
+		set_cosmetic_tag = LYM_liaoyang_province
+
+		white_peace = LIA
+		MIN = {
+			country_event = {
+				id = liaoyangtribal.14
+				days = 1
+			}
+		}
+
+	}
+    
+}
+
+country_event = {
+	id = liaoyangtribal.14 # We win in LIAOYANg!
+    title = liaoyangtribal.14.t
+    desc = liaoyangtribal.14.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Good for us
+		name = liaoyangtribal.14.a
+		add_stability = 0.02
+		add_war_support = 0.02
+		puppet = LYM
+
+	}
+    
+}
+
+news_event = {
+	id = liaoyangtribal.15 #News - Tribal revolt
+    title = liaoyangtribal.15.t
+    desc = liaoyangtribal.15.d
+	picture = GFX_event_ITA_news_mussolini_deposto
+
+	is_triggered_only = yes 
+	major = yes
+
+	option = { 
+		name = liaoyangtribal.15.a # to war we go!
+		trigger = {
+			tag = LIA
+		}
+
+
+	}
+
+
+	option = { 
+		name = liaoyangtribal.15.b # ok
+		trigger = {
+			NOT = {
+				OR = {
+					tag = LIA
+					tag = GOR
+					tag = NAN
+					tag = UDE
+					tag = LYM
+				}
+
+			}
+		}
+
+
+	}
+	option = { 
+		name = liaoyangtribal.15.c # ok
+		trigger = {
+			OR = {
+				tag = GOR
+				tag = NAN
+				tag = UDE
+				tag = LYM
+			}
+
+		}
+
+
+	}
+    
+}
+
+country_event = {
+	id = liaoyangtribal.16 # We win in LIAOYANg!
+    title = liaoyangtribal.16.t
+    desc = liaoyangtribal.16.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Good for us
+		name = liaoyangtribal.16.a
+		add_stability = -0.3
+		add_war_support = -0.3
+		add_ideas = LYM_collapse
+
+	}
+    
+}
+
+country_event = {
+	id = liaoyangtribal.17 # Victory over Jurchens
+    title = liaoyangtribal.17.t
+    desc = liaoyangtribal.17.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Liaoyang is saved!
+		name = liaoyangtribal.17.a
+		add_political_power = 100
+		
+
+	}
+    
+}

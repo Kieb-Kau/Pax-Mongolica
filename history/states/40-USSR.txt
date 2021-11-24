@@ -1,0 +1,38 @@
+
+state={
+	id=40
+	name="STATE_40"
+
+	history={
+		owner = YUA
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = YUA
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 2
+
+			}
+
+		}
+		victory_points = {
+			7965 3 
+		}
+		victory_points = {
+			10863 1 
+		}
+		victory_points = {
+			8023 1 
+		}
+
+	}
+
+	provinces={
+		1383 4210 4425 4559 4996 5009 7400 7965 7976 8023 10346 10413 10776 10863 10920 12262 12898 
+	}
+	manpower=2107451
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

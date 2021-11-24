@@ -1,0 +1,23 @@
+
+state={
+	id=587
+	name="STATE_587"
+
+	history={
+		owner = JOC
+		buildings = {
+			infrastructure = 1
+
+		}
+
+		add_core_of = JOC
+
+	}
+
+	provinces={
+		475 642 1517 3593 4523 4563 4620 7641 10131 10262 10264 10348 10406 11701 12108 12163 12233 12383 12474 13008 13207 
+	}
+	manpower=75133
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

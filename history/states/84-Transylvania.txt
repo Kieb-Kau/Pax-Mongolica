@@ -1,0 +1,24 @@
+
+state={
+	id=84
+	name="STATE_84"
+	manpower = 722300
+	resources={
+	}
+	
+	state_category = rural
+
+	history={
+		owner = THO
+		buildings = {
+			infrastructure = 3
+
+		}
+
+		add_core_of = THO
+	}
+
+	provinces={
+		676 690 693 3665 3676 3694 6679 6709 9619 11622 11639 
+	}
+}

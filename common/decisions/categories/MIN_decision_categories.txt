@@ -1,0 +1,26 @@
+################
+##### MIN ######
+################
+
+MIN_sanjiang_attack = {
+	allowed = {
+		tag = MIN
+	}
+	icon = generic_industry
+	visible_when_empty = yes
+	visible = {
+		has_war_with = YUA
+	}
+}
+
+MIN_zheng_vs_the_emperor = {
+	allowed = {
+		tag = MIN
+	}
+	icon = generic_industry
+	visible_when_empty = yes
+	visible = {
+		has_country_flag = MIN_conference_start
+	}
+}
+

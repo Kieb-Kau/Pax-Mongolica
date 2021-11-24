@@ -1,0 +1,22 @@
+
+state={
+	id=216
+	name="STATE_216"
+
+	history={
+		owner = NOV
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = NOV
+
+	}
+
+	provinces={
+		3 18 26 40 89 90 92 127 138 140 155 2356 2994 3031 3033 3078 3084 3086 3092 3144 6034 6051 6057 6070 6090 6094 6106 6109 6159 6172 9045 9055 9078 9118 9231 11038 11071 11092 11094 11137 11150 11153 11159 11178 11212 13130 13194 13198 
+	}
+	manpower=209564
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

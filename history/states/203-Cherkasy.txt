@@ -1,0 +1,23 @@
+
+state={
+	id=203
+	name="STATE_203"
+	manpower = 305190 # cherkasy existed
+	
+	state_category = rural
+
+	history={
+		victory_points = {
+			488 3
+		}
+		owner = JOC
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = JOC
+	}
+
+	provinces={
+		434 458 488 3452 3468 6478 11424 11438 11454 
+	}
+}

@@ -1,0 +1,169 @@
+ideas = {
+	
+	country = {
+		YUA_disobedient_han = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				planning_speed = -0.33
+				army_org_factor = -0.33
+				army_defence_factor = -0.33
+				army_attack_factor = -0.33
+				army_speed_factor = -0.33
+				conscription_factor = -0.33
+
+
+			}
+		}
+		YUA_empire_in_decline = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.33
+
+				
+			}
+		}
+		YUA_corrupt_military = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.2
+				army_morale_factor = -0.2
+				army_org_factor = -0.2
+				planning_speed = -0.2
+				max_planning = -0.2
+				attrition = 0.2
+
+			}
+		}
+		YUA_true_mongol_army = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.02
+				cavalry_attack_factor = 0.1
+				cavalry_defence_factor = 0.1
+			}
+		}
+		YUA_mongol_horses = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_speed_factor = 0.2
+				attrition = -0.2
+
+
+			}
+		}
+		YUA_khural_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+
+		yuan_primitive_mil_industry_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.4
+
+			}
+		}
+
+		YUA_archaic_industry = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.66
+				industrial_capacity_factory = -0.66
+				industrial_capacity_dockyard = -0.66
+				production_factory_max_efficiency_factor = -0.66
+				research_speed_factor = -0.66
+
+
+			}
+		}
+
+	}
+	
+
+
+
+
+}

@@ -1,0 +1,22 @@
+﻿l_english:
+ #Udege
+ UDE_fascism: "Udege"
+ UDE_fascism_DEF: "Udege"
+ UDE_neutrality: "Udege"
+ UDE_neutrality_DEF: "Udege"
+ UDE_democratic: "Udege"
+ UDE_democratic_DEF: "Udege"
+ UDE_communism: "Udege"
+ UDE_communism_DEF: "Udege"
+ UDE_fascism_ADJ: "Udege"
+ UDE_neutrality_ADJ: "Udege"
+ UDE_democratic_ADJ: "Udege"
+ UDE_communism_ADJ: "Udege"
+ 
+ UDE_liberal:0 "Udege"
+ UDE_liberal_DEF:0 "Udege"
+ UDE_liberal_ADJ:0 "Udege"
+ UDE_nomadic:0 "Udege"
+ UDE_nomadic_DEF:0 "Udege"
+ UDE_nomadic_ADJ:0 "Udege"
+ 

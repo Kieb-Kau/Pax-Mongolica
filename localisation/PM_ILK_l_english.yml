@@ -1,0 +1,52 @@
+﻿l_english:
+ #Ilkhanate/Nishapur
+ 
+ ILK_fascism:0 "Ilkhanate"
+ ILK_fascism_DEF:0 "The Ilkhanate"
+ ILK_neutrality:0 "Ilkhanate"
+ ILK_neutrality_DEF:0 "The Ilkhanate"
+ ILK_democratic:0 "Ilkhanate"
+ ILK_democratic_DEF:0 "The Ilkhanate"
+ ILK_communism:0 "Ilkhanate"
+ ILK_communism_DEF:0 "The Ilkhanate"
+ ILK_fascism_ADJ:0 "Ilkhanid"
+ ILK_neutrality_ADJ:0 "Ilkhanid"
+ ILK_democratic_ADJ:0 "Ilkhanid"
+ ILK_communism_ADJ:0 "Ilkhanid"
+ ILK_liberal:0 "Ilkhanate"
+ ILK_liberal_DEF:0 "The Ilkhanate"
+ ILK_liberal_ADJ:0 "Ilkhanid"
+ ILK_nomadic:0 "Ilkhanate"
+ ILK_nomadic_DEF:0 "The Ilkhanate"
+ ILK_nomadic_ADJ:0 "Ilkhanid"
+ 
+ ILK_nishapur_fascism:0 "Nishapur"
+ ILK_nishapur_fascism_DEF:0 "Nishapur"
+ ILK_nishapur_neutrality:0 "Nishapur"
+ ILK_nishapur_neutrality_DEF:0 "Nishapur"
+ ILK_nishapur_democratic:0 "Nishapur"
+ ILK_nishapur_democratic_DEF:0 "Nishapur"
+ ILK_nishapur_communism:0 "Nishapur"
+ ILK_nishapur_communism_DEF:0 "Nishapur"
+ ILK_nishapur_fascism_ADJ:0 "Ilkhanid"
+ ILK_nishapur_neutrality_ADJ:0 "Ilkhanid"
+ ILK_nishapur_democratic_ADJ:0 "Ilkhanid"
+ ILK_nishapur_communism_ADJ:0 "Ilkhanid"
+ 
+  
+ ILK_nishapur_liberal:0 "Nishapur"
+ ILK_nishapur_liberal_DEF:0 "Nishapur"
+ ILK_nishapur_liberal_ADJ:0 "Ilkhanid"
+ ILK_nishapur_nomadic:0 "Nishapur"
+ ILK_nishapur_nomadic_DEF:0 "Nishapur"
+ ILK_nishapur_nomadic_ADJ:0 "Ilkhanid"
+ 
+ ILK_nishapur_rump_state:0 "Rump Khanate"
+ ILK_nishapur_rump_state_desc:0 "Nishapur is a shadow of its former self. Since the time of Timur, Nishapur has been on a steady decline. The North-African provinces were lost, following by the Anatolian, Arabian, and finally, Persia, the heart of the Empire of Hulagu, fell to local revolutions. Now, Nishapur is a rugged, hostile, and disunited realm, barely stumbling into the present day. It may soon be that Nishapur itself falls into the history books..."
+ 
+ ILK_nishapur_strong_independent_governors:0 "Strong Regional Autonomy"
+ ILK_nishapur_strong_independent_governors_desc:0 "With the geography of the Eastern Nishapur being so hostile, the Mongol government in Nishapur has not been able to effectively exert its rule in the past 100 years. Regional governors control large swathes of our domain, with personal armies, advisors, and foreign relations. With the current state of affairs, it would appear impossible for the Huleguid Khanate to become a significant force."
+ 
+ 
+ ILK_nishapur_chagatai_supported:0 "The Chagatayid Mission"
+ ILK_nishapur_chagatai_supported_desc:0 "For the last 100 years, the crumbling Nishapur has been held up by the Chagatayid Military Mission. §RIf they were to withdraw, what remains of Nishapur may turn to Anarchy.§!"

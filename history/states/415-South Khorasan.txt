@@ -1,0 +1,28 @@
+
+state={
+	id=415
+	name="STATE_415"
+
+	history={
+		owner = ILK
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			4893 5 
+		}
+		victory_points = {
+			5064 1 
+		}
+		add_core_of = ILK
+
+	}
+
+	provinces={
+		1948 1995 2017 2078 4893 4958 5064 8053 10476 10789 10896 12788 12871 
+	}
+	manpower=1132860
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

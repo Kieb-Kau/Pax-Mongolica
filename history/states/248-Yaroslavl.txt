@@ -1,0 +1,26 @@
+
+state={
+	id=248
+	name="STATE_248"
+
+	history={
+		owner = YAR
+		victory_points = {
+			121 5 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = YAR
+
+	}
+
+	provinces={
+		121 3220 6101 9122 11099 11166 
+	}
+	manpower=364541
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

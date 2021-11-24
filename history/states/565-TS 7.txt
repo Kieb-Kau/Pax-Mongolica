@@ -1,0 +1,25 @@
+
+state={
+	id=565
+	name="STATE_565"
+	resources={
+
+	}
+
+	history={
+		owner = YUA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = YUA
+
+	}
+
+	provinces={
+		1666 1761 1792 4675 4737 4762 4795 4835 4868 7736 7759 7854 10565 10583 10654 10681 12506 12538 12575 
+	}
+	manpower=75325
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

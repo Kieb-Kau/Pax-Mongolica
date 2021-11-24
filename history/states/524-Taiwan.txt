@@ -1,0 +1,60 @@
+state=
+{
+	id=524
+	name="STATE_524"
+	resources = {
+		oil=12
+	}
+	manpower = 8712394
+	
+	state_category = city
+	history=
+	{
+		owner = MIN
+		add_core_of = MIN
+
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 2
+			dockyard = 2
+
+			air_base = 2
+			7186 = {
+				naval_base = 4
+				coastal_bunker = 1
+
+			}
+			11914 = {
+				naval_base = 2
+				coastal_bunker = 1
+
+			}
+			12068 = {
+				bunker = 3
+				coastal_bunker = 3
+				naval_base = 7
+			}
+		}
+		victory_points = {
+			12068 15
+		}
+		victory_points = {
+			7186 3
+		}
+		victory_points = {
+			4096 1
+		}
+		victory_points = {
+			12027 3
+		}
+		victory_points = {
+			11914 3
+		}
+
+
+	}
+	provinces={
+		1091 1175 4096 7186 7214 9955 11914 11959 12027 12068
+		}
+}

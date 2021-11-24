@@ -1,0 +1,230 @@
+###########################
+# Korean Events
+###########################
+
+add_namespace = goryeo
+
+country_event = {
+	id = goryeo.1 # Zhengdong Mongol Military storms Kaesong - proclaims military government - claiming Treaty of Ganghwa allows
+    title = goryeo.1.t
+    desc = goryeo.1.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = goryeo.1.a # Zhengdong must be held at all costs
+		hidden_effect = {
+			white_peace = SJR
+			white_peace = MIN
+
+			drop_cosmetic_tag = yes
+		}
+		set_cosmetic_tag = GOR_ZDMG
+		YUA = {
+			end_puppet = ROOT
+		}
+		add_stability = -0.2
+		add_war_support = -0.2
+		add_political_power = 50
+		set_politics = {
+			ruling_party = nomadic
+     			elections_allowed = no
+		}
+		swap_ideas = {
+			remove_idea = GOR_ethnic_tension_aggrivated
+			add_idea = GOR_ethnic_tension_very_bad
+		}
+		hidden_effect = {
+			country_event = {
+				id = goryeo.6
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = goryeo.2 # Unrest in the Kingdom
+    title = goryeo.2.t
+    desc = goryeo.2.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = goryeo.2.a # This can't be good
+		hidden_effect = {
+			country_event = {
+				id = goryeo.3
+				days = 10
+			}
+		}
+		add_stability = -0.05
+		add_war_support = -0.05
+		add_political_power = -50
+		swap_ideas = {
+			remove_idea = GOR_ethnic_tension
+			add_idea = GOR_ethnic_tension_aggrivated
+		}
+	}
+}
+country_event = {
+	id = goryeo.3 # Korean protest fired on in Kaesong
+    title = goryeo.3.t
+    desc = goryeo.3.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = goryeo.3.a # The situation is dire
+		hidden_effect = {
+			country_event = {
+				id = goryeo.4
+				days = 3
+			}
+		}
+		add_stability = -0.05
+		add_war_support = -0.05
+		add_political_power = -50
+	}
+}
+
+country_event = {
+	id = goryeo.4 # Two faces in Zhengdong - The Zhengdong Mongol Government condemns action, Goryeo doesn't care
+    title = goryeo.4.t
+    desc = goryeo.4.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = goryeo.4.a # Korea descends further into Chaos
+		hidden_effect = {
+			country_event = {
+				id = goryeo.5
+				days = 5
+			}
+		}
+		add_stability = -0.025
+		add_political_power = -25
+
+	}
+}
+
+country_event = {
+	id = goryeo.5 # Dual government coalition collapses
+    title = goryeo.5.t
+    desc = goryeo.5.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = goryeo.5.a # Korea descends further into Chaos
+		hidden_effect = {
+			country_event = {
+				id = goryeo.1
+				days = 10
+			}
+		}
+		add_stability = -0.05
+
+		add_popularity = {
+    			ideology = nomadic
+    			popularity = 0.15
+		}
+		add_popularity = {
+    			ideology = neutrality
+    			popularity = -0.1
+		}
+		swap_ideas = {
+			remove_idea = GOR_the_fine_balance
+			add_idea = GOR_governmental_collapse
+		}
+	}
+}
+
+country_event = {
+	id = goryeo.6 # Goryeo government refuses to recognise Military Government
+    title = goryeo.6.t
+    desc = goryeo.6.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = goryeo.6.a # bah! pathetique!
+		hidden_effect = {
+			country_event = {
+				id = goryeo.7
+				days = 20
+			}
+		}
+		add_stability = -0.05
+		add_popularity = {
+    			ideology = nomadic
+    			popularity = -0.02
+		}
+		add_popularity = {
+    			ideology = neutrality
+    			popularity = 0.02
+		}
+	}
+}
+
+country_event = {
+	id = goryeo.7 # Goryeo declares independence from Yuan China!
+    title = goryeo.7.t
+    desc = goryeo.7.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = goryeo.7.a # Here we go again...
+		hidden_effect = {
+			drop_cosmetic_tag = yes
+			add_stability = 0.1
+			add_war_support = 0.25
+			add_political_power = 100
+			remove_ideas = {
+				GOR_governmental_collapse
+				GOR_ethnic_tension_very_bad
+			}
+			add_ideas = {	
+				GOR_anti_mongol_independence_fevror
+			}
+			load_oob = "GOR_zhengdong_revolt"
+
+		}
+		ZHE = {
+			transfer_state = 729
+			add_state_core = 729
+			load_oob = "ZHE_1936"
+		}
+		declare_war_on = {
+    			target = ZHE
+    			type = annex_everything
+		}
+		add_popularity = {
+    			ideology = nomadic
+    			popularity = -0.15
+		}
+		add_popularity = {
+    			ideology = neutrality
+    			popularity = 0.15
+		}
+		set_politics = {
+			ruling_party = neutrality
+     			elections_allowed = no
+		}
+	}
+}

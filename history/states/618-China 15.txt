@@ -1,0 +1,26 @@
+
+state={
+	id=618
+	name="STATE_618"
+
+	history={
+		owner = CHK
+		add_core_of = CHK
+		victory_points = {
+			10674 1 
+		}
+		buildings = {
+			infrastructure = 1
+
+
+		}
+
+	}
+
+	provinces={
+		1708 1818 1844 4714 4788 10610 10674 10691 12590 12737 
+	}
+	manpower=630800
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

@@ -1,0 +1,34 @@
+
+state={
+	id=751
+	name="STATE_751"
+
+	history={
+		owner = YUA
+		add_core_of = YUA
+		buildings = {
+			infrastructure = 1
+
+		}
+
+		victory_points = {
+			7294 1 
+		}
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 1
+				infrastructure = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		2067 4937 7294 10726 12819 
+	}
+	manpower=242000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

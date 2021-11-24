@@ -1,0 +1,23 @@
+
+state={
+	id=250
+	name="STATE_250"
+
+	history={
+		owner = JOC
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = JOC
+
+
+	}
+
+	provinces={
+		208 257 286 345 380 392 3196 3197 3246 3269 3276 3317 3334 3372 6226 6275 6294 6302 6337 6394 9338 11240 11373 
+	}
+	manpower=330524
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

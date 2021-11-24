@@ -1,0 +1,17 @@
+################
+##### TUV ######
+################
+
+subutayid_recruitment = {
+	allowed = {
+		tag = TUV
+
+	}
+	icon = generic_industry
+	visible_when_empty = yes
+	visible = {
+		has_country_flag = subutais_recruitment_flag
+		
+	}
+}
+

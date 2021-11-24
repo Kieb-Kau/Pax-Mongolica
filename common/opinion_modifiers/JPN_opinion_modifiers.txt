@@ -1,0 +1,8 @@
+opinion_modifiers = {
+	JPN_YUA_heian = {
+		value = -150
+	}
+	JPN_northward_expansionism = {
+		value = -30
+	}
+}

@@ -1,0 +1,22 @@
+﻿l_english:
+ #Ma Clique
+ MAQ_fascism: "Ma Clique"
+ MAQ_fascism_DEF: "The Ma Clique"
+ MAQ_neutrality: "Ma Clique"
+ MAQ_neutrality_DEF: "The Ma Clique"
+ MAQ_democratic: "Ma Clique"
+ MAQ_democratic_DEF: "The Ma Clique"
+ MAQ_communism: "Ma Clique"
+ MAQ_communism_DEF: "The Ma Clique"
+ MAQ_fascism_ADJ: "Ma"
+ MAQ_neutrality_ADJ: "Ma"
+ MAQ_democratic_ADJ: "Ma"
+ MAQ_communism_ADJ: "Ma"
+ 
+ MAQ_liberal:0 "Ma Clique"
+ MAQ_liberal_DEF:0 "The Ma Clique"
+ MAQ_liberal_ADJ:0 "Ma"
+ MAQ_nomadic:0 "Ma Clique"
+ MAQ_nomadic_DEF:0 "The Ma Clique"
+ MAQ_nomadic_ADJ:0 "Ma"
+ 

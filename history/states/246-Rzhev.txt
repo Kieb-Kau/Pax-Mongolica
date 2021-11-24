@@ -1,0 +1,26 @@
+
+state={
+	id=246
+	name="STATE_246"
+
+	history={
+		owner = SLM
+		victory_points = {
+			11349 5 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = SLM
+
+	}
+
+	provinces={
+		226 287 3235 3344 6264 6303 6367 6400 9242 9265 9287 9343 11224 11272 11315 11326 11349 
+	}
+	manpower=1525458
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

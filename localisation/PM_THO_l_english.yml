@@ -1,0 +1,23 @@
+﻿l_english:
+ #Thonaia Province
+ THO_fascism:0 "Thonaia"
+ THO_fascism_DEF:0 "Thonaia"
+ THO_neutrality:0 "Thonaia"
+ THO_neutrality_DEF:0 "Thonaia"
+ THO_democratic:0 "Thonaia"
+ THO_democratic_DEF:0 "Thonaia"
+ THO_communism:0 "Thonaia"
+ THO_communism_DEF:0 "Thonaia"
+ THO_fascism_ADJ:0 "Thonaian"
+ THO_neutrality_ADJ:0 "Thonaian"
+ THO_democratic_ADJ:0 "Thonaian"
+ THO_communism_ADJ:0 "Thonaian"
+ 
+  
+ THO_liberal:0 "Thonaia"
+ THO_liberal_DEF:0 "Thonaia"
+ THO_liberal_ADJ:0 "Thonaian"
+ THO_nomadic:0 "Thonaia"
+ THO_nomadic_DEF:0 "Thonaia"
+ THO_nomadic_ADJ:0 "Thonaian"
+ 

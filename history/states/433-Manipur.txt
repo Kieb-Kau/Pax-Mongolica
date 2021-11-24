@@ -1,0 +1,28 @@
+
+state={
+	id=433
+	name="STATE_433" # Rajasthan
+	manpower = 7186000
+	
+	state_category = rural
+	
+	
+	resources={
+	}
+
+	history={
+		victory_points = {
+			2054 1
+		}
+		owner = KAT
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = KAT
+
+	}
+
+	provinces={
+		1199 1908 2054 4149 4915 4971 4984 7905 7998 10847 10866 12041 12718 12743 12829 12844 12876 12886 
+	}
+}

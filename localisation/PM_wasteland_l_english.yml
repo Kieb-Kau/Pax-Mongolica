@@ -1,0 +1,29 @@
+﻿l_english:
+ #Wastelands
+ SBW_fascism: "Siberian Tribes"
+ SBW_fascism_DEF: "Siberian Tribes"
+ SBW_neutrality: "Siberian Tribes"
+ SBW_neutrality_DEF: "Siberian Tribes"
+ SBW_democratic: "Siberian Tribes"
+ SBW_democratic_DEF: "Siberian Tribes"
+ SBW_communism: "Siberian Tribes"
+ SBW_communism_DEF: "Siberian Tribes"
+ SBW_fascism_ADJ: "Siberian Tribes"
+ SBW_neutrality_ADJ: "Siberian Tribes"
+ SBW_democratic_ADJ: "Siberian Tribes"
+ SBW_communism_ADJ: "Siberian Tribes"
+ 
+ SBW_liberal:0 "Siberian Tribes"
+ SBW_liberal_DEF:0 "Siberian Tribes"
+ SBW_liberal_ADJ:0 "Siberian Tribes"
+ SBW_nomadic:0 "Siberian Tribes"
+ SBW_nomadic_DEF:0 "Siberian Tribes"
+ SBW_nomadic_ADJ:0 "Siberian Tribes"
+ 
+ ### decisions for recruiting weapons
+ GEN_make_weapons:0 "Basic Weapons Production"
+ GEN_make_weapons_desc:0 "Although we lack a standard Military Industry, we can still produce some weapons by other means."
+ GEN_make_weapons_tribe:0 "Tribal Weapons Production"
+ GEN_make_weapons_small:0 "Produce Weapons"
+ GEN_make_weapons_medium:0 "Produce More Weapons"
+ GEN_make_weapons_large:0 "Produce Even More Weapons"

@@ -1,0 +1,62 @@
+capital = 248 # Yaroslavl
+
+oob = "YAR_1936"
+
+
+
+set_stability = 0.5
+set_war_support = 0.5
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	basic_light_tank = 1 
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+
+add_ideas = {
+	YAR_the_little_khanate
+	YAR_mongol_russian_ethnic_divide
+
+	limited_conscription
+
+
+}
+
+set_politics = {
+	ruling_party = nomadic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 18
+	liberal = 0
+	communism = 0
+	fascism = 0
+	neutrality = 29
+	nomadic = 53
+}
+
+create_country_leader = {
+	name = "Mangu VI" # Mongol guy settled down
+	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+	picture = "Portrait_China_Chiang_Kai_Shek.dds"
+	expire = "1965.1.1"
+	ideology = established_government_horde
+	traits = {
+		
+	}
+}
+

@@ -1,0 +1,109 @@
+capital = 608 # Beijing/Dadu
+
+set_research_slots = 2
+set_naval_oob = "YUA_1936_naval"
+
+
+oob = "YUA_1936"
+set_naval_oob = "YUA_1936_naval"
+
+
+
+set_stability = 0.25
+set_war_support = 0.25
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+
+		
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+
+		basic_battery = 1
+
+		basic_torpedo = 1
+
+		basic_depth_charges = 1
+
+		basic_fire_control_system = 1
+	}
+
+}
+add_ideas = {
+	YUA_empire_in_decline
+	YUA_corrupt_military
+	YUA_archaic_industry
+	closed_economy
+}
+
+puppet = AIN
+puppet = NIV
+puppet = GOR
+puppet = KHM
+puppet = MAO
+puppet = XZY
+
+create_faction = YUA_PAX_MONGOLICA
+add_to_faction = JOC
+add_to_faction = CHK
+add_to_faction = ILK
+add_to_faction = DEL
+
+add_to_faction = JOC
+add_to_faction = AIN
+add_to_faction = NIV
+add_to_faction = GOR
+add_to_faction = KHM
+add_to_faction = MAO
+add_to_faction = XZY
+
+set_convoys = 10
+
+set_politics = {
+	ruling_party = nomadic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 29
+	liberal = 5
+	communism = 7
+	fascism = 0
+	neutrality = 38
+	nomadic = 21
+}
+
+create_country_leader = {
+	name = "Merghen Khan"
+	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+	picture = "Portrait_China_Chiang_Kai_Shek.dds"
+	expire = "1965.1.1"
+	ideology = khanism
+	traits = {
+		the_wise_khan
+	}
+}
+
+
+
+
+

@@ -1,0 +1,27 @@
+﻿l_english:
+ #YNC
+ YNC_fascism: "Yunnan"
+ YNC_fascism_DEF: "Yunnan"
+ YNC_neutrality: "Yunnan"
+ YNC_neutrality_DEF: "Yunnan"
+ YNC_democratic: "Yunnan"
+ YNC_democratic_DEF: "Yunnan"
+ YNC_communism: "Yunnan"
+ YNC_communism_DEF: "Yunnan"
+ YNC_fascism_ADJ: "Yunnanese"
+ YNC_neutrality_ADJ: "Yunnanese"
+ YNC_democratic_ADJ: "Yunnanese"
+ YNC_communism_ADJ: "Yunnanese"
+ 
+ YNC_liberal:0 "Yunnan"
+ YNC_liberal_DEF:0 "Yunnan"
+ YNC_liberal_ADJ:0 "Yunnanese"
+ YNC_nomadic:0 "Yunnan"
+ YNC_nomadic_DEF:0 "Yunnan"
+ YNC_nomadic_ADJ:0 "Yunnanese"
+ 
+ YNC_unpopular_governor:0 "Unpopular Governor"
+ YNC_unpopular_governor_desc:0 "Bayan, Mongol governor of Yunnan, has in recent years alienated almost everyone from his side. The Minorities have deserted from his policies, The Chinese have deserted from the war, and The Mongols have deserted following his treason. The Yunnan Clique now relies entirely on its final pillar, the military, but one spark could topple his entire regime..."
+ YNC_ethnic_issue:0 "Ethnic Issue"
+ YNC_ethnic_issue_desc:0 "The Armies of Yunnan are built on an ethnic-based model. Mongols and other foreigners comprise the staff, while Chinese and local minorities comprise the soldiers. The large conglomeration of men with different tounges, and different loyalties, makes utilizing the Yunannese army to its full potential a diffcilut task."
+ YNC_archaic_industry:0 "Archaic Industry"

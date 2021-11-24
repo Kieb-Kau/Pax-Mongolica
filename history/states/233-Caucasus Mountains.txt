@@ -1,0 +1,26 @@
+
+state={
+	id=233
+	name="STATE_233"
+	impassable = yes
+	resources={
+	}
+
+	history={
+		owner = GEO
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = GEO
+
+
+	}
+
+	provinces={
+		685 1455 3667 6674 6692 9632 9649 11609 11614 11664 
+	}
+	manpower=263970
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

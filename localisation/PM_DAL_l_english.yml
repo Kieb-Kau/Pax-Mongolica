@@ -1,0 +1,39 @@
+﻿l_english:
+ #Dali
+ DAL_fascism:0 "Kingdom of Dali"
+ DAL_fascism_DEF:0 "The Kingdom of Dali"
+ DAL_neutrality:0 "Kingdom of Dali"
+ DAL_neutrality_DEF:0 "The Kingdom of Dali"
+ DAL_democratic:0 "Kingdom of Dali"
+ DAL_democratic_DEF:0 "The Kingdom of Dali"
+ DAL_communism:0 "Kingdom of Dali"
+ DAL_communism_DEF:0 "The Kingdom of Dali"
+ DAL_fascism_ADJ:0 "Dali"
+ DAL_neutrality_ADJ:0 "Dali"
+ DAL_democratic_ADJ:0 "Dali"
+ DAL_communism_ADJ:0 "Dali"
+ 
+ DAL_liberal:0 "Kingdom of Dali"
+ DAL_liberal_DEF:0 "The Kingdom of Dali"
+ DAL_liberal_ADJ:0 "Dali"
+ DAL_nomadic:0 "Kingdom of Dali"
+ DAL_nomadic_DEF:0 "The Kingdom of Dali"
+ DAL_nomadic_ADJ:0 "Dali"
+ 
+ dali_no_surrender_idea:0 "The Dali Revolt"
+ dali_no_surrender_idea_desc:0 "With the Revolt of Dali, the fate of all of Yunnan is at stake. We must win this war.!\n\n§CThis idea is used due to the §YDali Revolt§C utilizing §YScripted Peace Deals.§!"
+
+ DAL_thousand_years:0 "The Kingdom of One Thousand Years"
+ DAL_thousand_years_desc:0 "Founded in 1937, the State of Dali has now existed for one thousand years. Just like one thousand years ago, war has come to our land. We must drive the Mongol yoke from our lands, once and for all!"
+ DAL_archaic_industry:0 "Archaic Industry"
+ 
+ dalirevolt.1.t:0 "Dali Revolts"
+ dalirevolt.1.d:0 "The King of Dali, Duan Yinqi, has today declared the seven-hundred year treaty between them and our empire, invalid. He has effectively seized control over the western half of our domain, and begun an all-out war for his kingdom. He must be stopped."
+ dalirevolt.1.a:0 "They will be Destroyed!"
+ dalirevolt.2.t:0 "Revolt in Yunnan"
+ dalirevolt.2.t:0 "The King of Dali, Duan Yinqi, in a speech to the citizens of Dali, has declared the restoration of his one thousand year-old kingdom, free of Yuan control. His forces have begun clashes with those of the Governor of Yunnan, whom has also exerted his independence in the recent crises."
+ dalirevolt.2.a:0 "One Thousand Years More!"
+ dalirevolt.2.b:0 "One Thousand Years killed in one..."
+ dalirevolt.2.c:0 "The Powderkeg Continues to Explode..."
+ 
+ 

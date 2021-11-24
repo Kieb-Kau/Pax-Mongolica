@@ -1,0 +1,25 @@
+
+state={
+	id=442
+	name="STATE_442"
+
+	history={
+		victory_points = {
+			10887 3 
+		}
+		owner = DEL
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = DEL
+
+	}
+
+	provinces={
+		4979 8022 8106 9084 10066 10173 10887 12005 
+	}
+	manpower=7284400
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

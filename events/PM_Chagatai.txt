@@ -1,0 +1,598 @@
+###########################
+# chagatai khanate Events
+###########################
+
+add_namespace = chagatai
+
+country_event = {
+	id = chagatai.1 # Khwarezmian War
+	title = chagatai.1.t
+    	desc = chagatai.1.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	fire_only_once = yes 
+
+	option = { 
+		name = chagatai.1.a #We must rescue our brothers!
+		add_stability = -0.1
+		add_war_support = 0.05
+		add_state_claim = 583
+		add_state_claim = 585
+		add_state_claim = 587
+		declare_war_on = {
+    			target = KHW
+    			type = annex_everything
+		}
+		hidden_effect = {
+			country_event = {
+				id = chagatai.2
+				days = 75
+				random = 10
+			}
+		}
+
+	}
+}
+country_event = {
+	id = chagatai.2 # Battle of Delhi - Chagatai
+	title = chagatai.2.t
+    	desc = chagatai.2.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	option = { 
+		name = chagatai.2.a #Oh no...
+		IF = {
+			limit = {
+				tag = CHK
+			}
+			add_stability = -0.05
+			add_war_support = -0.05
+			add_political_power = -50
+			DEL = {
+				country_event = {
+					id = chagatai.2
+				}
+			}
+			KAT = {
+				country_event = {
+					id = chagatai.2
+				}
+			}
+			BEN = {
+				country_event = {
+					id = chagatai.2
+				}
+			}
+		}
+		IF = {
+			limit = {
+				tag = DEL
+			}
+			add_stability = -0.15
+			add_war_support = -0.15
+			add_political_power = -150
+		}
+		IF = {
+			limit = {
+				tag = KAT
+			}
+			add_war_support = 0.05
+			add_state_claim = 765
+			add_state_claim = 441
+			add_state_claim = 442
+			add_state_claim = 439
+
+			country_event = {
+				id = chagatai.3
+				days = 5
+			}
+			
+		}
+		IF = {
+			limit = {
+				tag = BEN
+			}
+			add_war_support = 0.05
+			add_state_claim = 765
+			add_state_claim = 441
+			add_state_claim = 442
+			add_state_claim = 439	
+		}
+	}
+}
+country_event = {
+	id = chagatai.3 # KAT - pact with Bengal
+	title = chagatai.3.t
+    	desc = chagatai.3.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	option = { 
+		name = chagatai.3.a #Better for both, right?
+		BEN = {
+			country_event = {
+				id = chagatai.4
+				days = 5
+			}
+		}
+		country_event = {
+			id = chagatai.4
+			days = 5
+		}
+
+	}
+}
+country_event = {
+	id = chagatai.4 # Lucknow Union
+	title = chagatai.4.t
+    	desc = chagatai.4.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	option = { 
+		name = chagatai.4.a #Oh no...
+		IF = {
+			limit = {
+				tag = KAT
+			}
+			remove_state_claim = 439
+			add_war_support = 0.1
+
+		}
+
+		IF = {
+			limit = {
+				tag = BEN
+			}
+			add_war_support = 0.05
+			remove_state_claim = 765
+			remove_state_claim = 441
+			remove_state_claim = 442
+			create_faction = BEN_Lucknow_union
+			add_to_faction = KAT
+			country_event = {
+				id = chagatai.5
+				days = 15
+			}
+
+		}
+	}
+}
+country_event = {
+	id = chagatai.5 # Lucknow Union vs Chatagai
+	title = chagatai.5.t
+    	desc = chagatai.5.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	option = { 
+		name = chagatai.5.a #Oh no...
+		declare_war_on = {
+    			target = DEL
+    			type = annex_everything
+		}
+		KAT = {
+			declare_war_on = {
+    				target = DEL
+    				type = annex_everything
+			}
+		}
+		CHK = {
+			country_event = {
+				id = chagatai.6
+			}
+		}
+	}
+}
+country_event = {
+	id = chagatai.6 # War has come to Chagatayidia!
+	title = chagatai.6.t
+    	desc = chagatai.6.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	option = { 
+		name = chagatai.6.a #Oh no...
+		add_war_support = 0.1
+		add_stability = -0.1
+		diplomatic_relation = {
+    			country = ILK
+    			relation = guarantee
+    			active = no
+		}
+		country_event = {
+			id = chagatai.7
+			days = 2
+		}
+		ILK = {
+			country_event = {
+				id = chagatai.9
+				days = 10
+			}
+		}
+
+	}
+}
+country_event = {
+	id = chagatai.7 # The Khwarezmian War
+	title = chagatai.7.t
+    	desc = chagatai.7.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	option = { 
+		name = chagatai.7.a #We must keep the war ongoing
+		trigger = {
+			controls_state = 656
+			controls_state = 586
+			OR = {
+				controls_state = 585
+				controls_state = 583
+
+			}
+		}
+		ai_chance = {
+			base = 20
+		}
+		add_war_support = -0.05
+		add_stability = -0.1
+	}
+	option = { 
+		name = chagatai.7.b #Abandon our campaigns there
+		ai_chance = {
+			base = 80
+		}
+		add_war_support = 0.05
+		add_stability = 0.05
+		KHW = {
+			country_event = {
+				id = chagatai.8
+				days = 3
+			}
+		}
+	}
+}
+country_event = {
+	id = chagatai.8 # The Khwarezmian War peace
+	title = chagatai.8.t
+    	desc = chagatai.8.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	option = { 
+		name = chagatai.8.a #We have won!
+		white_peace = CHK
+
+		add_war_support = 0.15
+		add_stability = 0.15
+		add_political_power = 150
+	}
+
+}
+country_event = {
+	id = chagatai.9 # Withdrawal of the Chagatayid Garrisons
+	title = chagatai.9.t
+    	desc = chagatai.9.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	option = { 
+		name = chagatai.9.a #Oh no..
+
+		add_stability = -0.25
+		remove_ideas = ILK_chagatai_supported
+		delete_unit_template_and_units = {
+    			division_template = "Chagatayid Garrison"
+    			disband = no
+		}
+		country_event = {
+			id = ilkhanpersia.1
+			days = 30
+			random = 5
+		}
+		CHK = {
+			country_event = {
+				id = chagatai.10
+				days = 10
+			}
+		}
+	}
+}
+country_event = {
+	id = chagatai.10 # the Chagatayid Garrisons arrive
+	title = chagatai.10.t
+    	desc = chagatai.10.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	option = { 
+		name = chagatai.10.a #Oh no..
+		division_template = {
+			name = "Consolidated Garrisons"
+			regiments = {
+				garrison = { x = 0 y = 0 }
+				garrison = { x = 0 y = 1 }
+				garrison = { x = 0 y = 2 }
+				garrison = { x = 0 y = 3 }
+				garrison = { x = 0 y = 4 }
+				garrison = { x = 1 y = 0 }
+				garrison = { x = 1 y = 1 }
+				garrison = { x = 1 y = 2 }
+				garrison = { x = 1 y = 3 }
+				garrison = { x = 1 y = 4 }
+
+			}
+			support = {
+			}
+			is_locked = yes
+		}
+		405 = {
+			create_unit = {
+    				division = "name = \"1. Garrison Division\" division_template = \"Consolidated Garrisons\" start_experience_factor = 0.3 start_equipment_factor = 0.9"
+    				owner = CHK
+			}
+			create_unit = {
+    				division = "name = \"2. Garrison Division\" division_template = \"Consolidated Garrisons\" start_experience_factor = 0.3 start_equipment_factor = 0.9"
+    				owner = CHK
+			}
+			create_unit = {
+    				division = "name = \"3. Garrison Division\" division_template = \"Consolidated Garrisons\" start_experience_factor = 0.3 start_equipment_factor = 0.9"
+    				owner = CHK
+			}
+		}
+		
+	}
+}
+
+country_event = {
+	id = chagatai.11 # Victory of the Indian coalition!
+	title = chagatai.11.t
+    	desc = chagatai.11.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	option = { 
+		name = chagatai.11.a #Good for us.
+		white_peace = CHK
+		BEN = {
+			white_peace = CHK
+		}
+		KAT = {
+			transfer_state = 442
+			transfer_state = 765
+			transfer_state = 441
+		}
+		BEN = {
+			transfer_state = 439
+			country_event = {
+				id = chagatai.13
+				days = 10
+			}
+		}
+
+	}
+}
+country_event = {
+	id = chagatai.12 # Victory of the Khanate!
+	title = chagatai.12.t
+    	desc = chagatai.12.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	option = { 
+		name = chagatai.12.a #Stunning
+		white_peace = BEN
+		white_peace = KAT
+
+		DEL = {
+			white_peace = BEN
+			white_peace = KAT
+
+		}
+		DEL = {
+			transfer_state = 440
+			transfer_state = 438
+			add_state_core = 440
+		}
+	}
+}
+country_event = {
+	id = chagatai.13 # The Nawabite of Delhi
+	title = chagatai.13.t
+    	desc = chagatai.13.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	option = { 
+		name = chagatai.13.a #A good idea
+		add_political_power = 50
+		DEL = {
+			transfer_state = 439
+			remove_state_core = 442
+			set_cosmetic_tag = DEL_Nawabite
+			create_country_leader = {
+				name = "Bangash Khan"
+				desc = "POLITICS_BANGASH_KHAN_DESC"
+				picture = ""
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					
+				}
+			}
+
+		}
+		439 = {
+			create_unit = {
+    				division = "name = \"1. Nawabite Militia\" division_template = \"Delhi Militia\" start_experience_factor = 0.0 start_equipment_factor = 0.5"
+    				owner = DEL
+			}
+			create_unit = {
+    				division = "name = \"2. Nawabite Militia\" division_template = \"Delhi Militia\" start_experience_factor = 0.0 start_equipment_factor = 0.5"
+    				owner = DEL
+			}
+		}
+		BEN = {
+			puppet = DEL
+		}
+		KAT = {
+			country_event = {
+				id = chagatai.14
+				days = 3
+			}
+		}
+	}
+}
+country_event = {
+	id = chagatai.14 # The Nawabite of Delhi
+	title = chagatai.14.t
+    	desc = chagatai.14.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	option = { 
+		name = chagatai.14.a #This violates our treaty!
+		add_state_core = 439
+
+		add_war_support = 0.05
+		BEN = {
+			country_event = {
+				id = chagatai.15
+			}
+		}
+	}
+}
+country_event = {
+	id = chagatai.15 # Kathiawar breaks the treaty!
+	title = chagatai.15.t
+    	desc = chagatai.15.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	option = { 
+		name = chagatai.15.a #Traitors!
+		DEL = {
+			add_state_claim = 441
+			add_state_claim = 765
+			add_state_core = 440
+			add_state_core = 442
+		}
+		add_war_support = 0.05
+		dismantle_faction = yes
+		country_event = {
+			id = chagatai.16
+			days = 100
+		}
+	}
+}
+country_event = {
+	id = chagatai.16 # great indian war!
+	title = chagatai.16.t
+    	desc = chagatai.15.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	option = { 
+		name = chagatai.16.a #
+		declare_war_on = {
+    			target = KAT
+    			type = annex_everything
+		}
+		add_manpower = 100000
+		hidden_effect = {	
+			add_manpower = 100000
+
+			KAT = {
+				country_event = {
+					id = chagatai.17
+					days = 75
+					random = 25
+				}
+			}
+		}
+
+	}
+}
+
+country_event = {
+	id = chagatai.17 # Through garha?
+	title = chagatai.17.t
+    	desc = chagatai.17.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	option = { 
+		name = chagatai.17.a #
+		trigger = {
+			controls_state = 437
+		}
+		ai_chance = {
+			base = 85
+		}
+		declare_war_on = {
+    			target = GAR
+    			type = annex_everything
+		}
+		add_stability = -0.05
+		437 = {
+			create_unit = {
+    				division = "name = \"1. Reserve Infantry Division\" division_template = \"Imperial Infantry Division\" start_experience_factor = 0.3 start_equipment_factor = 0.9"
+    				owner = KAT
+			}
+			create_unit = {
+    				division = "name = \"2. Reserve Infantry Division\" division_template = \"Imperial Infantry Division\" start_experience_factor = 0.3 start_equipment_factor = 0.9"
+    				owner = KAT
+			}
+			create_unit = {
+    				division = "name = \"3. Reserve Infantry Division\" division_template = \"Imperial Infantry Division\" start_experience_factor = 0.3 start_equipment_factor = 0.9"
+    				owner = KAT
+			}
+		}
+
+	}
+	option = { 
+		name = chagatai.17.b #
+		ai_chance = {
+			base = 15
+		}
+		add_manpower = 50000
+		add_political_power = 50
+
+
+	}
+}

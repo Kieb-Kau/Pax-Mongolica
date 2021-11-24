@@ -1,0 +1,21 @@
+state={
+	id=71
+	name="STATE_71"
+	manpower = 797800
+	
+	state_category = rural
+	
+	history={
+
+		owner = THO
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = THO
+
+	}
+
+	provinces={
+		555 3550 3565 3581 6573 6586 6604 9537 
+	}
+}

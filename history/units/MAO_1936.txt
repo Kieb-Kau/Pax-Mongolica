@@ -1,0 +1,104 @@
+division_template = {
+	name = "Huguang Infantry Division"				# Imperial Guards 
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 4 y = 0 }
+		infantry = { x = 4 y = 1 }
+
+	}
+}
+
+division_template = {
+	name = "Huguang Militia"				# Militia 
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		militia = { x = 3 y = 0 }
+		militia = { x = 3 y = 1 }
+		militia = { x = 4 y = 0 }
+		militia = { x = 4 y = 1 }
+
+	}
+}
+units = {
+	##### Suwei #####
+	division= {	
+		name = "1. Huguang Infantry Division"
+		location = 4619
+		division_template = "Huguang Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "2. Huguang Infantry Division"
+		location = 7097
+		division_template = "Huguang Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "3. Huguang Infantry Division"
+		location = 1597
+		division_template = "Huguang Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "4. Huguang Infantry Division"
+		location = 7137
+		division_template = "Huguang Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "5. Huguang Infantry Division"
+		location = 1010
+		division_template = "Huguang Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "Wuhan Militia"
+		location = 1597
+		division_template = "Huguang Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		name = "Leizhou Militia"
+		location = 7137
+		division_template = "Huguang Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		name = "Hainan Militia"
+		location = 1010
+		division_template = "Huguang Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+
+
+}

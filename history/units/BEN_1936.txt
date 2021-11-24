@@ -1,0 +1,199 @@
+division_template = {
+	name = "Royal Infantry Division"				# Imperial Guards 
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+	}
+}
+division_template = {
+	name = "Militia Division"				# Imperial Guards 
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 0 y = 3 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 1 y = 3 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		militia = { x = 2 y = 2 }
+		militia = { x = 2 y = 3 }
+	}
+}
+division_template = {
+	name = "Royal Cavalry Division"				# Imperial Guards 
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+		cavalry = { x = 2 y = 3 }
+	}
+}
+
+
+units = {
+	##### Divisions #####
+	division= {	
+		name = "1. Division"
+		location = 11929
+		division_template = "Royal Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "16. Division"
+		location = 11929
+		division_template = "Royal Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "2. Division"
+		location = 11929
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "3. Division"
+		location = 11929
+		division_template = "Royal Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "4. Division"
+		location = 11929
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "5. Division"
+		location = 11929
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "6. Division"
+		location = 11929
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "7. Division"
+		location = 11929
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "8. Division"
+		location = 11929
+		division_template = "Royal Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "9. Division"
+		location = 11929
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "10. Division"
+		location = 11929
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "11. Division"
+		location = 11929
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "12. Division"
+		location = 11929
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "13. Division"
+		location = 11929
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "14. Division"
+		location = 11929
+		division_template = "Royal Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "15. Division"
+		location = 11929
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "17. Division"
+		location = 11929
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "1. Cavalry Division"
+		location = 11929
+		division_template = "Royal Cavalry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "2. Cavalry Division"
+		location = 11929
+		division_template = "Royal Cavalry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "3. Cavalry Division"
+		location = 11929
+		division_template = "Royal Cavalry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+}

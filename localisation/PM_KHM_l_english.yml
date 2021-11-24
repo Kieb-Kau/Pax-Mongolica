@@ -1,0 +1,23 @@
+﻿l_english:
+ #Khmer Empire
+ KHM_fascism: "Angkor"
+ KHM_fascism_DEF: "Angkor"
+ KHM_neutrality: "Angkor"
+ KHM_neutrality_DEF: "Angkor"
+ KHM_democratic: "Angkor"
+ KHM_democratic_DEF: "Angkor"
+ KHM_communism: "Angkor"
+ KHM_communism_DEF: "Angkor"
+ KHM_fascism_ADJ: "Angkor"
+ KHM_neutrality_ADJ: "Angkor"
+ KHM_democratic_ADJ: "Angkor"
+ KHM_communism_ADJ: "Angkor"
+ 
+  
+ KHM_liberal:0 "Angkor"
+ KHM_liberal_DEF:0 "Angkor"
+ KHM_liberal_ADJ:0 "Angkor"
+ KHM_nomadic:0 "Angkor"
+ KHM_nomadic_DEF:0 "Angkor"
+ KHM_nomadic_ADJ:0 "Angkor"
+ 

@@ -1,0 +1,251 @@
+###########################
+# Ilkhanate Events
+###########################
+
+add_namespace = ilkhanpersia
+
+country_event = {
+	id = ilkhanpersia.1 # Loss of contact from governors
+	title = ilkhanpersia.1.t
+    	desc = ilkhanpersia.1.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	fire_only_once = yes 
+
+	option = { 
+		name = ilkhanpersia.1.a #The disaster has come...
+		add_stability = -0.15
+		add_war_support = -0.15
+		add_political_power = -150
+		584 = {
+			set_demilitarized_zone = yes
+		}
+		573 = {
+			set_demilitarized_zone = yes
+		}
+		266 = {
+			set_demilitarized_zone = yes
+		}
+		418 = {
+			set_demilitarized_zone = yes
+		}
+		414 = {
+			set_demilitarized_zone = yes
+		}
+		410 = {
+			set_demilitarized_zone = yes
+		}
+		444 = {
+			set_demilitarized_zone = yes
+		}
+		445 = {
+			set_demilitarized_zone = yes
+		}
+		415 = {
+			set_demilitarized_zone = yes
+		}
+		hidden_effect = {
+			country_event = {
+				id = ilkhanpersia.2
+				days = 40
+				random = 5
+			}
+		}
+	}
+}
+country_event = {
+	id = ilkhanpersia.2 # Collapse of the Ilkhanate
+	title = ilkhanpersia.2.t
+    	desc = ilkhanpersia.2.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	fire_only_once = yes 
+
+	option = { 
+		name = ilkhanpersia.2.a #The disaster has come...
+		add_stability = -0.35
+		add_political_power = -350
+		set_cosmetic_tag = ILK_nishapur
+		hidden_effect = {
+			584 = {
+				set_demilitarized_zone = no
+			}
+			573 = {
+				set_demilitarized_zone = no
+			}
+			418 = {
+				set_demilitarized_zone = no
+			}
+			414 = {
+				set_demilitarized_zone = no
+			}
+			410 = {
+				set_demilitarized_zone = no
+			}
+			444 = {
+				set_demilitarized_zone = no
+			}
+			445 = {
+				set_demilitarized_zone = no
+			}
+			415 = {
+				set_demilitarized_zone = no
+			}
+			MER = {
+				transfer_state = 584
+				transfer_state = 573
+				add_state_core = 584
+				add_state_core = 573
+				add_manpower = 10000
+
+			}
+			YAZ = {
+				transfer_state = 418
+				add_state_core = 418
+				add_manpower = 8000
+				load_oob = "YAZ_1936"
+
+
+			}
+			SIS = {
+				transfer_state = 410
+				add_state_core = 410
+				add_manpower = 8000
+				load_oob = "SIS_1936"
+
+
+			}
+			BAL = {
+				transfer_state = 444
+				transfer_state = 445
+				add_state_core = 444
+				add_state_core = 445
+				add_manpower = 10000
+				load_oob = "BAL_1936"
+
+
+			}
+			HER = {
+				transfer_state = 415
+				transfer_state = 414
+				add_state_core = 415
+				add_state_core = 414
+				add_manpower = 18000
+				load_oob = "HER_1936"
+
+			}
+			country_event = {
+				id = ilkhanpersia.3
+				days = 2
+			}
+			MER = {
+
+				load_oob = "MER_1936"
+
+			}
+
+			HER = {
+				declare_war_on = {
+    					target = SIS
+    					type = annex_everything
+				}
+				declare_war_on = {
+    					target = YAZ
+    					type = annex_everything
+				}
+				declare_war_on = {
+    					target = MER
+    					type = annex_everything
+				}
+			}
+			SIS = {
+				declare_war_on = {
+    					target = YAZ
+    					type = annex_everything
+				}
+			}
+		}
+
+		
+	}
+}
+
+country_event = {
+	id = ilkhanpersia.3 # Tehran governor defects to Bavandids
+	title = ilkhanpersia.3.t
+    	desc = ilkhanpersia.3.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	fire_only_once = yes 
+
+	option = { 
+		name = ilkhanpersia.3.a #
+
+		266 = {
+			set_demilitarized_zone = no
+		}
+		PRS = {
+			transfer_state = 266
+			add_state_core = 266
+		}
+		hidden_effect = {
+			news_event = {
+				id = ilkhanpersia.4
+			}
+		}
+	}
+}
+
+news_event = {
+	id = ilkhanpersia.4 #News - Collapse of the Ilkhanate
+    title = ilkhanpersia.4.t
+    desc = ilkhanpersia.4.d
+	picture = GFX_event_ITA_news_mussolini_deposto
+
+	is_triggered_only = yes 
+	major = yes
+
+	option = { 
+		name = ilkhanpersia.4.a # It was inevitable...
+		trigger = {
+			OR = {
+				tag = ILK
+				tag = MER
+				tag = YAZ
+				tag = SIS
+				tag = BAL
+				tag = HER
+			}
+		}
+
+
+	}
+
+
+	option = { 
+		name = ilkhanpersia.4.b # Another khan bites the dust...
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ILK
+					tag = MER
+					tag = YAZ
+					tag = SIS
+					tag = BAL
+					tag = HER
+				}
+
+			}
+		}
+
+
+	}
+    
+}
+

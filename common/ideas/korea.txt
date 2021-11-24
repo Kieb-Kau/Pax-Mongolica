@@ -1,0 +1,198 @@
+ideas = {
+	
+	country = { # Tibet and XZY
+		GOR_the_fine_balance = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = -0.1
+			}
+		}
+		GOR_governmental_collapse = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.33
+				stability_weekly = -0.01
+			}
+		}
+		GOR_ethnic_tension = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.2
+				political_power_factor = -0.2
+				army_org_factor = -0.2
+				army_morale_factor = -0.2
+
+			}
+		}
+		GOR_ethnic_tension_aggrivated = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.3
+				political_power_factor = -0.3
+				army_org_factor = -0.3
+				army_morale_factor = -0.3
+			}
+		}
+		GOR_ethnic_tension_very_bad = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.75
+				political_power_factor = -0.3
+				army_org_factor = -0.5
+				army_morale_factor = -0.5
+			}
+		}
+		GOR_anti_mongol_independence_fevror = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.02
+				political_power_factor = 0.25
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		ZHE_one_government_now = { # The Military Junta
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.05
+				political_power_factor = 0.05
+				army_org_factor = 0.1
+				army_defence_factor = 0.1
+			}
+		}
+		ZHE_bad_ethnic_tension = { # The Military Junta
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.66
+				attrition = 0.33
+				army_org_factor = -0.33
+				army_morale_factor = -0.33
+			}
+		}
+		GOR_archaic_industry = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.66
+				industrial_capacity_factory = -0.66
+				industrial_capacity_dockyard = -0.66
+				production_factory_max_efficiency_factor = -0.66
+				research_speed_factor = -0.66
+
+			}
+		}
+		ZHE_archaic_industry = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.66
+				industrial_capacity_factory = -0.66
+				industrial_capacity_dockyard = -0.66
+				production_factory_max_efficiency_factor = -0.66
+				research_speed_factor = -0.66
+
+			}
+		}
+
+	}
+
+}

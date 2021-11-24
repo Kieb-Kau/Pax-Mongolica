@@ -1,0 +1,25 @@
+
+state={
+	id=444
+	name="STATE_444" #Baluchistan
+
+	history={
+		victory_points = {
+			2101 1 
+		}
+		owner = ILK
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ILK
+
+	}
+
+	provinces={
+		2101 4891 4949 5020 5043 5075 7917 8013 10782 12761 12774 13082 
+	}
+	manpower=363500
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

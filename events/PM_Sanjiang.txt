@@ -1,0 +1,988 @@
+###########################
+# Sanjiang Events
+###########################
+
+add_namespace = sanjiang_revolution
+
+country_event = {
+	id = sanjiang_revolution.1 #The Sanjiang Revolution
+    title = sanjiang_revolution.1.t
+    desc = sanjiang_revolution.1.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = sanjiang_revolution.1.a
+		custom_effect_tooltip = YUA_shattered_pax_mongolica_tt
+		add_war_support = -0.1
+		add_stability = -0.1
+		add_political_power = -100
+		add_ideas = YUA_disobedient_han
+		hidden_effect = { # he start
+		SJR = {
+			transfer_state = 749
+			add_state_core = 749
+
+			transfer_state = 596
+			add_state_core = 596
+
+			transfer_state = 613
+			add_state_core = 613
+
+			transfer_state = 598
+			add_state_core = 598
+
+			transfer_state = 595
+			add_state_core = 595
+
+			transfer_state = 600
+			add_state_core = 600
+
+			transfer_state = 593
+			add_state_core = 593
+
+			transfer_state = 592
+			add_state_core = 592
+
+		}
+
+		} # he end
+		SJR = {
+			declare_war_on = {
+    				target = YUA
+    				type = annex_everything
+			}
+		}
+
+		hidden_effect = {
+			dismantle_faction = yes
+			add_ideas = sanjiang_nosurrender_idea
+			SJR = {
+				add_ideas = sanjiang_nosurrender_idea
+				add_ideas = extensive_conscription
+
+			}
+			SJR = {
+				load_oob = "SJR_war"
+			}
+			news_event = {
+				id = sanjiang_revolution.2
+				days = 2
+			}
+			news_event = {
+				id = sanjiang_revolution.20
+				days = 7
+			}
+			MAO = {
+				country_event = {
+					id = sanjiang_revolution.3
+					days = 3
+				}
+			}
+			AIN = {
+				country_event = {
+					id = sanjiang_revolution.5
+					days = 10
+					random = 6
+				}
+			}
+			NIV = {
+				country_event = {
+					id = sanjiang_revolution.5
+					days = 10
+					random = 6
+				}
+			}
+			KHM = {
+				country_event = {
+					id = sanjiang_revolution.5
+					days = 10
+					random = 6
+				}
+			}
+			GOR = {
+				country_event = {
+					id = goryeo.2
+					days = 20
+				}
+			}
+			XZY = {
+				country_event = {
+					id = tibet_xzy.1
+					days = 15
+				}
+			}
+			MIN = {
+				country_event = {
+					id = sanjiang_revolution.6
+					days = 21
+				}
+			}
+			country_event = {
+				id = sanjiang_revolution.9
+				days = 52
+			}
+		}
+
+
+	}
+    
+}
+
+news_event = {
+	id = sanjiang_revolution.2 #The Sanjiang Revolution News
+    title = sanjiang_revolution.2.t
+    desc = sanjiang_revolution.2.d
+	picture = GFX_event_ITA_news_mussolini_deposto
+
+	is_triggered_only = yes 
+	major = yes
+
+	option = { 
+		name = sanjiang_revolution.2.a
+		trigger = {
+			tag = YUA
+		}
+
+
+	}
+	option = { 
+		name = sanjiang_revolution.2.b
+		trigger = {
+			OR = {
+				tag = SJR
+				tag = MIN
+			}
+		}
+
+
+	}
+	option = { 
+		name = sanjiang_revolution.2.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = SJR
+					tag = MIN
+					tag = YUA
+
+				}
+			}
+		}
+
+
+	}
+    
+}
+
+country_event = {
+	id = sanjiang_revolution.3 #Huguang breaks away
+    title = sanjiang_revolution.3.t
+    desc = sanjiang_revolution.3.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = sanjiang_revolution.3.a
+		hidden_effect = {
+			white_peace = SJR
+			drop_cosmetic_tag = yes
+
+		}
+		YUA = {
+			end_puppet = MAO
+			country_event = {
+				id = sanjiang_revolution.4
+				days = 3
+			}
+		}
+
+
+
+
+	}
+    
+}
+
+country_event = {
+	id = sanjiang_revolution.4 #Huguang breaks away
+    title = sanjiang_revolution.4.t
+    desc = sanjiang_revolution.4.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = sanjiang_revolution.4.a
+		add_stability = -0.01
+		add_political_power = -10
+
+
+
+	}
+    
+}
+
+country_event = {
+	id = sanjiang_revolution.5 # Generic Independence from YUA - Will change in the future
+    title = sanjiang_revolution.5.t
+    desc = sanjiang_revolution.5.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = no
+
+	option = { 
+		name = sanjiang_revolution.5.a
+		hidden_effect = {
+			white_peace = SJR
+			drop_cosmetic_tag = yes
+
+		}
+		YUA = {
+			end_puppet = ROOT
+		}
+		
+
+
+
+
+	}
+    
+}
+
+country_event = {
+	id = sanjiang_revolution.6 # Ming - Sanjiang offer loyalty
+    title = sanjiang_revolution.6.t
+    desc = sanjiang_revolution.6.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes
+
+	option = { 
+		name = sanjiang_revolution.6.a # To war we march!
+
+		hidden_effect = {
+			drop_cosmetic_tag = yes
+
+			add_ideas = sanjiang_nosurrender_idea
+			YUA = {
+				country_event = {
+
+					id = sanjiang_revolution.8
+					days = 1
+				}
+			}
+
+		}
+
+		declare_war_on = {
+    			target = YUA
+    			type = annex_everything
+		}		
+		annex_country = {
+    			target = SJR
+    			transfer_troops = yes
+		}
+		set_capital = 596
+		add_stability = 0.1
+		add_war_support = 0.1
+		every_state = {
+			limit = {
+				is_core_of = SJR
+			}
+			remove_core_of = SJR
+			add_core_of = MIN
+		}
+		hidden_effect = {
+			add_state_core = 598
+			add_state_core = 606
+			add_state_core = 620
+			add_state_core = 750
+			add_state_core = 605
+			add_state_core = 753
+			add_state_core = 283
+			add_state_core = 622
+			add_state_core = 746
+			add_state_core = 744
+			add_state_core = 607
+			add_state_core = 597
+		}
+		hidden_effect = {
+			news_event = {
+				id = sanjiang_revolution.7
+				days = 3
+			}
+
+		}
+
+
+
+
+	}
+    
+}
+
+news_event = {
+	id = sanjiang_revolution.7 #The Ming Sanjiang alliance
+    title = sanjiang_revolution.7.t
+    desc = sanjiang_revolution.7.d
+	picture = GFX_event_ITA_news_mussolini_deposto
+
+	is_triggered_only = yes 
+	major = yes
+
+
+	option = { 
+		name = sanjiang_revolution.7.a
+		trigger = {
+			tag = YUA
+		}
+
+	}
+	option = { 
+		name = sanjiang_revolution.7.b
+		trigger = {
+			tag = MIN
+		}
+
+
+	}
+	option = { 
+		name = sanjiang_revolution.7.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = MIN
+					tag = YUA
+
+				}
+			}
+		}
+
+
+	}
+    
+}
+
+country_event = {
+	id = sanjiang_revolution.8 #The Ming Revolution
+    title = sanjiang_revolution.8.t
+    desc = sanjiang_revolution.8.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = sanjiang_revolution.8.a
+		add_war_support = -0.1
+		add_stability = -0.1
+		add_political_power = -100
+
+	
+	}
+    
+}
+
+country_event = {
+	id = sanjiang_revolution.9 #The South breaks away
+    title = sanjiang_revolution.9.t
+    desc = sanjiang_revolution.9.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = sanjiang_revolution.9.a
+		add_war_support = -0.05
+		add_stability = -0.05
+		add_political_power = -50
+		LSP = {
+			transfer_state = 671
+			add_state_core = 671
+			transfer_state = 286
+			add_state_core = 286
+			transfer_state = 670
+			add_state_core = 670
+			transfer_state = 289
+			add_state_core = 289
+			transfer_state = 288
+			add_state_core = 288
+			transfer_state = 640
+			add_state_core = 640
+			transfer_state = 724
+			add_state_core = 724
+			transfer_state = 336
+			add_state_core = 336
+			transfer_state = 591
+			add_state_core = 591
+		}
+		hidden_effect = {
+			news_event = {
+				id = sanjiang_revolution.10
+				days = 2
+			}
+			country_event = {
+				id = sanjiang_revolution.11
+				days = 10
+			}
+		}
+
+	
+	}
+    
+}
+
+news_event = {
+	id = sanjiang_revolution.10 #The League of Southern Provinces News
+    title = sanjiang_revolution.10.t
+    desc = sanjiang_revolution.10.d
+	picture = GFX_event_ITA_news_mussolini_deposto
+
+	is_triggered_only = yes 
+	major = yes
+
+	option = { 
+		name = sanjiang_revolution.10.a
+		trigger = {
+			tag = YUA
+		}
+
+
+	}
+	option = { 
+		name = sanjiang_revolution.10.b
+		trigger = {
+			OR = {
+				tag = SJR
+				tag = MIN
+			}
+		}
+
+
+	}
+	option = { 
+		name = sanjiang_revolution.10.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = SJR
+					tag = MIN
+					tag = YUA
+
+				}
+			}
+		}
+
+
+	}
+    
+}
+
+country_event = {
+	id = sanjiang_revolution.11 #Yunnan governor seceedes
+    title = sanjiang_revolution.11.t
+    desc = sanjiang_revolution.11.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = sanjiang_revolution.11.a
+		add_war_support = -0.03
+		add_stability = -0.03
+		add_political_power = -30
+		YNC = {
+			transfer_state = 40
+			add_state_core = 40
+			transfer_state = 324
+			add_state_core = 324
+			transfer_state = 747
+			add_state_core = 747
+			transfer_state = 325
+			add_state_core = 325
+			transfer_state = 603
+			add_state_core = 603
+			transfer_state = 751
+			add_state_core = 751
+
+
+		}
+		hidden_effect = {
+			country_event = {
+				id = sanjiang_revolution.16
+				days = 30
+			}
+			YNC = {
+				country_event = {
+					id = dalirevolt.1
+					days = 320
+				}
+				load_oob = "YNC_war"
+				
+				add_ideas = YNC_unpopular_governor
+				add_ideas = YNC_ethnic_issue
+				add_ideas = YNC_archaic_industry
+				add_ideas = limited_conscription
+
+
+			}
+		}
+
+	}
+
+}
+
+country_event = {
+	id = sanjiang_revolution.12 # Khan forced with ultimatum to ceasefire
+    title = sanjiang_revolution.12.t
+    desc = sanjiang_revolution.12.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = sanjiang_revolution.12.a # We must accept this, for now
+
+		custom_effect_tooltip = YUA_sanjiang_peace_tt
+		hidden_effect = {
+			MIN = {
+				country_event = {
+					id = sanjiang_revolution.13
+					days = 2
+				}
+			}
+		}
+
+	
+	}
+    
+}
+
+country_event = {
+	id = sanjiang_revolution.13 # Khan ceasefire
+    title = sanjiang_revolution.13.t
+    desc = sanjiang_revolution.13.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = sanjiang_revolution.13.a # We must accept this, for now
+		add_war_support = 0.05
+		add_stability = 0.05
+		add_political_power = 50
+
+		white_peace = YUA
+		custom_effect_tooltip = MIN_sanjiang_peace_tt
+		hidden_effect = {
+			news_event = {
+				id = sanjiang_revolution.15
+				days = 3
+			}
+		}
+		hidden_effect = {
+			transfer_state = 598
+			add_state_core = 598
+			transfer_state = 606
+			add_state_core = 606
+			transfer_state = 620
+			add_state_core = 620
+			transfer_state = 750
+			add_state_core = 750
+			transfer_state = 605
+			add_state_core = 605
+			transfer_state = 753
+			add_state_core = 753
+
+			transfer_state = 283
+			add_state_core = 283
+			transfer_state = 622
+			add_state_core = 622
+			transfer_state = 746
+			add_state_core = 746
+			transfer_state = 744
+			add_state_core = 744
+			transfer_state = 607
+			add_state_core = 607
+			transfer_state = 597
+			add_state_core = 597
+			YUA = {
+				country_event = {
+					id = sanjiang_revolution.14
+				}
+			}
+			MIN = {
+				country_event = {
+					id = ming.1
+					days = 1
+				}
+			}
+		}
+
+
+
+	
+	}
+    
+}
+
+country_event = {
+	id = sanjiang_revolution.14 # Khan ceasefire - a disaster
+    title = sanjiang_revolution.14.t
+    desc = sanjiang_revolution.14.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = sanjiang_revolution.14.a # A disaster
+
+		add_war_support = -0.15
+		add_stability = -0.15
+		add_political_power = -150
+		set_cosmetic_tag = YUA_northern_yuan
+		hidden_effect = {
+			country_event = {
+				id = yuan.2
+				days = 3
+			}
+		}
+
+
+
+	
+	}
+    
+}
+
+news_event = {
+	id = sanjiang_revolution.15 #The Huanghe Truce news
+    title = sanjiang_revolution.15.t
+    desc = sanjiang_revolution.15.d
+	picture = GFX_event_ITA_news_mussolini_deposto
+
+	is_triggered_only = yes 
+	major = yes
+
+	option = { 
+		name = sanjiang_revolution.15.a # We have failed...
+		trigger = {
+			tag = YUA
+		}
+
+
+	}
+	option = { 
+		name = sanjiang_revolution.15.b # Victory is ours!
+		trigger = {
+			OR = {
+				tag = SJR
+				tag = MIN
+			}
+		}
+
+
+	}
+	option = { 
+		name = sanjiang_revolution.15.c # Daaaamnnn
+		trigger = {
+			NOT = {
+				OR = {
+					tag = SJR
+					tag = MIN
+					tag = YUA
+
+				}
+			}
+		}
+
+
+	}
+    
+}
+
+country_event = {
+	id = sanjiang_revolution.16 # Sichuan Rebellion
+    title = sanjiang_revolution.16.t
+    desc = sanjiang_revolution.16.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = sanjiang_revolution.16.a # damnation!
+		custom_effect_tooltip = YUA_sichuan_revolt
+		add_war_support = -0.03
+		add_stability = -0.03
+		add_political_power = -30
+		hidden_effect = {
+			MIN = { 
+				transfer_state = 605
+				transfer_state = 753
+
+			
+				country_event = {
+					id = sanjiang_revolution.17
+				}
+			}
+		}
+
+		hidden_effect = {
+			country_event = {
+				id = sanjiang_revolution.18
+				days = 22
+			}
+		}
+
+
+
+	
+	}
+    
+}
+
+country_event = {
+	id = sanjiang_revolution.17 # Sichuan Rebellion - ming
+    title = sanjiang_revolution.17.t
+    desc = sanjiang_revolution.17.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = sanjiang_revolution.17.a # More join our cause!
+		custom_effect_tooltip = YUA_sichuan_revolt_ming
+
+		add_war_support = 0.05
+		add_stability = 0.05
+		add_political_power = 50
+		hidden_effect = {
+			605 = {
+				add_core_of = MIN
+				create_unit = {
+    					division = "name = \"Sichuan Division\" division_template = \"Traditional Division\" start_experience_factor = 0.2 start_equipment_factor = 1.0"
+    					owner = MIN
+					prioritize_location = 4925
+				}
+				create_unit = {
+    					division = "name = \"1. Sichuan Militia\" division_template = \"Revolutionary Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+    					owner = MIN
+					prioritize_location = 6999
+
+				}
+				create_unit = {
+    					division = "name = \"2. Sichuan Militia\" division_template = \"Revolutionary Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+    					owner = MIN
+					prioritize_location = 6999
+
+				}
+				create_unit = {
+    					division = "name = \"3. Sichuan Militia\" division_template = \"Revolutionary Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+    					owner = MIN
+					prioritize_location = 4925
+
+				}
+				create_unit = {
+ 	 		  		division = "name = \"4. Sichuan Militia\" division_template = \"Revolutionary Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+    					owner = MIN
+					prioritize_location = 2091
+
+				}
+			}
+			753 = {
+				add_core_of = MIN
+				create_unit = {
+  	 				division = "name = \"5. Sichuan Militia\" division_template = \"Revolutionary Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+    					owner = MIN
+					prioritize_location = 2045
+
+				}
+
+			}
+		}
+
+
+
+
+	
+	}
+    
+}
+
+
+country_event = {
+	id = sanjiang_revolution.18 # Yanan Rebellion
+    title = sanjiang_revolution.18.t
+    desc = sanjiang_revolution.18.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = sanjiang_revolution.18.a # damnation!
+		custom_effect_tooltip = YUA_yanan_revolt
+
+
+		add_war_support = -0.03
+		add_stability = -0.03
+		add_political_power = -30
+		hidden_effect = {
+			MIN = { 
+				set_province_controller = 8049
+				set_province_controller = 12356
+				set_province_controller = 7208
+
+				country_event = {
+					id = sanjiang_revolution.19
+				}
+			}
+
+		}
+		hidden_effect = {
+			country_event = {
+				id = yuan.7
+				days = 80
+			}
+		}
+
+	
+	}
+    
+}
+
+country_event = {
+	id = sanjiang_revolution.19 # Yanan Rebellion - ming
+    title = sanjiang_revolution.19.t
+    desc = sanjiang_revolution.19.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = sanjiang_revolution.19.a # The Yuan shall fall!
+		custom_effect_tooltip = YUA_yanan_revolt_ming
+
+
+		add_war_support = 0.05
+		add_stability = 0.05
+		add_political_power = 50
+		hidden_effect = {
+			622 = {
+				add_core_of = MIN
+
+				create_unit = {
+    					division = "name = \"1. Shaanxi Militia\" division_template = \"Revolutionary Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+    					owner = MIN
+					prioritize_location = 8049
+
+				}
+				create_unit = {
+    					division = "name = \"2. Shaanxi Militia\" division_template = \"Revolutionary Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+    					owner = MIN
+					prioritize_location = 7208
+
+				}
+				create_unit = {
+    					division = "name = \"3. Shaanxi Militia\" division_template = \"Revolutionary Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+    					owner = MIN
+					prioritize_location = 8049
+
+				}
+
+			}
+		}
+
+	}
+    
+}
+
+news_event = {
+	id = sanjiang_revolution.20 #Destruction of the Pax Mongolica news
+    title = sanjiang_revolution.20.t
+    desc = sanjiang_revolution.20.d
+	picture = GFX_event_ITA_news_mussolini_deposto
+
+	is_triggered_only = yes 
+	major = yes
+
+	option = { 
+		name = sanjiang_revolution.20.a
+		trigger = {
+			has_government = nomadic
+		}
+
+
+	}
+	option = { 
+		name = sanjiang_revolution.20.b
+		trigger = {
+			NOT = {
+				has_government = nomadic
+				tag = SJR
+				tag = MIN
+			}
+		}
+
+
+	}
+	option = { 
+		name = sanjiang_revolution.20.c
+		trigger = {
+			OR = {
+				tag = SJR
+				tag = MIN
+			}
+		}
+
+
+	}
+    
+}
+

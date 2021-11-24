@@ -1,0 +1,47 @@
+
+units= {
+
+	##### Naval OOB #####
+	fleet = {
+		name = "Eastern Fleet"			
+		naval_base = 7191 # Hangzhou
+		task_force = {
+			name = "Eastern Fleet"
+			location = 7191 #
+			ship = { name = "Jiqing" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = YUA } } }
+			ship = { name = "Datong" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YUA } } }
+			ship = { name = "Ninghai" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YUA } } }
+			ship = { name = "Wenzhou" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YUA } } }
+			ship = { name = "Haijin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YUA } } }
+			ship = { name = "Yongming" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YUA } } }
+		}
+			
+	}
+	fleet = {
+		name = "Northern Fleet"			
+		naval_base = 3900 # Yongming
+		task_force = {
+			name = "Northern Fleet"
+			location = 3900 #
+			ship = { name = "Yingchang" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YUA } } }
+			ship = { name = "Dening" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YUA } } }
+			ship = { name = "Quanming" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YUA } } }
+
+		}
+			
+	}
+	fleet = {
+		name = "Southern Fleet"			
+		naval_base = 7408 # Modern Bangkok
+		task_force = {
+			name = "Southern Fleet"
+			location = 7408 #
+
+			ship = { name = "Leizhou" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YUA } } }
+			ship = { name = "Dacheng" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YUA } } }
+			ship = { name = "Qianning" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YUA } } }
+		}
+			
+	}
+} 
+

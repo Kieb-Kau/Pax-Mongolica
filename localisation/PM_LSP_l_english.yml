@@ -1,0 +1,23 @@
+﻿l_english:
+ #League of Southern Provinces
+ LSP_fascism: "League of Southern Provinces"
+ LSP_fascism_DEF: "The League of Southern Provinces"
+ LSP_neutrality: "League of Southern Provinces"
+ LSP_neutrality_DEF: "The League of Southern Provinces"
+ LSP_democratic: "League of Southern Provinces"
+ LSP_democratic_DEF: "The League of Southern Provinces"
+ LSP_communism: "League of Southern Provinces"
+ LSP_communism_DEF: "The League of Southern Provinces"
+ LSP_fascism_ADJ: "Southern Provinces"
+ LSP_neutrality_ADJ: "Southern Provinces"
+ LSP_democratic_ADJ: "Southern Provinces"
+ LSP_communism_ADJ: "Southern Provinces"
+
+ 
+ LSP_liberal:0 "League of Southern Provinces"
+ LSP_liberal_DEF:0 "The League of Southern Provinces"
+ LSP_liberal_ADJ:0 "Southern Provinces"
+ LSP_nomadic:0 "League of Southern Provinces"
+ LSP_nomadic_DEF:0 "The League of Southern Provinces"
+ LSP_nomadic_ADJ:0 "Southern Provinces"
+ 

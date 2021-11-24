@@ -1,0 +1,801 @@
+###########################
+# Muscovite Events
+###########################
+
+add_namespace = muscovy_kozelsk
+
+country_event = {
+	id = muscovy_kozelsk.1 #The Orient Stirs - Muscovy
+    title = muscovy_kozelsk.1.t
+    desc = muscovy_kozelsk.1.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	fire_only_once = yes 
+
+	option = { 
+		name = muscovy_kozelsk.1.a # The end of the tatars is near!
+
+
+		hidden_effect = {
+			country_event = {
+				id = muscovy_kozelsk.3
+				days = 5
+			}
+		}
+
+
+	}
+    
+}
+country_event = {
+	id = muscovy_kozelsk.2 #The Orient Stirs - Jochid
+    title = muscovy_kozelsk.2.t
+    desc = muscovy_kozelsk.2.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	fire_only_once = yes 
+
+	option = { 
+		name = muscovy_kozelsk.2.a # oh dear
+		add_war_support = -0.1
+		add_stability = -0.1
+		add_ideas = JOC_shock_of_the_east
+
+		hidden_effect = {
+			MOS = {
+				country_event = {
+					id = muscovy_kozelsk.1
+				}
+			}
+		}
+
+
+	}
+    
+}
+country_event = {
+	id = muscovy_kozelsk.3 #A speech in Moscow
+    title = muscovy_kozelsk.3.t
+    desc = muscovy_kozelsk.3.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	fire_only_once = yes 
+
+	option = { 
+		name = muscovy_kozelsk.3.a # The tatars shall fall!
+		add_stability = 0.1
+		add_war_support = 0.1
+		add_political_power = 100
+		add_ideas = MOS_russian_revanchism
+
+		hidden_effect = {
+			country_event = {
+				id = muscovy_kozelsk.4
+				days = 5
+			}
+			country_event = {
+				id = muscovy_kozelsk.8
+				days = 30
+			}
+			RYA = {
+				country_event = {
+					id = muscovy_kozelsk.8
+					days = 30
+				}
+			}
+			SLM = {
+				country_event = {
+					id = muscovy_kozelsk.8
+					days = 30
+				}
+			}
+			country_event = {
+				id = muscovy_kozelsk.9
+				days = 60
+			}
+			RYA = {
+				country_event = {
+					id = muscovy_kozelsk.9
+					days = 60
+				}
+			}
+			SLM = {
+				country_event = {
+					id = muscovy_kozelsk.9
+					days = 60
+				}
+			}
+
+		}
+
+
+	}
+    
+}
+
+country_event = {
+	id = muscovy_kozelsk.4 #The Kozelsk Pact 
+    title = muscovy_kozelsk.4.t
+    desc = muscovy_kozelsk.4.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	fire_only_once = yes 
+
+	option = { 
+		name = muscovy_kozelsk.4.a # The Kozelsk Pact is made!
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_political_power = 50
+		create_faction = Kozelsk_pact
+
+		RYA = {
+			country_event = {
+				id = muscovy_kozelsk.5
+				days = 1
+			}
+		}
+		TRU = {
+			country_event = {
+				id = muscovy_kozelsk.5
+				days = 3
+			}
+		}
+		SLM = {
+			country_event = {
+				id = muscovy_kozelsk.5
+				days = 5
+			}
+		}
+
+
+	}
+    
+}
+
+country_event = {
+	id = muscovy_kozelsk.5 #The Kozelsk Pact invitation
+    title = muscovy_kozelsk.5.t
+    desc = muscovy_kozelsk.5.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	option = { 
+		name = muscovy_kozelsk.5.a # Alliance with Muscovy accepted
+		trigger = {
+			OR = {
+				tag = RYA
+				tag = SLM
+			}
+		}
+		MOS = {
+			country_event = {
+				id = muscovy_kozelsk.6
+				days = 1
+			}
+		}
+
+	}
+	option = { 
+		name = muscovy_kozelsk.5.b # Alliance with Muscovy rejected
+		trigger = {
+			tag = TRU
+		}
+		MOS = {
+			country_event = {
+				id = muscovy_kozelsk.7
+				days = 1
+			}
+		}
+
+
+	}
+    
+}
+
+country_event = {
+	id = muscovy_kozelsk.6 #The Kozelsk Pact accepted
+    title = muscovy_kozelsk.6.t
+    desc = muscovy_kozelsk.6.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	option = { 
+		name = muscovy_kozelsk.6.a # We stand together!
+		add_to_faction = FROM
+		add_political_power = 25
+
+	}
+
+    
+}
+country_event = {
+	id = muscovy_kozelsk.7 #The Kozelsk Pact rejected
+    title = muscovy_kozelsk.7.t
+    desc = muscovy_kozelsk.7.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	option = { 
+		name = muscovy_kozelsk.7.a # RIP
+		add_political_power = -25
+	}
+
+    
+}
+country_event = {
+	id = muscovy_kozelsk.8 #Conference of the three Lords
+    title = muscovy_kozelsk.8.t
+    desc = muscovy_kozelsk.8.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	option = { 
+		name = muscovy_kozelsk.8.a # The time has come...
+		add_war_support = 0.1
+	}
+}
+country_event = {
+	id = muscovy_kozelsk.9 #Victory or death
+    title = muscovy_kozelsk.9.t
+    desc = muscovy_kozelsk.9.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	option = { 
+		name = muscovy_kozelsk.9.a # The time has come... now
+		IF = {
+			limit = {
+				tag = MOS
+			}
+
+			declare_war_on = {
+    				target = JOC
+    				type = annex_everything
+			}
+			hidden_effect = {
+				JOC = {
+					add_ideas = jochid_no_surrender_idea
+				}
+				RYA = {
+					add_to_war = { 
+    						targeted_alliance = MOS 
+    						enemy = JOC 
+    						hostility_reason = asked_to_join
+					}
+				}
+				SLM = {
+					add_to_war = { 
+    						targeted_alliance = MOS 
+    						enemy = JOC 
+    						hostility_reason = asked_to_join
+					}
+				}
+				TRU = {
+					country_event = {
+						id = muscovy_kozelsk.10
+						days = 25
+					}
+				}
+				YAR = {
+					country_event = {
+						id = muscovy_kozelsk.12
+						days = 10
+					}
+				}
+				VLA = {
+					country_event = {
+						id = muscovy_kozelsk.14
+						days = 35
+					}
+				}
+				JOC = {
+					country_event = {
+						id = muscovy_kozelsk.18
+					}
+					country_event = {
+						id = muscovy_kozelsk.19
+						days = 5
+					}
+				}
+			}
+		}
+		add_timed_idea = {
+    			idea = Russian_war_fevror
+    			days = 65
+		}
+		add_manpower = 15000
+	}
+}
+
+country_event = {
+	id = muscovy_kozelsk.10 #Trubetsk reapplies for the Kozelsk pact
+    title = muscovy_kozelsk.10.t
+    desc = muscovy_kozelsk.10.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	option = { 
+		name = muscovy_kozelsk.10.a # The muscovites were right!
+		MOS = {
+			country_event = {
+				id = muscovy_kozelsk.11
+				days = 1
+			}
+		}		
+	}
+
+    
+}
+
+country_event = {
+	id = muscovy_kozelsk.11 #Trubetsk reapplies for the Kozelsk pact
+    title = muscovy_kozelsk.11.t
+    desc = muscovy_kozelsk.11.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	option = { 
+		name = muscovy_kozelsk.11.a # yes!
+		add_to_faction = TRU
+		TRU = {
+			add_to_war = { 
+    				targeted_alliance = MOS 
+    				enemy = JOC 
+    				hostility_reason = asked_to_join
+			}
+		}
+		
+	}
+
+    
+}
+
+country_event = {
+	id = muscovy_kozelsk.12 #Yaroslavl - Loyalties, loyalties...
+    title = muscovy_kozelsk.12.t
+    desc = muscovy_kozelsk.12.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	option = { 
+		name = muscovy_kozelsk.12.a # We cannot fight fellow Mongols!
+		ai_chance = {
+			base = 70
+		}
+		add_stability = -0.1
+		add_war_support = -0.1
+		add_political_power = 100
+
+		declare_war_on = {
+    			target = MOS
+    			type = annex_everything
+		}
+		hidden_effect = {
+			JOC = {
+				add_to_faction = YAR
+			}
+		}
+	
+	}
+	option = { 
+		name = muscovy_kozelsk.12.b # We have no choice
+		ai_chance = {
+			base = 30
+		}
+		add_stability = -0.25
+		add_war_support = -0.25
+		add_political_power = -250
+		add_ideas = Unpopular_war
+		MOS = {
+			country_event = {
+				id = muscovy_kozelsk.13
+				days = 1
+			}
+		}	
+	
+	}
+
+    
+}
+
+country_event = {
+	id = muscovy_kozelsk.13 #Yaroslavl applies for the Kozelsk pact
+    title = muscovy_kozelsk.13.t
+    desc = muscovy_kozelsk.13.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	option = { 
+		name = muscovy_kozelsk.13.a # a surprise, but a welcome one
+		ai_chance = {
+			base = 80
+		}
+		add_to_faction = YAR
+		YAR = {
+			add_to_war = { 
+    				targeted_alliance = MOS 
+    				enemy = JOC 
+    				hostility_reason = asked_to_join
+			}
+
+		}
+		
+	}
+	option = { 
+		name = muscovy_kozelsk.13.b # they will just betray us though...
+		ai_chance = {
+			base = 20
+		}
+		add_political_power = -25
+
+		
+	}
+}
+
+country_event = {
+	id = muscovy_kozelsk.14 #Vladimir - the war in Moscow
+    title = muscovy_kozelsk.14.t
+    desc = muscovy_kozelsk.14.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	option = { 
+		name = muscovy_kozelsk.14.a # We should help our brethren
+		ai_chance = {
+			base = 40
+		}
+		add_stability = 0.1
+		add_war_support = 0.1
+		add_political_power = 100
+		MOS = {
+			country_event = {
+				id = muscovy_kozelsk.15
+				days = 1
+			}
+		}	
+
+	
+	}
+	option = { 
+		name = muscovy_kozelsk.14.b # Let's stay neutral for now
+		ai_chance = {
+			base = 30
+		}
+		add_stability = -0.05
+		add_war_support = -0.05
+		add_political_power = -50
+	}
+	option = { 
+		name = muscovy_kozelsk.14.c # Lets side with the Mongols!
+		ai_chance = {
+			base = 30
+		}
+		add_stability = -0.25
+		add_war_support = -0.25
+		add_political_power = -250
+		add_ideas = Unpopular_war
+		declare_war_on = {
+    			target = MOS
+    			type = annex_everything
+		}
+		every_state = {
+			limit = {
+				is_owned_by = MOS
+			}
+			add_claim_by = VLA
+		}
+		MOS = {
+			country_event = {
+				id = muscovy_kozelsk.16
+				days = 1
+			}
+		}
+		JOC = {
+			country_event = {
+				id = muscovy_kozelsk.17
+				days = 1
+			}
+		}
+	}
+
+    
+}
+
+country_event = {
+	id = muscovy_kozelsk.15 #Vladimir applies for the Kozelsk pact
+    title = muscovy_kozelsk.15.t
+    desc = muscovy_kozelsk.15.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	option = { 
+		name = muscovy_kozelsk.15.a # The enemy of my enemy...
+		ai_chance = {
+			base = 75
+		}
+		add_to_faction = VLA
+		VLA = {
+			add_to_war = { 
+    				targeted_alliance = MOS 
+    				enemy = JOC 
+    				hostility_reason = asked_to_join
+			}
+
+		}
+		
+	}
+	option = { 
+		name = muscovy_kozelsk.15.b # they will just betray us though...
+		ai_chance = {
+			base = 25
+		}
+		
+		
+	}
+}
+country_event = {
+	id = muscovy_kozelsk.16 #Vladimir backstabs us!
+    title = muscovy_kozelsk.16.t
+    desc = muscovy_kozelsk.16.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	option = { 
+		name = muscovy_kozelsk.16.a # Damn those vladimiris!
+		add_stability = -0.05
+		add_war_support = 0.05
+	}
+
+}
+country_event = {
+	id = muscovy_kozelsk.17 #Vladimir joins us!
+    title = muscovy_kozelsk.17.t
+    desc = muscovy_kozelsk.17.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	option = { 
+		name = muscovy_kozelsk.17.a # Aha!
+		add_war_support = 0.05
+		add_to_faction = VLA
+	}
+
+}
+country_event = {
+	id = muscovy_kozelsk.18 #The war arrives!
+    title = muscovy_kozelsk.18.t
+    desc = muscovy_kozelsk.18.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	option = { 
+		name = muscovy_kozelsk.18.a # Oh dear...
+		add_stability = -0.1
+		add_war_support = -0.1
+		add_timed_idea = {
+    			idea = JOC_Jochid_collapse
+    			days = 90
+		}
+		create_faction = JOC_jochid_khanate_faction
+	}
+
+}
+country_event = {
+	id = muscovy_kozelsk.19 #Westerners (TBD) seize ports and oil region!
+    title = muscovy_kozelsk.19.t
+    desc = muscovy_kozelsk.19.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	option = { 
+		name = muscovy_kozelsk.19.a # Oh dear...
+		add_stability = -0.03
+		add_war_support = -0.03
+		ENG = {
+			transfer_state = 81
+			transfer_state = 46
+			transfer_state = 766
+			transfer_state = 401
+			transfer_state = 218
+		}
+	}
+
+}
+
+country_event = {
+	id = muscovy_kozelsk.20 #Jochi - Capitulation to Russians - they are too strong
+    title = muscovy_kozelsk.20.t
+    desc = muscovy_kozelsk.20.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	option = { 
+		name = muscovy_kozelsk.20.a # Just like in the east! we cannot compete!
+		add_stability = -0.1
+		add_war_support = -0.1
+		MOS = {
+			country_event = {
+				id = muscovy_kozelsk.21
+				days = 2
+			}
+		}
+	}
+
+}
+
+country_event = {
+	id = muscovy_kozelsk.21 #Jochid Khan offers to throw off the tatar yoke
+    title = muscovy_kozelsk.21.t
+    desc = muscovy_kozelsk.21.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	option = { 
+		name = muscovy_kozelsk.21.a #Rus victory
+		add_stability = 0.1
+		add_war_support = 0.1
+		add_political_power = 100
+
+
+		hidden_effect = {
+			transfer_state = 220
+			add_state_core = 220
+			transfer_state = 240
+			add_state_core = 240
+			SLM = {
+				transfer_state = 225
+				add_state_core = 225
+			}
+			TRU = {
+				transfer_state = 193
+				add_state_core = 193
+			}
+			RYA = {
+				transfer_state = 260
+				add_state_core = 260
+				transfer_state = 257
+				add_state_core = 257
+				transfer_state = 258
+				add_state_core = 258
+			}	
+			IF = {
+				limit = {	
+					is_in_faction_with = VLA
+				}
+				VLA = {
+					transfer_state = 255
+					add_state_core = 255
+				}
+				else = {
+					transfer_state = 255
+					add_state_core = 255
+				}
+			}
+			every_country = {
+				limit = {
+					is_in_faction_with = MOS
+				}
+				country_event = {
+					id = muscovy_kozelsk.22
+				}
+			}
+			JOC = {
+				country_event = {
+					id = muscovy_kozelsk.23
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {
+	id = muscovy_kozelsk.22 #Russians - victory!
+    title = muscovy_kozelsk.22.t
+    desc = muscovy_kozelsk.22.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	option = { 
+		name = muscovy_kozelsk.22.a # The tatar yoke is thrown!
+		add_stability = 0.1
+		add_war_support = 0.1
+		add_political_power = 100
+	}
+
+}
+
+country_event = {
+	id = muscovy_kozelsk.23 #Jochi defeat
+    title = muscovy_kozelsk.23.t
+    desc = muscovy_kozelsk.23.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	option = { 
+		name = muscovy_kozelsk.23.a # The mongol west is down!!
+		add_stability = -0.2
+		add_war_support = -0.2
+		add_political_power = -200
+		IF = {
+			limit = {
+				is_in_faction_with = VLA
+			}
+			VLA = {	
+				country_event = {
+					id = muscovy_kozelsk.24
+				}
+			}
+		}
+		IF = {
+			limit = {
+				is_in_faction_with = YAR
+			}
+			YAR = {	
+				country_event = {
+					id = muscovy_kozelsk.24
+				}
+			}
+		}
+		leave_faction = yes
+		every_country = {
+			limit = {
+				has_war_with = JOC
+			}
+			white_peace = JOC
+		}
+		hidden_effect = {
+			country_event = {
+				id = jochid.1
+				days = 8
+			}
+		}
+	}
+
+}
+
+country_event = {
+	id = muscovy_kozelsk.24 #Vladimir / Yaroslavl - Jochi surrenders
+    title = muscovy_kozelsk.24.t
+    desc = muscovy_kozelsk.24.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+	option = { 
+		name = muscovy_kozelsk.24.a # oh no
+		add_stability = -0.1
+		add_war_support = -0.1
+		add_political_power = -100
+		add_ideas = JOC_immient_collapse
+
+	}
+
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=758
+	name="STATE_758"
+
+	history={
+		owner = XZY
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			1961 1
+		}
+		add_core_of = XZY
+
+	}
+
+	provinces={
+		1961 7273 8005 8029 10802 12884 
+	}
+	manpower=359238
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

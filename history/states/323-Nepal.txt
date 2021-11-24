@@ -1,0 +1,28 @@
+
+state={
+	id=323
+	name="STATE_323"
+	resources={
+		chromium=2.000
+	}
+
+	history={
+		owner = BEN
+		buildings = {
+			infrastructure = 2
+
+		}
+		victory_points = {
+			4987 3 
+		}
+		add_core_of = BEN
+
+	}
+
+	provinces={
+		4386 4987 5310 7374 12338 
+	}
+	manpower=2173791
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

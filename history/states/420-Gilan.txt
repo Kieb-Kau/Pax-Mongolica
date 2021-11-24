@@ -1,0 +1,28 @@
+
+state={
+	id=420
+	name="STATE_420"
+
+	history={
+		owner = PRS
+		victory_points = {
+			7969 5 
+		}
+		victory_points = {
+			4901 3 
+		}
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = PRS
+
+	}
+
+	provinces={
+		4473 4553 4580 4609 4637 4901 7969 10385 10454 10523 10768 12434
+	}
+	manpower=2514948
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=329
+	name="STATE_329"
+	resources={
+	}
+
+	history={
+		owner = YUA
+		buildings = {
+			infrastructure = 1
+
+
+		}
+		victory_points = {
+			10627 1
+		}
+		add_core_of = YUA
+
+	}
+
+	provinces={
+		1676 1689 1834 1877 4680 4690 4882 7703 7713 7731 7773 10562 10597 10627 10646 10669 12579 12610 12625 12628 12649 
+	}
+	manpower=162000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

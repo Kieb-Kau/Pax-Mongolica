@@ -1,0 +1,26 @@
+
+state={
+	id=405
+	name="STATE_405"
+
+	history={
+		owner = CHK
+		add_core_of = CHK
+		victory_points = {
+			10671 5 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		756 1216 1384 1919 4467 4542 4629 4923 7224 7682 7775 8027 10205 10671 11687 12218 12239 12250 12722 
+	}
+	manpower=2785820
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

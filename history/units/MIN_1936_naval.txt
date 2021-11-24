@@ -1,0 +1,58 @@
+
+units= {
+
+	##### Naval OOB #####
+	fleet = {
+		name = "Ming Imperial Navy"			
+		naval_base = 12068 # Anping
+		task_force = {
+			name = "1st Squadron"
+			location = 12068 # Anping
+			ship = { name = "Anping" definition = battleship equipment = { battleship_1 = { amount = 1 owner = MIN } } }
+
+
+
+			ship = { name = "Dagou" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = MIN version_name = "Qilai Class" } } }
+
+			ship = { name = "Shalianbao" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = MIN version_name = "Shalianbao Class" } } }
+
+
+			ship = { name = "Taibei" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MIN } } }
+			ship = { name = "Zheng Chenggong" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MIN } } }
+			ship = { name = "Zheng Delun" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MIN  } } }
+			ship = { name = "Zheng Yan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MIN  } } }
+			ship = { name = "Zheng Li" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MIN  } } }
+			ship = { name = "Zheng Peizhi" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MIN  } } }
+
+		}
+		task_force = {	
+			name = "2nd Squadron"			
+			location = 7186 # 
+			ship = { name = "Qilai" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = MIN version_name = "Qilai Class" } } }
+			ship = { name = "Xingang" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MIN } } }
+			ship = { name = "Tianfu" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MIN } } }
+
+			ship = { name = "Zheng Lijian" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MIN } } }
+			ship = { name = "Zheng Guozhi" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MIN } } }
+			ship = { name = "Zheng Xi" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MIN } } }
+
+		}	
+		task_force = {				
+			name = "Submarines"			
+			location = 11914 # 
+			ship = { name = "Qianting A" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MIN } } }
+			ship = { name = "Qianting B" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MIN } } }
+
+		}	
+		task_force = {				
+			name = "Ryukyu Squadron"			
+			location = 11932 # 
+			ship = { name = "Liuqiu" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = MIN version_name = "Qilai Class" } } }
+			ship = { name = "Shouli" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MIN } } }
+			ship = { name = "Zheng Liuxian" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MIN } } }
+			ship = { name = "Qianting C" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MIN } } }
+
+		}			
+	}
+} 
+

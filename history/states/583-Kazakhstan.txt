@@ -1,0 +1,25 @@
+
+state={
+	id=583
+	name="STATE_583"
+
+	history={
+		owner = JOC
+		add_core_of = JOC
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			7657 1 
+		}
+
+	}
+
+	provinces={
+		1532 4300 4488 4581 4638 7243 7486 7600 7657 12471 
+	}
+	manpower=215450
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

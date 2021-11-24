@@ -1,0 +1,22 @@
+
+state={
+	id=715
+	name="STATE_715"
+
+	history={
+		owner = YUA
+		add_core_of = YUA
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		930 1499 1502 1508 1558 1627 1638 1847 3877 3978 4503 4561 4633 4876 7812 7894 10429 11903 12337 12469 12478 12485 
+	}
+	manpower=1343373
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

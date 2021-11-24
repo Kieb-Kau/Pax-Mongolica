@@ -1,0 +1,107 @@
+
+division_template = {
+	name = "Infantry Division"		# Imperial Guards 
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4 }
+
+
+
+	}
+	support = {
+      	 	engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+
+
+	}
+}
+division_template = {
+	name = "Grand Battery of Slomensk"		# Imperial Guards 
+
+	regiments = {
+		artillery_brigade = { x = 0 y = 0 }
+		artillery_brigade = { x = 0 y = 1 }
+		artillery_brigade = { x = 0 y = 2 }
+		artillery_brigade = { x = 0 y = 3 }
+		artillery_brigade = { x = 0 y = 4 }
+		artillery_brigade = { x = 1 y = 0 }
+		artillery_brigade = { x = 1 y = 1 }
+		artillery_brigade = { x = 1 y = 2 }
+		artillery_brigade = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4 }
+
+
+
+	}
+	is_locked = yes
+	support = {
+		artillery = { x = 0 y = 0 }
+
+
+	}
+}
+
+
+units = {
+	##### Divisions #####
+	division= {	
+		name = "1. Infantry Division"
+		location = 306
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "2. Infantry Division"
+		location = 11349
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "3. Infantry Division"
+		location = 9318
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "4. Infantry Division"
+		location = 11272
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "5. Infantry Division"
+		location = 226
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "Grand Battery of Slomensk"
+		location = 306
+		division_template = "Grand Battery of Slomensk"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+
+
+
+}

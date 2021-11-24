@@ -1,0 +1,39 @@
+
+state={
+	id=755
+	name="STATE_755"
+
+	history={
+		owner = XZY
+		add_core_of = XZY
+		buildings = {
+			infrastructure = 1
+
+		}
+		1938.10.25 = {
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = Waking
+						the Tiger 
+					}
+
+				}
+				CHI = {
+					transfer_state = PREV
+
+				}
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1698 2099 5076 7997 10750 10796 10834 10865 12596 12846 12890 
+	}
+	manpower=190690
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

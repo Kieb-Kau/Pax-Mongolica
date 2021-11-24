@@ -1,0 +1,22 @@
+
+state = {
+	id=154
+	name="STATE_154"
+	manpower = 1235383
+
+	state_category = town
+
+	history = {
+		owner = THO
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+
+		add_core_of = THO
+	}
+
+	provinces={
+		679 699 730 3730 6670 6700 6735 9656 11625 11644 11646 11659 
+	}
+}

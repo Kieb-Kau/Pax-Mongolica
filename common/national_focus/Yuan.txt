@@ -1,0 +1,661 @@
+focus_tree = {
+	id = yuan_focus_northern
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = YUA
+		}
+
+	}
+	default = no
+	continuous_focus_position = { x = 80 y = 3000 }
+	shared_focus = yuan_a_new_order
+
+}
+
+shared_focus = {
+	id = yuan_a_new_order # A new order dawns
+	icon = GFX_focus_Grab_Money
+	x = 10
+	y = 0
+	cost = 1
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		has_country_flag = yuan_new_order_flag
+		
+	}	
+	bypass = {
+	}
+	completion_reward = {
+		add_stability = 0.1
+		add_war_support = 0.1
+	}
+}
+
+shared_focus = {
+	id = yuan_assess_the_situation # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = yuan_a_new_order
+	}
+	x = 0
+	y = 1
+	relative_position_id = yuan_a_new_order
+	cost = 1
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		country_event = {
+			id = yuan.12
+		}
+
+	}
+}
+
+##### STABILISING OUR RULE #####
+
+shared_focus = {
+	id = yuan_stabilize_the_empire # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = yuan_assess_the_situation
+	}
+	x = 0
+	y = 2
+	relative_position_id = yuan_a_new_order
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = yuan_mongolized_government # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = yuan_stabilize_the_empire
+	}
+	x = -2
+	y = 3
+	relative_position_id = yuan_a_new_order
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		country_event = {
+			id = yuan.18
+		}
+	}
+}
+
+shared_focus = {
+	id = yuan_government_oaths_of_loyalty # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = yuan_mongolized_government
+	}
+	x = -2
+	y = 4
+	relative_position_id = yuan_a_new_order
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		country_event = {
+			id = yuan.13
+		}
+	}
+}
+
+shared_focus = {
+	id = yuan_crown_the_new_khan # Burij
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = yuan_stabilize_the_empire
+	}
+	x = 0
+	y = 3
+	relative_position_id = yuan_a_new_order
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		country_event = {
+			id = yuan.14
+		}
+	}
+}
+
+shared_focus = {
+	id = yuan_the_regency_council # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = yuan_crown_the_new_khan
+	}
+	x = 0
+	y = 4
+	relative_position_id = yuan_a_new_order
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		country_event = {
+			id = yuan.15
+		}
+	}
+}
+
+
+shared_focus = {
+	id = yuan_reorganize_government_in_karakorum # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = yuan_stabilize_the_empire
+	}
+	x = 2
+	y = 3
+	relative_position_id = yuan_a_new_order
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		country_event = {
+			id = yuan.16
+		}
+	}
+}
+
+shared_focus = {
+	id = yuan_recreate_the_khural # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = yuan_reorganize_government_in_karakorum
+	}
+	x = 2
+	y = 4
+	relative_position_id = yuan_a_new_order
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		country_event = {
+			id = yuan.17
+		}
+	}
+}
+
+shared_focus = {
+	id = yuan_all_hail_the_khan # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = yuan_recreate_the_khural
+	}
+	prerequisite = { 
+		focus = yuan_the_regency_council
+	}
+	prerequisite = { 
+		focus = yuan_government_oaths_of_loyalty
+	}
+	x = 0
+	y = 5
+	relative_position_id = yuan_a_new_order
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		add_stability = 0.1
+		add_war_support = 0.1
+	}
+}
+
+##### SECURING OUR BORDERS #####
+
+shared_focus = {
+	id = yuan_secure_the_borders # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = yuan_assess_the_situation
+	}
+	x = -6
+	y = 2
+	relative_position_id = yuan_a_new_order
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = yuan_mingghan_system # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = yuan_secure_the_borders
+	}
+	x = -5
+	y = 3
+	relative_position_id = yuan_a_new_order
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		add_manpower = 20000
+	}
+}
+
+shared_focus = {
+	id = yuan_call_tumens_to_arms # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = yuan_mingghan_system
+	}
+	x = -5
+	y = 4
+	relative_position_id = yuan_a_new_order
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		custom_effect_tooltip = yuan_call_tumens_to_arms_tt
+		hidden_effect = {
+			330 = {
+				create_unit = {
+    					division = "name = \"5. Tumen\" division_template = \"Tumen\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+    					owner = YUA
+				}
+				create_unit = {
+    					division = "name = \"6. Tumen\" division_template = \"Tumen\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+    					owner = YUA
+				}
+				create_unit = {
+    					division = "name = \"7. Tumen\" division_template = \"Tumen\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+    					owner = YUA
+				}
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = yuan_conscript_mongol_horse # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = yuan_secure_the_borders
+	}
+	x = -7
+	y = 3
+	relative_position_id = yuan_a_new_order
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		add_stability = -0.03
+		add_ideas = YUA_mongol_horses
+	}
+}
+
+shared_focus = {
+	id = yuan_scavenge_the_steppe # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = yuan_conscript_mongol_horse
+	}
+	x = -7
+	y = 4
+	relative_position_id = yuan_a_new_order
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = 2000
+    			producer = YUA
+		}
+	}
+}
+
+shared_focus = {
+	id = yuan_true_mongol_army # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = yuan_call_tumens_to_arms
+	}
+	prerequisite = { 
+		focus = yuan_scavenge_the_steppe
+	}
+	x = -6
+	y = 5
+	relative_position_id = yuan_a_new_order
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		add_ideas = YUA_true_mongol_army
+	}
+}
+
+##### NATIONAL REVITILIZATION #####
+
+shared_focus = {
+	id = yuan_national_revitilization # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = yuan_assess_the_situation
+	}
+	x = 6
+	y = 2
+	relative_position_id = yuan_a_new_order
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = yuan_ensure_clan_loyalty # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = yuan_national_revitilization
+	}
+	x = 5
+	y = 3
+	relative_position_id = yuan_a_new_order
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		add_stability = 0.03
+		add_popularity = {
+    			ideology = nomadic
+    			popularity = 0.03
+		}
+		
+	}
+}
+
+shared_focus = {
+	id = yuan_relocate_xuanzhengyuan # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = yuan_ensure_clan_loyalty
+	}
+	x = 5
+	y = 4
+	relative_position_id = yuan_a_new_order
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		country_event = {
+			id = yuan.19
+		}
+	}
+}
+
+
+shared_focus = {
+	id = yuan_industrialization_on_the_steppe # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = yuan_national_revitilization
+	}
+	x = 7
+	y = 3
+	relative_position_id = yuan_a_new_order
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		add_stability = -0.05
+		custom_effect_tooltip = yuan_industry_steppe_tt
+		330 = {
+			add_building_construction = {
+    				type = industrial_complex
+   				level = 1
+    				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+
+		}
+	}
+}
+
+shared_focus = {
+	id = yuan_military_industry # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = yuan_industrialization_on_the_steppe
+	}
+	x = 7
+	y = 4
+	relative_position_id = yuan_a_new_order
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		330 = {
+			add_building_construction = {
+    				type = arms_factory
+   				level = 1
+    				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+
+		}
+		add_timed_idea = {
+    			idea = yuan_primitive_mil_industry_idea
+    			days = 360
+		}
+	}
+}
+
+shared_focus = {
+	id = yuan_economic_collapse_halted # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = yuan_relocate_xuanzhengyuan
+	}
+	prerequisite = { 
+		focus = yuan_military_industry
+	}
+
+	x = 6
+	y = 5
+	relative_position_id = yuan_a_new_order
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		add_stability = 0.1
+	}
+}
+
+shared_focus = {
+	id = yuan_our_position_secured # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = yuan_economic_collapse_halted
+	}
+	prerequisite = { 
+		focus = yuan_true_mongol_army
+	}
+	prerequisite = { 
+		focus = yuan_all_hail_the_khan
+	}
+
+	x = 0
+	y = 6
+	relative_position_id = yuan_a_new_order
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		country_event = {
+			id = yuan.20
+		}
+	}
+}

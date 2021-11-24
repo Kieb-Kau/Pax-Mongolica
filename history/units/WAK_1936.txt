@@ -1,0 +1,43 @@
+division_template = {
+	name = "Landbound Pirates" #
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+
+	}
+}
+
+units = {
+	##### Wakao Pirates #####
+	division= {	
+		name = "Tsushima Garrison"
+		location = 10011
+		division_template = "Landbound Pirates"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+		start_manpower_factor = 0.3
+
+	}
+	fleet = {
+		name = "Pirate Fleet"			
+		naval_base = 10011 # Tsushima
+		task_force = {
+			name = "Squadron A"
+			location = 10011 # Anping
+			ship = { name = "A" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = WAK } } }
+			ship = { name = "B" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = WAK } } }
+			ship = { name = "D" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = WAK  } } }
+			ship = { name = "G" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = WAK  } } }
+		}
+		task_force = {	
+			name = "Squadron B"			
+			location = 10011 # 
+			ship = { name = "C" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = WAK } } }
+			ship = { name = "E" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = WAK  } } }
+			ship = { name = "F" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = WAK  } } }
+			ship = { name = "H" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = WAK  } } }
+
+		}		
+	}
+
+}

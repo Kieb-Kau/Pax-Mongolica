@@ -1,0 +1,30 @@
+
+state={
+	id=617
+	name="STATE_617"
+
+	history={
+		owner = CHK
+		add_core_of = CHK
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		victory_points = {
+			12656 1 
+		}
+		victory_points = {
+			12601 10 
+		}
+
+	}
+
+	provinces={
+		1703 1783 1840 4391 4682 4709 4770 4845 5736 7702 7792 7850 7866 10545 10614 12526 12601 12656 
+	}
+	manpower=6280500
+	buildings_max_level_factor=1.000
+	state_category=town
+}

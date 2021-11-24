@@ -1,0 +1,26 @@
+
+state={
+	id=656
+	name="STATE_656"
+
+	history={ # Bukhara
+		add_core_of = CHK
+		owner = CHK
+		victory_points = {
+			1573 5 
+		}
+		buildings = {
+			infrastructure = 2
+
+
+		}
+
+	}
+
+	provinces={
+		1573 1623 1632 4499 7639 9605 10470 12161 
+	}
+	manpower=2197829
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

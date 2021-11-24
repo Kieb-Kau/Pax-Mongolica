@@ -1,0 +1,51 @@
+capital = 430 # Sonargaon
+
+oob = "BEN_1936"
+
+
+
+set_stability = 0.5
+set_war_support = 0.5
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	mass_assault = 1
+
+
+}
+
+add_ideas = {
+	BEN_the_two_treaties # hanlin (yuan) and Jaunpur - defensive war buffs
+	BEN_traditionalist_army
+	BEN_backwards_industry
+}
+give_guarantee = GAR
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 10
+	liberal = 6
+	communism = 24
+	fascism = 2
+	neutrality = 58
+	nomadic = 0
+}
+
+create_country_leader = {
+	name = "Alauddin Hussain Shah III"
+	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+	picture = "Portrait_China_Chiang_Kai_Shek.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}
+

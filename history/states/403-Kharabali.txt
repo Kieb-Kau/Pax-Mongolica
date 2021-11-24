@@ -1,0 +1,25 @@
+
+state={
+	id=403
+	name="STATE_403"
+
+	history={
+		owner = JOC
+		victory_points = {
+			4824 3 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = JOC
+
+	}
+
+	provinces={
+		307 1387 1543 1704 1750 1808 1821 1880 4754 4813 4824 7228 7778 9553 10189 10604 10648 10716 12102 12106 12567 12696 
+	}
+	manpower=739067
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

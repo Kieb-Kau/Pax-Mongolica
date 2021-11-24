@@ -1,0 +1,269 @@
+
+division_template = {
+	name = "Western Modelled Division"				# Imperial Guards 
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+
+division_template = {
+	name = "Jochid Kheshig"				# Imperial Guards 
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 3 y = 0 }
+		cavalry = { x = 3 y = 1 }
+		cavalry = { x = 4 y = 0 }
+		cavalry = { x = 4 y = 1 }
+
+	}
+	is_locked = yes
+}
+
+division_template = {
+	name = "Jochid Tumen"				# Mongol Cavalry 
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 3 y = 0 }
+		cavalry = { x = 3 y = 1 }
+		cavalry = { x = 4 y = 0 }
+		cavalry = { x = 4 y = 1 }
+
+	}
+}
+
+division_template = {
+	name = "Militia Division"				# Militia 
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 0 y = 3 }
+		militia = { x = 0 y = 4 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 1 y = 3 }
+		militia = { x = 1 y = 4 }
+
+
+
+	}
+}
+
+units = {
+	##### Armies #####
+	division= {	
+		name = "1. Infantry Division"
+		location = 11474 
+		division_template = "Loyalist Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "2. Infantry Division"
+		location = 3464 #
+		division_template = "Loyalist Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "3. Infantry Division"
+		location = 6527 #
+		division_template = "Loyalist Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "4. Infantry Division"
+		location = 11555 #
+		division_template = "Loyalist Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "5. Infantry Division"
+		location = 11457 #
+		division_template = "Loyalist Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "6. Infantry Division"
+		location = 9447 #
+		division_template = "Loyalist Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "7. Infantry Division"
+		location = 9753 #
+		division_template = "Loyalist Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "8. Infantry Division"
+		location = 11339 #
+		division_template = "Loyalist Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "9. Infantry Division"
+		location = 11195 #
+		division_template = "Western Modelled Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "10. Infantry Division"
+		location = 9474 #
+		division_template = "Western Modelled Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "11. Infantry Division"
+		location = 11559 #
+		division_template = "Western Modelled Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "12. Infantry Division"
+		location = 6765 #
+		division_template = "Western Modelled Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "Jochid Kheshig"
+		location = 520 #
+		division_template = "Jochid Kheshig"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "1. Jochid Tumen"
+		location = 6574 #
+		division_template = "Jochid Tumen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "2. Jochid Tumen"
+		location = 6473 #
+		division_template = "Jochid Tumen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "3. Jochid Tumen"
+		location = 3216 #
+		division_template = "Jochid Tumen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "4. Jochid Tumen"
+		location = 9385 #
+		division_template = "Jochid Tumen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "5. Jochid Tumen"
+		location = 12244 #
+		division_template = "Jochid Tumen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "6. Jochid Tumen"
+		location = 579 #
+		division_template = "Jochid Tumen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "7. Jochid Tumen"
+		location = 3464 #
+		division_template = "Jochid Tumen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "1. Militia"
+		location = 6486 #
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		name = "2. Militia"
+		location = 6468 #
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		name = "3. Militia"
+		location = 9475 #
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		name = "4. Militia"
+		location = 3490 #
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		name = "5. Militia"
+		location = 6338 #
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		name = "6. Militia"
+		location = 11377 #
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		name = "7. Militia"
+		location = 6748 #
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.6
+	}
+}

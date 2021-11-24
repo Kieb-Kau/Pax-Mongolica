@@ -1,0 +1,30 @@
+
+state={
+	id=526
+	name="STATE_526"
+	manpower = 1038657
+	
+	state_category = small_island
+
+	history={
+		owner = MIN
+		add_core_of = MIN
+		buildings = {
+			infrastructure = 4
+			air_base = 1
+			11932 = {
+				naval_base = 3
+
+			}
+
+		}
+		victory_points = {
+			11932 5 
+		}
+
+	}
+
+	provinces={
+		1123 7115 10124 11932 
+	}
+}

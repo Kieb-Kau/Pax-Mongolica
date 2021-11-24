@@ -1,0 +1,551 @@
+focus_tree = {
+	id = JPN_expansionism
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JPN
+		}
+
+	}
+	default = no
+	continuous_focus_position = { x = 80 y = 3000 }
+	shared_focus = JPN_the_sulde_falls
+
+}
+
+shared_focus = {
+	id = JPN_the_sulde_falls # The Sulde Lowers
+	icon = GFX_focus_Grab_Money
+	x = 10
+	y = 0
+	cost = 0
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		always = no
+	}	
+	bypass = {
+		has_country_flag = JPN_bypass_initial
+	}
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = JPN_the_heian_proclamation # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = JPN_the_sulde_falls
+	}
+	x = 0
+	y = 1
+	relative_position_id = JPN_the_sulde_falls
+	cost = 3
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		country_event = {
+			id = japanese_empire.2
+		}
+	}
+}
+
+shared_focus = {
+	id = JPN_ready_the_army # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = JPN_the_heian_proclamation
+	}
+	x = -2
+	y = 2
+	relative_position_id = JPN_the_sulde_falls
+	cost = 7
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		add_timed_idea = {
+    			idea = JPN_army_nationalism
+    			days = 180
+		}
+		
+	}
+}
+
+shared_focus = {
+	id = JPN_ready_the_industry # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = JPN_the_heian_proclamation
+	}
+	x = 0
+	y = 2
+	relative_position_id = JPN_the_sulde_falls
+	cost = 7
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		add_timed_idea = {
+    			idea = JPN_industry_nationalism
+    			days = 180
+		}
+	}
+}
+
+
+shared_focus = {
+	id = JPN_ready_the_fleet # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = JPN_the_heian_proclamation
+	}
+	x = 2
+	y = 2
+	relative_position_id = JPN_the_sulde_falls
+	cost = 7
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		add_timed_idea = {
+    			idea = JPN_navy_nationalism
+    			days = 180
+		}
+	}
+}
+
+shared_focus = {
+	id = JPN_and_the_sun_rises # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = JPN_ready_the_army
+	}
+	prerequisite = { 
+		focus = JPN_ready_the_industry
+	}
+	prerequisite = { 
+		focus = JPN_ready_the_fleet
+	}
+	x = 0
+	y = 3
+	relative_position_id = JPN_the_sulde_falls
+	cost = 3
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		country_event = {
+			id = japanese_empire.3
+		}		
+	}
+}
+
+################################# NORTHERN EXPANSIONISM #################################
+
+shared_focus = {
+	id = JPN_northern_expansionism # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = JPN_and_the_sun_rises
+	}
+
+	x = -6
+	y = 4
+	relative_position_id = JPN_the_sulde_falls
+	cost = 3
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		AIN = {
+			add_opinion_modifier = {
+    				target = ROOT
+    				modifier = JPN_northward_expansionism
+			}
+		}
+		NIV = {
+			add_opinion_modifier = {
+    				target = ROOT
+    				modifier = JPN_northward_expansionism
+			}
+		}
+		WAK = {
+			add_opinion_modifier = {
+    				target = ROOT
+    				modifier = JPN_northward_expansionism
+			}
+		}		
+	}
+}
+
+
+shared_focus = {
+	id = JPN_nullify_the_ezo_treaty # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = JPN_northern_expansionism
+	}
+
+	x = 0
+	y = 1
+	relative_position_id = JPN_northern_expansionism
+	cost = 5
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+	completion_reward = {
+		custom_effect_tooltip = JPN_ezo_treaty_broken_tt
+		diplomatic_relation = {
+    			country = AIN
+    			relation = non_aggression_pact
+    			active = no
+		}
+		AIN = {
+			country_event = {
+				id = japanese_empire.6
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = JPN_support_tribal_rebellions # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = JPN_northern_expansionism
+	}
+
+	x = -2
+	y = 1
+	relative_position_id = JPN_northern_expansionism
+	cost = 3
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = JPN_tsugaru_straits_incident # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = JPN_nullify_the_ezo_treaty
+	}
+
+	x = -1
+	y = 2
+	relative_position_id = JPN_northern_expansionism
+	cost = 5
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		has_country_flag = JPN_ainu_rejected_puppet
+
+	}
+	bypass = {
+		has_country_flag = JPN_ainu_accepted_puppet
+
+
+	}
+	completion_reward = {
+		custom_effect_tooltip = JPN_tsugaru_incident_tt
+		hidden_effect = {
+			AIN = {
+				country_event = {
+					id = japanese_empire.9
+					days = 5
+				}
+			}
+		}
+		
+	}
+}
+shared_focus = {
+	id = JPN_ezo_infrastructure # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = JPN_nullify_the_ezo_treaty
+	}
+
+	x = 1
+	y = 2
+	relative_position_id = JPN_northern_expansionism
+	cost = 7
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		OR = {
+			controls_state = 536
+			AIN = {
+				is_puppet_of = JPN
+				controls_state = 536
+			}
+		}
+	}
+	bypass = {
+	}
+	completion_reward = {
+		536 = {
+			add_building_construction = {
+    				type = infrastructure
+    				level = 1
+    				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {
+	id = JPN_ultimatum_to_so_clan # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = JPN_northern_expansionism
+	}
+
+	x = 2
+	y = 1
+	relative_position_id = JPN_northern_expansionism
+	cost = 5
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+	completion_reward = {
+	}
+}
+shared_focus = {
+	id = JPN_conquest_of_sakhalin # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = JPN_tsugaru_straits_incident
+	}
+	prerequisite = { 
+		focus = JPN_ezo_infrastructure
+		
+	}
+
+	x = 0
+	y = 3
+	relative_position_id = JPN_northern_expansionism
+	cost = 7
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		OR = {
+			controls_state = 536
+			AIN = {
+				is_puppet_of = JPN
+				controls_state = 536
+			}
+		}
+		has_war = no
+	}
+	bypass = {
+	}
+	completion_reward = {
+		IF = {
+			limit = {
+				AIN = {
+					controls_state = 537
+				}
+			}
+			declare_war_on = {
+    				target = AIN
+    				type = annex_everything
+			}
+
+		}
+		declare_war_on = {
+    			target = NIV
+    			type = annex_everything
+		}
+		add_state_claim = 537
+		add_state_claim = 655
+
+
+	}
+}
+shared_focus = {
+	id = JPN_northern_ports # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = JPN_conquest_of_sakhalin
+	}
+
+	x = 0
+	y = 4
+	relative_position_id = JPN_northern_expansionism
+	cost = 7
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+	completion_reward = {
+	}
+}
+shared_focus = {
+	id = JPN_protect_the_liaoyang_tribes # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = JPN_conquest_of_sakhalin
+	}
+	prerequisite = { 
+		focus = JPN_support_tribal_rebellions
+	}
+
+	x = -2
+	y = 4
+	relative_position_id = JPN_northern_expansionism
+	cost = 7
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+	completion_reward = {
+	}
+}
+shared_focus = {
+	id = JPN_pay_off_the_pirates # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = JPN_ultimatum_to_so_clan
+	}
+	prerequisite = { 
+		focus = JPN_conquest_of_sakhalin
+	}
+	x = 2
+	y = 4
+	relative_position_id = JPN_northern_expansionism
+	cost = 7
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+	completion_reward = {
+	}
+}
+shared_focus = {
+	id = JPN_integration_of_ezo # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = JPN_northern_ports
+	}
+	prerequisite = { 
+		focus = JPN_protect_the_liaoyang_tribes
+		focus = JPN_pay_off_the_pirates
+
+	}
+
+	x = 0
+	y = 5
+	relative_position_id = JPN_northern_expansionism
+	cost = 7
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+	completion_reward = {
+		set_country_flag = JPN_integrate_north
+		custom_effect_tooltip = JPN_integrate_north_tt
+
+	}
+}
+
+shared_focus = {
+	id = JPN_dominate_the_great_north # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = JPN_integration_of_ezo
+	}
+
+	x = 0
+	y = 6
+	relative_position_id = JPN_northern_expansionism
+	cost = 3
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+	completion_reward = {
+		set_country_flag = JPN_dominate_okhotsk
+		custom_effect_tooltip = JPN_dominate_okhotsk_decisions_tt
+
+	}
+}

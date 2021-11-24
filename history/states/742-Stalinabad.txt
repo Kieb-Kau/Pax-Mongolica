@@ -1,0 +1,26 @@
+
+state={
+	id=742
+	name="STATE_742"
+
+	history={
+		add_core_of = CHK
+		owner = CHK
+		victory_points = {
+			10187 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		2058 12430 12581 
+	}
+	manpower=1393182
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

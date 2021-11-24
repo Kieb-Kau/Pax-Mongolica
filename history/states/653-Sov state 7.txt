@@ -1,0 +1,26 @@
+
+state={
+	id=653
+	name="STATE_653"
+	impassable = yes
+
+	history={
+		owner = JOC
+
+		buildings = {
+			infrastructure = 1
+
+
+		}
+		add_core_of = JOC
+
+
+	}
+
+	provinces={
+		237 278 4758 4874 10216 11307 12659 
+	}
+	manpower=21650
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

@@ -1,0 +1,769 @@
+ ###########################
+# Yuan Events
+###########################
+
+add_namespace = yuan
+
+country_event = {
+	id = yuan.1 #The Yuan Empire
+    title = yuan.1.t
+    desc = yuan.1.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = yuan.1.a
+	}
+}
+
+country_event = {
+	id = yuan.2 #The Yuan Empire is defeated! collapse is imminent
+    title = yuan.2.t
+    desc = yuan.2.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = yuan.2.a
+		remove_ideas = YUA_disobedient_han
+
+		hidden_effect = {
+			remove_ideas = sanjiang_nosurrender_idea
+			MIN = {
+				remove_ideas = sanjiang_nosurrender_idea
+			}
+
+			country_event = {
+				id = yuan.3
+				days = 15
+			}	
+			GOR = {
+				country_event = {
+					id = yuan.4
+					days = 8
+				}	
+			}
+			JOC = {
+				country_event = {
+					id = muscovy_kozelsk.2
+					days = 20
+				}	
+			}
+
+		}
+	}
+}
+
+country_event = {
+	id = yuan.3 #The Yuan Empire collapses
+    title = yuan.3.t
+    desc = yuan.3.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = yuan.3.a
+		custom_effect_tooltip = YUA_collapsing_tt
+		set_country_flag = yuan_new_order_flag
+		hidden_effect = {
+		AIN = {
+			country_event = {
+				id = ainunivkh.1
+				days = 5
+			}
+		}
+		NIV = {
+			country_event = {
+				id = ainunivkh.2
+				days = 5
+			}
+		}
+		set_capital = 330
+		KHN = {
+			add_state_core = 614
+			transfer_state = 614
+			add_state_core = 615
+			transfer_state = 615
+			add_state_core = 608
+			transfer_state = 608
+			add_state_core = 611
+			transfer_state = 611
+			add_state_core = 610
+			transfer_state = 610
+			add_state_core = 609
+			transfer_state = 609
+			load_oob = "KHN_1936"
+
+		}
+		MAQ = {
+			add_state_core = 616
+			transfer_state = 616
+			add_state_core = 756
+			transfer_state = 756
+			load_oob = "MAQ_1936"
+
+		}
+		NAI = {
+			add_state_core = 760
+			transfer_state = 760
+			add_state_core = 728
+			transfer_state = 728
+			load_oob = "NAI_1936"
+
+		}
+		ALT = {
+			add_state_core = 654
+			transfer_state = 654
+			add_state_core = 568
+			transfer_state = 568
+			add_ideas = {
+				tribal_undeveloped_industry
+				tribal_nomadic_army
+	
+			}
+			load_oob = "ALT_1936"
+
+		}
+		TUV = {
+			add_state_core = 329
+			transfer_state = 329
+			add_ideas = {
+				tribal_undeveloped_industry
+				tribal_nomadic_army
+	
+			}
+			hidden_effect = {
+				country_event = {
+					id = subutai.3
+					days = 25
+
+				}
+			}
+			load_oob = "TUV_1936"
+
+
+		}
+		TUM = {
+			add_state_core = 566
+			transfer_state = 566
+			add_state_core = 567
+			transfer_state = 567
+			add_ideas = {
+				tribal_undeveloped_industry
+				tribal_nomadic_army
+	
+			}
+			load_oob = "TUM_1936"
+
+		}
+		BRY = {
+			add_state_core = 564
+			transfer_state = 564
+			add_state_core = 565
+			transfer_state = 565
+			add_ideas = {
+				tribal_undeveloped_industry
+				tribal_nomadic_army
+	
+			}
+			load_oob = "BRY_1936"
+
+		}
+		SEV = {
+			add_state_core = 561
+			transfer_state = 561
+			add_state_core = 560
+			transfer_state = 560
+			add_state_core = 657
+			transfer_state = 657
+			add_ideas = {
+				tribal_undeveloped_industry
+				tribal_nomadic_army
+	
+			}
+			load_oob = "SEV_1936"
+
+
+		}
+		JUR = {
+			add_state_core = 715
+			transfer_state = 715
+			add_state_core = 714
+			transfer_state = 714
+			add_ideas = {
+
+				JUR_nation_divided
+			}
+			load_oob = "JUR_1936"
+
+		}
+		LIA = {
+			add_state_core = 716
+			transfer_state = 716
+			add_state_core = 328
+			transfer_state = 328
+			add_state_core = 717
+			transfer_state = 717
+			add_state_core = 409
+			transfer_state = 409
+
+			add_state_core = 163
+			transfer_state = 163
+			add_state_core = 805
+			transfer_state = 805
+			add_state_core = 188
+			transfer_state = 188
+
+			add_state_core = 662
+			transfer_state = 662
+			add_state_core = 118
+			transfer_state = 118
+
+			load_oob = "LIA_1936"
+			add_ideas = {
+				LIA_the_kan_clique
+				LIA_unstable_domain
+				LIA_archaic_industry
+	
+			}
+
+
+		}
+		WAK = {
+			add_state_core = 745
+			transfer_state = 745
+
+			load_oob = "WAK_1936"
+			add_ideas = {
+				WAK_pirate_government
+				WAK_the_so_clan
+				WAK_archaic_industry
+	
+			}
+
+		}
+		MIN = {
+			country_event = {
+				id = yuan.6
+				days = 1
+			}	
+		}
+		LIA = {
+			country_event = {
+				id = liaoyangtribal.1
+				days = 83
+				random = 5
+			}	
+		}
+		LIA = {
+			country_event = {
+				id = jurchenia.1
+				days = 1
+			}	
+		}
+		news_event = {
+			id = yuan.5
+			days = 3
+		}
+
+		every_state = {
+			limit = {
+				is_core_of = YUA
+				NOT = {
+					is_owned_by = YUA
+				}
+			}
+			remove_core_of = YUA
+		}
+		}
+		hidden_effect = {
+			every_country = {	
+				limit = {
+					OR = {
+						tag = YUA
+						tag = NAI
+						tag = MAQ
+						tag = ALT
+						tag = TUV
+						tag = BRY
+						tag = TUM
+						tag = SEV
+						tag = JUR
+						tag = LIA
+						tag = KHN
+
+
+					}
+				}
+				delete_unit_template_and_units = {
+    					division_template = "Yuan Infantry Division"
+    					disband = no #will refund equipment and manpower
+				}
+				delete_unit_template_and_units = {
+    					division_template = "Frontier Garrison"
+    					disband = no #will refund equipment and manpower
+				}
+
+				delete_unit_template_and_units = {
+    					division_template = "Militia"
+    					disband = no #will refund equipment and manpower
+				}
+			}
+			every_country = {	
+				limit = {
+					OR = {
+						tag = NAI
+						tag = MAQ
+						tag = ALT
+						tag = TUV
+						tag = BRY
+						tag = TUM
+						tag = SEV
+						tag = JUR
+						tag = LIA
+						tag = KHN
+
+
+					}
+				}
+				delete_unit_template_and_units = {
+    					division_template = "Keshig"
+    					disband = no #will refund equipment and manpower
+				}
+				delete_unit_template_and_units = {
+    					division_template = "Tumen"
+    					disband = no #will refund equipment and manpower
+				}
+
+			}
+		}
+	}
+
+}
+
+country_event = {
+	id = yuan.4 #korea takes the north
+    title = yuan.4.t
+    desc = yuan.4.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = yuan.4.a
+		transfer_state = 326
+		add_state_core = 326
+		transfer_state = 527
+		add_state_core = 527
+		transfer_state = 743
+		add_state_core = 743
+		hidden_effect = {
+			326 = {
+				create_unit = {
+    					division = "name = \"1. Northern Militias\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+   					owner = GOR
+				}
+			}
+			527 = {
+				create_unit = {
+    					division = "name = \"2. Northern Militias\" division_template = \"Militia Division\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+   					owner = GOR
+				}
+			}
+		}
+
+
+	}
+
+}
+
+news_event = {
+	id = yuan.5 #News - Yuan collapses
+    title = yuan.5.t
+    desc = yuan.5.d
+	picture = GFX_event_ITA_news_mussolini_deposto
+
+	is_triggered_only = yes 
+	major = yes
+
+	option = { 
+		name = yuan.5.a # oh deary me.
+		trigger = {
+			tag = YUA
+		}
+
+
+	}
+
+	option = { 
+		name = yuan.5.b # ok
+		trigger = {
+			NOT = {
+
+				tag = YUA
+
+			}
+		}
+
+
+	}
+    
+}
+
+country_event = {
+	id = yuan.6 #Yuan collapses - Ming
+    title = yuan.6.t
+    desc = yuan.6.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = yuan.6.a
+		add_political_power = 25
+
+
+	}
+
+}
+
+country_event = {
+	id = yuan.7 # The Khan assassinated!
+    title = yuan.7.t
+    desc = yuan.7.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = yuan.7.a # Oh dear
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Burij Khan" # A child
+			desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+			picture = "Portrait_China_Chiang_Kai_Shek.dds"
+			expire = "1965.1.1"
+			ideology = khanism
+			traits = {
+				regency_council_trait 
+				child_khan
+			}
+		}
+
+		add_stability = -0.05
+		add_war_support = -0.05
+		hidden_effect = {
+			country_event = {
+				id = yuan.8
+				days = 3
+			}
+		}
+
+
+	}
+
+}
+
+country_event = {
+	id = yuan.8 # Military storms Dadu! (Zhang Litong Coup)
+    title = yuan.8.t
+    desc = yuan.8.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = yuan.8.a # If this couldn't get any worse!
+		add_political_power = -100
+		add_stability = -0.1
+		add_war_support = -0.1
+		hidden_effect = {
+			country_event = {
+				id = yuan.9
+				days = 5
+			}
+		}
+
+
+
+	}
+
+}
+
+country_event = {
+	id = yuan.9 # New gov't begins truce talks
+    title = yuan.9.t
+    desc = yuan.9.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = yuan.9.a # If this couldn't get any worse!
+
+		add_war_support = -0.1
+		hidden_effect = {
+			country_event = {
+				id = sanjiang_revolution.12
+				days = 5
+			}
+		}
+
+
+
+	}
+
+}
+
+country_event = {
+	id = yuan.10 # Merghen Khan dies
+    title = yuan.10.t
+    desc = yuan.10.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = yuan.10.a # rip
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Qadan Khan"
+			desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+			picture = "Portrait_China_Chiang_Kai_Shek.dds"
+			expire = "1965.1.1"
+			ideology = khanism
+			traits = {
+				
+			}
+		}
+
+		add_stability = -0.05
+		add_war_support = -0.05
+		
+		hidden_effect = {
+			country_event = {
+				id = yuan.11
+				days = 15
+			}
+		}
+
+
+
+	}
+
+}
+
+country_event = {
+	id = yuan.11 # The empire stirs...
+    title = yuan.11.t
+    desc = yuan.11.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = yuan.11.a # something is not right
+
+		add_stability = -0.01
+
+		
+		hidden_effect = {
+			country_event = {
+				id = sanjiang_revolution.1
+				days = 15
+			}
+		}
+
+
+
+	}
+
+}
+
+country_event = {
+	id = yuan.12 # assessing the situation
+    title = yuan.12.t
+    desc = yuan.12.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = yuan.12.a # We must ensure our second coming
+		create_faction = YUA_new_faction
+
+		
+	}
+
+
+}
+
+country_event = {
+	id = yuan.13 # oaths of loyalty
+    	title = yuan.13.t
+    	desc = yuan.13.d
+	picture = GFX_report_event_ITA_mussolini_1
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = yuan.13.a # We must ensure our second coming
+		add_political_power = 30
+		add_stability = 0.03
+	}
+}
+
+country_event = {
+	id = yuan.14 # formalise the coronation
+    	title = yuan.14.t
+    	desc = yuan.14.d
+	picture = GFX_report_event_ITA_mussolini_1
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = yuan.14.a # the khan is back
+		add_political_power = 50
+		remove_country_leader_trait = regency_council_trait # regency_council means puppet khan
+
+	}
+}
+
+country_event = {
+	id = yuan.15 # regency council
+    	title = yuan.15.t
+    	desc = yuan.15.d
+	picture = GFX_report_event_ITA_mussolini_1
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = yuan.15.a # advisors to the khan
+		add_stability = 0.05
+
+		add_country_leader_trait = regency_council_real_trait
+
+
+	}
+}
+
+country_event = {
+	id = yuan.16 # reorg govt in karakorum
+    	title = yuan.16.t
+    	desc = yuan.16.d
+	picture = GFX_report_event_ITA_mussolini_1
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = yuan.16.a # advisors to the khan
+		add_political_power = 50
+
+
+	}
+}
+
+country_event = {
+	id = yuan.17 # remake khural
+    	title = yuan.17.t
+    	desc = yuan.17.d
+	picture = GFX_report_event_ITA_mussolini_1
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = yuan.17.a # advisors to the khan
+		add_ideas = YUA_khural_idea
+
+
+	}
+}
+
+country_event = {
+	id = yuan.18 # mongols only in the govt
+    	title = yuan.18.t
+    	desc = yuan.18.d
+	picture = GFX_report_event_ITA_mussolini_1
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = yuan.18.a # advisors to the khan
+		add_popularity = {
+    			ideology = nomadic
+    			popularity = 0.05
+		}
+
+	}
+}
+
+country_event = {
+	id = yuan.19 # XZY relocated
+    	title = yuan.19.t
+    	desc = yuan.19.d
+	picture = GFX_report_event_ITA_mussolini_1
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = yuan.19.a # advisors to the khan
+		add_political_power = 30
+		add_popularity = {
+    			ideology = nomadic
+    			popularity = 0.03
+		}
+
+	}
+}
+
+country_event = {
+	id = yuan.20 # stabilised
+    	title = yuan.20.t
+    	desc = yuan.20.d
+	picture = GFX_report_event_ITA_mussolini_1
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = yuan.19.a # advisors to the khan
+		add_stability = 0.25
+		add_war_support = 0.25
+
+	}
+}

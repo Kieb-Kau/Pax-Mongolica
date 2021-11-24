@@ -1,0 +1,28 @@
+
+state={
+	id=537
+	name="STATE_537"
+	resources={
+	}
+
+	history={
+		owner = AIN
+		add_core_of = AIN
+		buildings = {
+			infrastructure = 1
+
+
+		}
+		victory_points = {
+			12446 1
+		}
+
+	}
+
+	provinces={
+		1322 1755 1820 12446 
+	}
+	manpower=77196
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

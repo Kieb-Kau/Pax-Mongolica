@@ -1,0 +1,22 @@
+﻿l_english:
+ #Buryat
+ BRY_fascism: "Buryat"
+ BRY_fascism_DEF: "Buryat"
+ BRY_neutrality: "Buryat"
+ BRY_neutrality_DEF: "Buryat"
+ BRY_democratic: "Buryat"
+ BRY_democratic_DEF: "Buryat"
+ BRY_communism: "Buryat"
+ BRY_communism_DEF: "Buryat"
+ BRY_fascism_ADJ: "Buryat"
+ BRY_neutrality_ADJ: "Buryat"
+ BRY_democratic_ADJ: "Buryat"
+ BRY_communism_ADJ: "Buryat"
+ 
+ BRY_liberal:0 "Buryat"
+ BRY_liberal_DEF:0 "Buryat"
+ BRY_liberal_ADJ:0 "Buryat"
+ BRY_nomadic:0 "Buryat"
+ BRY_nomadic_DEF:0 "Buryat"
+ BRY_nomadic_ADJ:0 "Buryat"
+ 

@@ -1,0 +1,146 @@
+GEN_make_weapons = {
+	GEN_make_weapons_tribe = {
+		icon = eng_propaganda_campaigns
+		visible = {
+			num_of_military_factories < 1
+			has_idea = tribal_nomadic_army
+		}
+		available = {
+			command_power > 99
+
+		}
+
+		ai_will_do = {
+			factor = 10000
+
+		}
+		days_remove = 25
+		complete_effect = {
+			add_command_power = -100
+
+		}
+       	 	remove_effect = {
+			add_equipment_to_stockpile = {
+    				type = infantry_equipment
+    				amount = 10
+    				producer = ROOT
+			}
+        	}
+	}
+	GEN_make_weapons_small = {
+		icon = eng_propaganda_campaigns
+		visible = {
+			num_of_military_factories < 1
+			NOT = {
+				has_idea = tribal_nomadic_army
+			}
+
+		}
+		available = {
+			command_power > 49
+			NOT = {
+				has_country_flag = GEN_making_weapons
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 10000
+
+		}
+		days_remove = 50
+		complete_effect = {
+			set_country_flag = GEN_making_weapons
+
+			add_command_power = -50
+
+		}
+       	 	remove_effect = {
+			clr_country_flag = GEN_making_weapons
+
+			add_equipment_to_stockpile = {
+    				type = infantry_equipment
+    				amount = 170
+    				producer = ROOT
+			}
+        	}
+	}
+	GEN_make_weapons_medium = {
+		icon = eng_propaganda_campaigns
+		visible = {
+			num_of_military_factories < 1
+
+			NOT = {
+				has_idea = tribal_nomadic_army
+			}
+
+		}
+		available = {
+			command_power > 99
+			num_of_civilian_factories > 0
+			NOT = {
+				has_country_flag = GEN_making_weapons
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 10000
+
+		}
+		days_remove = 75
+		complete_effect = {
+			set_country_flag = GEN_making_weapons
+			add_command_power = -100
+
+		}
+       	 	remove_effect = {
+			clr_country_flag = GEN_making_weapons
+			add_equipment_to_stockpile = {
+    				type = infantry_equipment
+    				amount = 300
+    				producer = ROOT
+			}
+        	}
+	}
+
+	GEN_make_weapons_large = {
+		icon = eng_propaganda_campaigns
+		visible = {
+			num_of_military_factories < 1
+			NOT = {
+				has_idea = tribal_nomadic_army
+			}
+
+		}
+		available = {
+			command_power > 99
+			num_of_civilian_factories > 2
+			NOT = {
+				has_country_flag = GEN_making_weapons
+			}
+
+
+		}
+
+		ai_will_do = {
+			factor = 10000
+
+		}
+		days_remove = 100
+		complete_effect = {
+			set_country_flag = GEN_making_weapons
+			add_command_power = -100
+
+		}
+       	 	remove_effect = {
+			clr_country_flag = GEN_making_weapons
+			add_equipment_to_stockpile = {
+    				type = infantry_equipment
+    				amount = 500
+    				producer = ROOT
+			}
+        	}
+	}
+}

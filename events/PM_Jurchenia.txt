@@ -1,0 +1,275 @@
+ ###########################
+# Jurchen Events
+###########################
+
+add_namespace = jurchenia
+
+country_event = {
+	id = jurchenia.1 #Jurchen de-facto independence
+    title = jurchenia.1.t
+    desc = jurchenia.1.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = { 
+		name = jurchenia.1.a # Finally! A jurchen nation!
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_political_power = 50
+		every_state = {
+			limit = {
+				is_owned_by = JUR
+			}
+			add_core_of = YUA
+		}
+		YUA = {
+			country_event = {
+				id = jurchenia.2
+				days = 30
+			}	
+		}
+	}
+}
+
+country_event = {
+	id = jurchenia.2 #Jurchen de-facto independence exerted - send a mission?
+    title = jurchenia.2.t
+    desc = jurchenia.2.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = jurchenia.2.a # Send a proposal to the Jurchens - we must regain their allegiance
+		JUR = {
+			country_event = {
+				id = jurchenia.3
+				days = 10
+			}	
+		}
+	}
+}
+
+country_event = {
+	id = jurchenia.3 # the Northern Yuan Empire sends a mission
+    title = jurchenia.3.t
+    desc = jurchenia.3.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = jurchenia.3.a # accept their proposal - we are stronger together
+		ai_chance = {
+			base = 40
+			modifier = {
+				has_game_rule = { rule = Jurchen_path option = JURCHEN_JIN_DYNASTY }
+				factor = 0
+			}
+		}
+		custom_effect_tooltip = JUR_become_mongol_tt
+		YUA = {
+			country_event = {
+				id = jurchenia.4
+				days = 4
+			}	
+		}
+	}
+	option = { 
+		name = jurchenia.3.b # We have no need for Mongolia
+		ai_chance = {
+			base = 60
+			modifier = {
+				has_game_rule = { rule = Jurchen_path option = JURCHEN_YUAN_SUBJECT }
+				factor = 0
+			}
+		}
+		YUA = {
+			country_event = {
+				id = jurchenia.5
+				days = 4
+			}	
+		}
+		add_ideas = JUR_unsure_about_yuan
+		set_country_flag = JUR_independent_jurchenia
+	}
+}
+
+country_event = {
+	id = jurchenia.4 # the Jurchens return to the Yuan Empire
+    title = jurchenia.4.t
+    desc = jurchenia.4.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = jurchenia.4.a # Good
+		puppet = JUR
+		hidden_effect = {
+			JUR = {
+				set_popularities = {
+					democratic = 2
+					liberal = 0
+					communism = 0
+					fascism = 0
+					neutrality = 13
+					nomadic = 85
+				}
+			}
+		}
+		every_state = {
+			limit = {
+				is_owned_by = JUR
+			}
+			remove_core_of = YUA
+		}
+	}
+
+}
+
+country_event = {
+	id = jurchenia.5 # the Jurchens refuse!
+    title = jurchenia.5.t
+    desc = jurchenia.5.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = jurchenia.5.a # Damn!
+		
+	}
+
+}
+
+country_event = {
+	id = jurchenia.6 # Time for a jurchen reconquest!
+    title = jurchenia.6.t
+    desc = jurchenia.6.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = jurchenia.6.a # Yes!
+		ai_chance = {
+			base = 100
+
+		}
+		declare_war_on = {
+    			target = LIA
+    			type = annex_everything
+		}
+		add_state_core = 716
+		add_state_core = 328
+		add_state_core = 717
+		add_state_core = 409
+		add_state_claim = 118
+		add_state_claim = 662
+
+	}
+	option = { 
+		name = jurchenia.6.b # coward out
+		ai_chance = {
+			base = 0
+		}
+		add_stability = -0.25
+		add_war_support = -0.25
+		add_political_power = -250
+		
+	}
+
+}
+
+country_event = {
+	id = jurchenia.7 # The reunification of the Jurchens
+    title = jurchenia.7.t
+    desc = jurchenia.7.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = jurchenia.7.a # Yes!
+		add_stability = 0.1
+		add_war_support = 0.1
+		add_political_power = 100
+		hidden_effect = {
+			country_event = {
+				id = jurchenia.8
+				days = 5
+			}	
+		}
+
+	}
+
+
+}
+
+country_event = {
+	id = jurchenia.8 # The restored Jin dynasty!
+    title = jurchenia.8.t
+    desc = jurchenia.8.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+	fire_only_once = yes 
+
+	option = { 
+		name = jurchenia.8.a # Yes!
+
+		add_political_power = 50
+		set_cosmetic_tag = JUR_jin
+		hidden_effect = {
+			news_event = {
+				id = jurchenia.9
+				days = 3
+			}	
+		}
+	}
+}
+
+news_event = {
+	id = jurchenia.9 #News - Jin
+    title = jurchenia.9.t
+    desc = jurchenia.9.d
+	picture = GFX_event_ITA_news_mussolini_deposto
+
+	is_triggered_only = yes 
+	major = yes
+
+	option = { 
+		name = jurchenia.9.a # hurrah1
+		trigger = {
+			tag = JUR
+		}
+
+
+	}
+
+
+	option = { 
+		name = jurchenia.9.b # another new dynasty?
+		trigger = {
+			NOT = {
+				tag = JUR
+
+			}
+		}
+
+
+	}
+
+    
+}

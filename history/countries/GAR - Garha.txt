@@ -1,0 +1,50 @@
+capital = 430 #
+
+oob = "GAR_1936"
+
+
+
+set_stability = 0.5
+set_war_support = 0.5
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+
+
+
+}
+
+add_ideas = {
+	limited_conscription
+	GAR_the_garhs
+	GAR_buffer_state
+	GAR_backwards_industry
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 6
+	liberal = 0
+	communism = 3
+	fascism = 0
+	neutrality = 91
+	nomadic = 0
+}
+
+create_country_leader = {
+	name = "Keerat Shah"
+	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+	picture = "Portrait_China_Chiang_Kai_Shek.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}
+

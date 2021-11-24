@@ -1,0 +1,25 @@
+
+
+
+units = {
+	##### Divisions #####
+	division= {	
+		name = "2. Shaanxi Infantry Division"
+		location = 556
+		division_template = "Traditional Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+
+	division= {	
+		name = "3. Shaanxi Militia"
+		location = 4313
+		division_template = "Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
+	}
+
+
+}

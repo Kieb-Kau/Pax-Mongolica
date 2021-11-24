@@ -1,0 +1,25 @@
+
+state={
+	id=264
+	name="STATE_264"
+
+	history={
+		owner = NOV
+		victory_points = {
+			3140 1 
+		}
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = NOV
+
+	}
+
+	provinces={
+		39 57 85 93 150 152 172 187 194 2999 3035 3077 3085 3101 3140 3142 3143 3163 3176 6056 6131 6169 6203 9060 9082 9107 9111 9153 9177 9184 9190 9333 11048 11059 11083 11084 11093 11131 11154 11165 13129 
+	}
+	manpower=315559
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

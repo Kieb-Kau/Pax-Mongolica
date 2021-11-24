@@ -1,0 +1,174 @@
+###########################
+# Ordos Events - The ordos mongol revolt 
+###########################
+
+add_namespace = ordos
+
+country_event = {
+	id = ordos.1 #The Ordos Revolt begins!
+    title = ordos.1.t
+    desc = ordos.1.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # We will be victorious!
+		name = ordos.1.a
+		add_stability = 0.1
+		add_war_support = 0.1
+		add_ideas = ORD_war_of_independence
+
+		custom_effect_tooltip = ordos_units_will_spawn_tt
+
+		hidden_effect = {
+			load_oob = "ordos_war"
+			transfer_state = 746
+			news_event = {
+				id = ordos.2
+				days = 3
+			}
+			country_event = {
+				id = ordos.3
+				days = 8
+			}
+
+		}
+
+
+	}
+    
+}
+
+news_event = {
+	id = ordos.2 #News - Ordos revolt
+    title = ordos.2.t
+    desc = ordos.2.d
+	picture = GFX_event_ITA_news_mussolini_deposto
+
+	is_triggered_only = yes 
+	major = yes
+
+	option = { 
+		name = ordos.2.a # to war we go!
+		trigger = {
+			tag = ORD
+		}
+
+
+	}
+	option = { 
+		name = ordos.2.b # to war we go!
+		trigger = {
+			tag = MIN
+		}
+
+
+	}
+
+	option = { 
+		name = ordos.2.c # ok
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ORD
+					tag = MIN
+
+				}
+
+			}
+		}
+
+
+	}
+    
+}
+
+country_event = {
+	id = ordos.3 #Alliance with Zheng?
+    title = ordos.3.t
+    desc = ordos.3.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Good for both of us.
+		name = ordos.3.a
+		ai_chance = {
+			base = 70
+		}
+		add_stability = -0.05
+		add_war_support = -0.05
+		add_political_power = -50
+		TNG = {
+			country_event = {
+				id = ordos.4
+				days = 1
+			}
+		}
+
+
+
+	}
+	option = {  # Never will we work with them!
+		name = ordos.3.a
+		ai_chance = {
+			base = 30
+		}
+		add_stability = 0.1
+		add_war_support = 0.1
+		add_political_power = 100
+
+
+
+	}
+    
+}
+country_event = {
+	id = ordos.4 #Alliance with Ordos?
+    title = ordos.4.t
+    desc = ordos.4.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Good for both of us.
+		name = ordos.4.a
+		ai_chance = {
+			base = 100
+		}
+		white_peace = ORD
+		hidden_effect = {
+			SHA = {
+				white_peace = ORD
+			}
+			SHD = {
+				white_peace = ORD
+			}
+			SIC = {
+				white_peace = ORD
+			}
+		}
+
+		add_to_faction = ORD
+
+
+
+	}
+	option = {  # Never will we work with them!
+		name = ordos.3.a
+		ai_chance = {
+			base = 0
+		}
+
+	}
+    
+}

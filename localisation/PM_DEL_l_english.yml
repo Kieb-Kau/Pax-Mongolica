@@ -1,0 +1,24 @@
+﻿l_english:
+ #The Delhi Sultanate (lodi sultanate)
+ DEL_fascism:0 "Sultanate of Delhi"
+ DEL_fascism_DEF:0 "The Sultanate of Delhi"
+ DEL_neutrality:0 "Sultanate of Delhi"
+ DEL_neutrality_DEF:0 "The Sultanate of Delhi"
+ DEL_democratic:0 "Sultanate of Delhi"
+ DEL_democratic_DEF:0 "The Sultanate of Delhi"
+ DEL_communism:0 "Sultanate of Delhi"
+ DEL_communism_DEF:0 "The Sultanate of Delhi"
+ DEL_fascism_ADJ:0 "Delhiite"
+ DEL_neutrality_ADJ:0 "Delhiite"
+ DEL_democratic_ADJ:0 "Delhiite"
+ DEL_communism_ADJ:0 "Delhiite"
+ 
+  
+ DEL_liberal:0 "Sultanate of Delhi"
+ DEL_liberal_DEF:0 "The Sultanate of Delhi"
+ DEL_liberal_ADJ:0 "Delhiite"
+ DEL_nomadic:0 "Sultanate of Delhi"
+ DEL_nomadic_DEF:0 "The Sultanate of Delhi"
+ DEL_nomadic_ADJ:0 "Delhiite"
+ 
+ 

@@ -1,0 +1,22 @@
+
+state={
+	id=434
+	name="STATE_434"
+
+	history={
+		owner = XZY
+		add_core_of = XZY
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		1116 1996 8010 10810 12322 12730 12860 
+	}
+	manpower=241200
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

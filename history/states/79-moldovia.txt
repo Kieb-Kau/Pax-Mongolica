@@ -1,0 +1,28 @@
+state=
+{
+	id=79
+	name="STATE_79"
+	manpower = 526400
+	
+	state_category = rural
+	
+	history=
+	{
+		owner = JOC
+		buildings = {
+
+		}
+		victory_points = {
+			9716 1 
+		}
+		victory_points = {
+			6706 1 
+		}
+		add_core_of = JOC
+	}
+	provinces=
+	{
+723 744 3728 3741 6584 6747 9716 11534 11672 	}
+}
+
+# blame pdx not me

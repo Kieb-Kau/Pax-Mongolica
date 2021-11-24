@@ -1,0 +1,27 @@
+
+state={
+	id=226
+	name="STATE_226" # Dnipropertovsk
+	manpower = 391047
+	
+	state_category = rural
+	
+	resources={
+	}
+
+	history={
+		owner = JOC
+		victory_points = {
+			9463 3 
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = JOC
+	}
+
+	provinces={
+		453 472 486 3508 9463 9479 11452 11461
+	}
+}

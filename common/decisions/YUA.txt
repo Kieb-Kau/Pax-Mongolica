@@ -1,0 +1,607 @@
+YUA_sanjiang_defence = {
+	YUA_recruit_in_hebei = {
+		icon = eng_propaganda_campaigns
+		visible = {
+			OR = {
+				has_war_with = SJR
+				has_war_with = MIN
+			}
+		}
+		available = {
+			614 = {
+				is_fully_controlled_by = YUA
+			}
+
+			NOT = {
+				has_country_flag = YUA_recruiting
+			}
+
+		}
+		fire_only_once = yes
+		highlight_states = {
+			state = 614
+		}
+
+		ai_will_do = {
+			factor = 10000
+
+		}
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = YUA_recruiting
+		}
+       	 	remove_effect = {
+			custom_effect_tooltip = YUA_recruiting_tt_3
+			hidden_effect = {
+				clr_country_flag = YUA_recruiting
+				614 = { 
+					create_unit = {
+    						division = "name = \"1. Hebei Militia\" division_template = \"Militia\" start_experience_factor = 0.0 start_equipment_factor = 0.3"
+   						owner = YUA
+						prioritize_location = 7160
+					}
+					create_unit = {
+    						division = "name = \"2. Hebei Militia\" division_template = \"Militia\" start_experience_factor = 0.0 start_equipment_factor = 0.3"
+   						owner = YUA
+						prioritize_location = 7160
+					}
+					create_unit = {
+    						division = "name = \"3. Hebei Militia\" division_template = \"Militia\" start_experience_factor = 0.0 start_equipment_factor = 0.3"
+   						owner = YUA
+						prioritize_location = 7160
+					}
+				}
+			}
+        	}
+	}
+	YUA_recruit_in_henan = {
+		icon = eng_propaganda_campaigns
+		visible = {
+			OR = {
+				has_war_with = SJR
+				has_war_with = MIN
+			}
+		}
+		available = {
+			607 = {
+				is_fully_controlled_by = YUA
+			}	
+			NOT = {
+				has_country_flag = YUA_recruiting
+			}
+
+		}
+		fire_only_once = yes
+		highlight_states = {
+			state = 607
+		}
+		ai_will_do = {
+			factor = 10000
+
+		}
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = YUA_recruiting
+		}
+       	 	remove_effect = {
+			custom_effect_tooltip = YUA_recruiting_tt_3
+			hidden_effect = {
+				clr_country_flag = YUA_recruiting
+				607 = { 
+					create_unit = {
+    						division = "name = \"1. Henan Militia\" division_template = \"Militia\" start_experience_factor = 0.0 start_equipment_factor = 0.3"
+   						owner = YUA
+						prioritize_location = 9958
+					}
+					create_unit = {
+    						division = "name = \"2. Henan Militia\" division_template = \"Militia\" start_experience_factor = 0.0 start_equipment_factor = 0.3"
+   						owner = YUA
+						prioritize_location = 7126
+					}
+					create_unit = {
+    						division = "name = \"3. Henan Militia\" division_template = \"Militia\" start_experience_factor = 0.0 start_equipment_factor = 0.3"
+   						owner = YUA
+						prioritize_location = 12012
+					}
+				}
+			}
+        	}
+	}
+
+
+	YUA_recruit_in_shaanxi = {
+		icon = eng_propaganda_campaigns
+		visible = {
+			OR = {
+				has_war_with = SJR
+				has_war_with = MIN
+			}
+		}
+		available = {
+			622 = {
+				is_fully_controlled_by = YUA
+			}	
+			NOT = {
+				has_country_flag = YUA_recruiting
+			}
+
+		}
+		fire_only_once = yes
+
+		highlight_states = {
+			state = 622
+		}
+		ai_will_do = {
+			factor = 10000
+
+		}
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = YUA_recruiting
+		}
+       	 	remove_effect = {
+			custom_effect_tooltip = YUA_recruiting_tt_2
+			hidden_effect = {
+				clr_country_flag = YUA_recruiting
+				622 = { 
+					create_unit = {
+    						division = "name = \"1. Shaanxi Militia\" division_template = \"Militia\" start_experience_factor = 0.0 start_equipment_factor = 0.3"
+   						owner = YUA
+						prioritize_location = 8049
+					}
+					create_unit = {
+    						division = "name = \"2. Shaanxi Militia\" division_template = \"Militia\" start_experience_factor = 0.0 start_equipment_factor = 0.3"
+   						owner = YUA
+						prioritize_location = 8049
+					}
+
+				}
+			}
+        	}
+	}
+
+	YUA_recruit_in_sichuan = {
+		icon = eng_propaganda_campaigns
+		visible = {
+			OR = {
+				has_war_with = SJR
+				has_war_with = MIN
+			}
+		}
+		available = {
+			605 = {
+				is_fully_controlled_by = YUA
+			}	
+			NOT = {
+				has_country_flag = YUA_recruiting
+			}
+
+		}
+		fire_only_once = yes
+
+		highlight_states = {
+			state = 605
+		}
+		ai_will_do = {
+			factor = 10000
+
+		}
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = YUA_recruiting
+		}
+       	 	remove_effect = {
+			custom_effect_tooltip = YUA_recruiting_tt_3
+			hidden_effect = {
+				clr_country_flag = YUA_recruiting
+				605 = { 
+					create_unit = {
+    						division = "name = \"1. Sichuan Militia\" division_template = \"Militia\" start_experience_factor = 0.0 start_equipment_factor = 0.3"
+   						owner = YUA
+						prioritize_location = 4925
+					}
+					create_unit = {
+    						division = "name = \"2. Sichuan Militia\" division_template = \"Militia\" start_experience_factor = 0.0 start_equipment_factor = 0.3"
+   						owner = YUA
+						prioritize_location = 6999
+					}
+					create_unit = {
+    						division = "name = \"3. Sichuan Militia\" division_template = \"Militia\" start_experience_factor = 0.0 start_equipment_factor = 0.3"
+   						owner = YUA
+						prioritize_location = 5048
+					}
+
+				}
+			}
+        	}
+	}
+
+	YUA_recruit_in_jingdong = {
+		icon = eng_propaganda_campaigns
+		visible = {
+			OR = {
+				has_war_with = SJR
+				has_war_with = MIN
+			}
+		}
+		available = {
+			597 = {
+				is_fully_controlled_by = YUA
+			}	
+			NOT = {
+				has_country_flag = YUA_recruiting
+			}
+
+		}
+		fire_only_once = yes
+
+		highlight_states = {
+			state = 597
+		}
+		ai_will_do = {
+			factor = 10000
+
+		}
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = YUA_recruiting
+		}
+       	 	remove_effect = {
+			custom_effect_tooltip = YUA_recruiting_tt_2
+			hidden_effect = {
+				clr_country_flag = YUA_recruiting
+				597 = { 
+					create_unit = {
+    						division = "name = \"1. Jingdong Militia\" division_template = \"Militia\" start_experience_factor = 0.0 start_equipment_factor = 0.3"
+   						owner = YUA
+						prioritize_location = 1069
+					}
+					create_unit = {
+    						division = "name = \"2. Jingdong Militia\" division_template = \"Militia\" start_experience_factor = 0.0 start_equipment_factor = 0.3"
+   						owner = YUA
+						prioritize_location = 4071
+					}
+
+				}
+			}
+        	}
+	}
+	YUA_recruit_in_gansu = {
+		icon = eng_propaganda_campaigns
+		visible = {
+			OR = {
+				has_war_with = SJR
+				has_war_with = MIN
+			}
+		}
+		available = {
+			616 = {
+				is_fully_controlled_by = YUA
+			}	
+			NOT = {
+				has_country_flag = YUA_recruiting
+			}
+
+		}
+		fire_only_once = yes
+
+		highlight_states = {
+			state = 616
+		}
+		ai_will_do = {
+			factor = 10000
+
+		}
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = YUA_recruiting
+		}
+       	 	remove_effect = {
+			custom_effect_tooltip = YUA_recruiting_tt_1
+			hidden_effect = {
+				clr_country_flag = YUA_recruiting
+				616 = { 
+					create_unit = {
+    						division = "name = \"1. Gansu Militia\" division_template = \"Militia\" start_experience_factor = 0.0 start_equipment_factor = 0.3"
+   						owner = YUA
+						prioritize_location = 5100
+					}
+
+				}
+			}
+        	}
+	}
+	YUA_recruit_in_liaoyang = {
+		icon = eng_propaganda_campaigns
+		visible = {
+			OR = {
+				has_war_with = SJR
+				has_war_with = MIN
+			}
+		}
+		available = {
+			716 = {
+				is_fully_controlled_by = YUA
+			}	
+			NOT = {
+				has_country_flag = YUA_recruiting
+			}
+
+		}
+		fire_only_once = yes
+
+		highlight_states = {
+			state = 716
+		}
+		ai_will_do = {
+			factor = 10000
+
+		}
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = YUA_recruiting
+		}
+       	 	remove_effect = {
+			custom_effect_tooltip = YUA_recruiting_tt_2
+			hidden_effect = {
+				clr_country_flag = YUA_recruiting
+				716 = { 
+					create_unit = {
+    						division = "name = \"1. Liaoyang Militia\" division_template = \"Militia\" start_experience_factor = 0.0 start_equipment_factor = 0.3"
+   						owner = YUA
+						prioritize_location = 1150
+					}
+					create_unit = {
+    						division = "name = \"2. Liaoyang Militia\" division_template = \"Militia\" start_experience_factor = 0.0 start_equipment_factor = 0.3"
+   						owner = YUA
+						prioritize_location = 11771
+					}
+
+				}
+			}
+        	}
+	}
+	YUA_recruit_in_lingbei = {
+		icon = eng_propaganda_campaigns
+		visible = {
+			OR = {
+				has_war_with = SJR
+				has_war_with = MIN
+			}
+		}
+		available = {
+			330 = {
+				is_fully_controlled_by = YUA
+			}	
+			NOT = {
+				has_country_flag = YUA_recruiting
+			}
+
+		}
+		fire_only_once = yes
+
+		highlight_states = {
+			state = 330
+		}
+		ai_will_do = {
+			factor = 10000
+
+		}
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = YUA_recruiting
+		}
+       	 	remove_effect = {
+			custom_effect_tooltip = YUA_recruiting_tt_2
+			hidden_effect = {
+				clr_country_flag = YUA_recruiting
+				330 = { 
+					create_unit = {
+    						division = "name = \"1. Lingbei Militia\" division_template = \"Militia\" start_experience_factor = 0.0 start_equipment_factor = 0.3"
+   						owner = YUA
+						prioritize_location = 4732
+					}
+					create_unit = {
+    						division = "name = \"2. Lingbei Militia\" division_template = \"Militia\" start_experience_factor = 0.0 start_equipment_factor = 0.3"
+   						owner = YUA
+						prioritize_location = 4801
+					}
+
+				}
+			}
+        	}
+	}
+	YUA_recruit_in_zhongshu = {
+		icon = eng_propaganda_campaigns
+		visible = {
+			OR = {
+				has_war_with = SJR
+				has_war_with = MIN
+			}
+		}
+		available = {
+			608 = {
+				is_fully_controlled_by = YUA
+			}	
+			NOT = {
+				has_country_flag = YUA_recruiting
+			}
+
+		}
+		fire_only_once = yes
+
+		highlight_states = {
+			state = 608
+		}
+		ai_will_do = {
+			factor = 10000
+
+		}
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = YUA_recruiting
+		}
+       	 	remove_effect = {
+			custom_effect_tooltip = YUA_recruiting_tt_2
+			hidden_effect = {
+				clr_country_flag = YUA_recruiting
+				608 = { 
+					create_unit = {
+    						division = "name = \"1. Zhongshu Militia\" division_template = \"Militia\" start_experience_factor = 0.0 start_equipment_factor = 0.3"
+   						owner = YUA
+						prioritize_location = 9843
+					}
+					create_unit = {
+    						division = "name = \"2. Zhongshu Militia\" division_template = \"Militia\" start_experience_factor = 0.0 start_equipment_factor = 0.3"
+   						owner = YUA
+						prioritize_location = 9843
+					}
+					create_unit = {
+    						division = "name = \"3. Zhongshu Militia\" division_template = \"Militia\" start_experience_factor = 0.0 start_equipment_factor = 0.3"
+   						owner = YUA
+						prioritize_location = 10068
+					}
+
+				}
+			}
+        	}
+	}
+	YUA_recruit_in_jiangbei = {
+		icon = eng_propaganda_campaigns
+		visible = {
+			OR = {
+				has_war_with = SJR
+				has_war_with = MIN
+			}
+		}
+		available = {
+			598 = {
+				is_fully_controlled_by = YUA
+			}	
+			NOT = {
+				has_country_flag = YUA_recruiting
+			}
+
+		}
+		fire_only_once = yes
+
+		highlight_states = {
+			state = 598
+		}
+		ai_will_do = {
+			factor = 10000
+
+		}
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = YUA_recruiting
+		}
+       	 	remove_effect = {
+			custom_effect_tooltip = YUA_recruiting_tt_1
+			hidden_effect = {
+				clr_country_flag = YUA_recruiting
+				598 = { 
+					create_unit = {
+    						division = "name = \"1. Jiangbei Loyalist Militia\" division_template = \"Militia\" start_experience_factor = 0.0 start_equipment_factor = 0.3"
+   						owner = YUA
+						prioritize_location = 4123
+					}
+
+				}
+			}
+        	}
+	}
+	YUA_recruit_in_jiangzhe = {
+		icon = eng_propaganda_campaigns
+		visible = {
+			OR = {
+				has_war_with = SJR
+				has_war_with = MIN
+			}
+		}
+		available = {
+			596 = {
+				is_fully_controlled_by = YUA
+			}	
+			NOT = {
+				has_country_flag = YUA_recruiting
+			}
+
+		}
+		fire_only_once = yes
+
+		highlight_states = {
+			state = 596
+		}
+		ai_will_do = {
+			factor = 10000
+
+		}
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = YUA_recruiting
+		}
+       	 	remove_effect = {
+			custom_effect_tooltip = YUA_recruiting_tt_1
+			hidden_effect = {
+				clr_country_flag = YUA_recruiting
+				596 = { 
+					create_unit = {
+    						division = "name = \"1. Jiangzhe Loyalist Militia\" division_template = \"Militia\" start_experience_factor = 0.0 start_equipment_factor = 0.3"
+   						owner = YUA
+						prioritize_location = 7191
+					}
+
+				}
+			}
+        	}
+	}
+	YUA_recruit_in_jiangxi = {
+		icon = eng_propaganda_campaigns
+		visible = {
+			OR = {
+				has_war_with = SJR
+				has_war_with = MIN
+			}
+		}
+		available = {
+			600 = {
+				is_fully_controlled_by = YUA
+			}	
+			NOT = {
+				has_country_flag = YUA_recruiting
+			}
+
+		}
+		fire_only_once = yes
+
+		highlight_states = {
+			state = 600
+		}
+		ai_will_do = {
+			factor = 10000
+
+		}
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = YUA_recruiting
+		}
+       	 	remove_effect = {
+			custom_effect_tooltip = YUA_recruiting_tt_2
+			hidden_effect = {
+				clr_country_flag = YUA_recruiting
+				600 = { 
+					create_unit = {
+    						division = "name = \"1. Jiangxi Loyalist Militia\" division_template = \"Militia\" start_experience_factor = 0.0 start_equipment_factor = 0.3"
+   						owner = YUA
+						prioritize_location = 3992
+					}
+
+
+				}
+			}
+        	}
+	}
+
+
+}

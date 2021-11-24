@@ -1,0 +1,30 @@
+
+state={
+	id=228
+	name="STATE_228"
+
+	history={
+		owner = JOC
+		victory_points = {
+			11559 5 
+		}
+
+		buildings = {
+			infrastructure = 3
+			11559 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = JOC
+
+	}
+
+	provinces={
+		585 765 6783 9744 11559 
+	}
+	manpower=967411
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,26 @@
+
+state={
+	id=398
+	name="STATE_398"
+
+	history={
+		owner = JOC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			11195 5 
+		}
+		add_core_of = JOC
+
+	}
+
+	provinces={
+		123 189 390 1336 1365 1754 3127 4326 4372 6025 7346 7375 9283 11111 11195 11228 11352 12175 12187 12216 12527 
+	}
+	manpower=1835879
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

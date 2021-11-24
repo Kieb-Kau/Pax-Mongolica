@@ -1,0 +1,141 @@
+
+division_template = {
+	name = "Infantry Division"				# Imperial Guards 
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+
+
+	}
+	support = {
+      	 	engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Guard of the Rus"				# Imperial Guards 
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+
+
+	}
+		is_locked = yes
+	support = {
+      	 	engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	##### Divisions #####
+	division= {	
+		name = "1. Infantry Division"
+		location = 11248
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "2. Infantry Division"
+		location = 11368
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "3. Infantry Division"
+		location = 6262
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "4. Infantry Division"
+		location = 6262
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "5. Infantry Division"
+		location = 3376
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "6. Infantry Division"
+		location = 328
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "7. Infantry Division"
+		location = 3250
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "8. Infantry Division"
+		location = 9273
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "9. Infantry Division"
+		location = 3302
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "10. Infantry Division"
+		location = 3275
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "Guard of the Rus"
+		location = 11248
+		division_template = "Infantry Division"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+
+
+}

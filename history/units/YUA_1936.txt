@@ -1,0 +1,347 @@
+division_template = {
+	name = "Yuan Infantry Division"				# Imperial Guards 
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 4 y = 0 }
+		infantry = { x = 4 y = 1 }
+
+	}
+	is_locked = yes
+}
+
+division_template = {
+	name = "Frontier Garrison"				# Imperial Guards 
+
+	regiments = {
+		garrison = { x = 0 y = 0 }
+		garrison = { x = 0 y = 1 }
+		garrison = { x = 1 y = 0 }
+		garrison = { x = 1 y = 1 }
+
+	}
+	is_locked = yes
+}
+
+division_template = {
+	name = "Keshig"				# Imperial Guards 
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 3 y = 0 }
+		cavalry = { x = 3 y = 1 }
+		cavalry = { x = 4 y = 0 }
+		cavalry = { x = 4 y = 1 }
+
+	}
+	is_locked = yes
+}
+
+division_template = {
+	name = "Tumen"				# Mongol Cavalry 
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 3 y = 0 }
+		cavalry = { x = 3 y = 1 }
+		cavalry = { x = 4 y = 0 }
+		cavalry = { x = 4 y = 1 }
+
+	}
+}
+
+division_template = {
+	name = "Militia"				# Militia 
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 0 y = 3 }
+		militia = { x = 0 y = 4 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 1 y = 3 }
+		militia = { x = 1 y = 4 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		militia = { x = 2 y = 2 }
+		militia = { x = 2 y = 3 }
+		militia = { x = 2 y = 4 }
+		militia = { x = 3 y = 0 }
+		militia = { x = 3 y = 1 }
+		militia = { x = 3 y = 2 }
+		militia = { x = 3 y = 3 }
+		militia = { x = 3 y = 4 }
+		militia = { x = 4 y = 0 }
+		militia = { x = 4 y = 1 }
+		militia = { x = 4 y = 2 }
+		militia = { x = 4 y = 3 }
+		militia = { x = 4 y = 4 }
+
+
+	}
+	is_locked = yes
+}
+
+units = {
+	##### Suwei #####
+	division= {	
+		name = "1. Infantry Division"
+		location = 9843
+		division_template = "Yuan Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		name = "10. Infantry Division"
+		location = 9843
+		division_template = "Yuan Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		name = "2. Infantry Division"
+		location = 11913
+		division_template = "Yuan Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		name = "3. Infantry Division"
+		location = 1047
+		division_template = "Yuan Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		name = "4. Infantry Division"
+		location = 6999
+		division_template = "Yuan Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		name = "5. Infantry Division"
+		location = 11771
+		division_template = "Yuan Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		name = "6. Infantry Division"
+		location = 4732
+		division_template = "Yuan Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		name = "7. Infantry Division"
+		location = 7418
+		division_template = "Yuan Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		name = "8. Infantry Division"
+		location = 4075
+		division_template = "Yuan Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		name = "9. Infantry Division"
+		location = 1330
+		division_template = "Yuan Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+
+	division= {	
+		name = "11. Infantry Division"
+		location = 3992
+		division_template = "Yuan Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		name = "12. Infantry Division"
+		location = 4052
+		division_template = "Yuan Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+
+	##### Garrisons #####
+	division= {	
+		name = "Ainu Garrison"
+		location = 10444
+		division_template = "Frontier Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "North Liaoyang Garrison"
+		location = 10433
+		division_template = "Frontier Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "Hexi Garrison"
+		location = 4704
+		division_template = "Frontier Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "West Lingbei Garrison"
+		location = 10563
+		division_template = "Frontier Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "Northern Frontier Garrison"
+		location = 10627
+		division_template = "Frontier Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "Mianzhong Garrison"
+		location = 1492
+		division_template = "Frontier Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "Northern Zhengnan Garrison"
+		location = 7408
+		division_template = "Frontier Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "Southern Zhengnan Garrison"
+		location = 12299
+		division_template = "Frontier Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "Liaoyang Frontier Garrison"
+		location = 7868
+		division_template = "Frontier Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "Tibet Garrison"
+		location = 1991
+		division_template = "Frontier Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "Shaanxi Garrison"
+		location = 8049
+		division_template = "Frontier Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "Zhancheng Garrison"
+		location = 4401
+		division_template = "Frontier Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	##### Keshigs #####
+
+	division= {	
+		name = "Yuan Keshig"
+		location = 4732
+		division_template = "Keshig"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {	
+		name = "1. Tumen"
+		location = 4572
+		division_template = "Tumen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "2. Tumen"
+		location = 12732
+		division_template = "Tumen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "3. Tumen"
+		location = 11752
+		division_template = "Tumen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "4. Tumen"
+		location = 957
+		division_template = "Tumen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+
+
+
+}

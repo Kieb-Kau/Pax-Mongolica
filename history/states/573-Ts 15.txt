@@ -1,0 +1,25 @@
+
+state={
+	id=573
+	name="STATE_573"
+	resources={
+	}
+
+	history={
+
+		owner = ILK
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ILK
+
+	}
+
+	provinces={
+		1493 1593 4599 7477 7563 7618 7635 8099 10359 12491 
+	}
+	manpower=55555
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

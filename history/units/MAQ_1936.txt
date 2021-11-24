@@ -1,0 +1,75 @@
+division_template = {
+	name = "Ma Infantry Division"				# Infantry 
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+
+
+	}
+	is_locked = yes
+
+}
+
+division_template = {
+	name = "Militia Division"				# 
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		militia = { x = 3 y = 0 }
+		militia = { x = 3 y = 1 }
+		militia = { x = 4 y = 0 }
+		militia = { x = 4 y = 1 }
+
+	}
+}
+
+units = {
+	##### Suwei #####
+	division= {	
+		name = "1. Ma Infantry Division"
+		location = 12732
+		division_template = "Ma Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+	division= {	
+		name = "2. Ma Infantry Division"
+		location = 12750
+		division_template = "Ma Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		name = "1. Militia Division"
+		location = 4783
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		name = "Gansu Militai Division"
+		location = 7511
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.5
+
+	}
+
+
+
+}

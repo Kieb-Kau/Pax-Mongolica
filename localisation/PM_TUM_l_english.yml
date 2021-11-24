@@ -1,0 +1,26 @@
+﻿l_english:
+ #Tumed
+ TUM_fascism: "Tumed"
+ TUM_fascism_DEF: "Tumed"
+ TUM_neutrality: "Tumed"
+ TUM_neutrality_DEF: "Tumed"
+ TUM_democratic: "Tumed"
+ TUM_democratic_DEF: "Tumed"
+ TUM_communism: "Tumed"
+ TUM_communism_DEF: "Tumed"
+ TUM_fascism_ADJ: "Tumed"
+ TUM_neutrality_ADJ: "Tumed"
+ TUM_democratic_ADJ: "Tumed"
+ TUM_communism_ADJ: "Tumed"
+ 
+ TUM_liberal:0 "Tumed"
+ TUM_liberal_DEF:0 "Tumed"
+ TUM_liberal_ADJ:0 "Tumed"
+ TUM_nomadic:0 "Tumed"
+ TUM_nomadic_DEF:0 "Tumed"
+ TUM_nomadic_ADJ:0 "Tumed"
+ 
+ nomadic_recruitment_cat:0 "Nomadic Recruitment"
+ nomadic_recruitment_descision:0 "Raise Nomadic Militias"
+ nomadic_recruiting_stopper:0 "We've already Raised Nomadic Militias!"
+ nomadic_recruiting_tt:0 "§GTwo Nomadic Militia Units will be raised!§!"

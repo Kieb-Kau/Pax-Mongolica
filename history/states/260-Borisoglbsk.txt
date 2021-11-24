@@ -1,0 +1,23 @@
+
+state={
+	id=260
+	name="STATE_260"
+
+	history={
+		owner = JOC
+		buildings = {
+			infrastructure = 3
+
+		}
+
+		add_core_of = JOC
+
+	}
+
+	provinces={
+		413 437 510 3469 3504 3527 3566 6428 6477 6494 6553 6587 9448 9529 9552 11396 11412 11475 11540 
+	}
+	manpower=327983
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,29 @@
+﻿l_english:
+ #JAPAN
+ JPN_fascism:0 "Empire of Japan"
+ JPN_fascism_DEF:0 "The Empire of Japan"
+ JPN_neutrality:0 "Empire of Japan"
+ JPN_neutrality_DEF:0 "The Empire of Japan"
+ JPN_democratic:0 "Empire of Japan"
+ JPN_democratic_DEF:0 "The Empire of Japan"
+ JPN_communism:0 "Empire of Japan"
+ JPN_communism_DEF:0 "The Empire of Japan"
+ JPN_fascism_ADJ:0 "Japanese"
+ JPN_neutrality_ADJ:0 "Japanese"
+ JPN_democratic_ADJ:0 "Japanese"
+ JPN_communism_ADJ:0 "Japanese"
+ 
+ JPN_liberal:0 "Empire of Japan"
+ JPN_liberal_DEF:0 "The Empire of Japan"
+ JPN_liberal_ADJ:0 "Japanese"
+ JPN_nomadic:0 "Empire of Japan"
+ JPN_nomadic_DEF:0 "The Empire of Japan"
+ JPN_nomadic_ADJ:0 "Japanese"
+ 
+ JPN_ezo_treaty_tt:0 "As long as the §YEzo Treaty§W is in effect, Japan will never truly be free..."
+ JPN_ezo_treaty_broken_tt:0 "We will break the §YEzo Treaty§W, and demand §YAinu §!submission!"
+ JPN_tsugaru_incident_tt:0 "An §YIncident§W will be staged, providing us the §YCausus Belli §Wto §Rinvade Ezo!§!"
+ JPN_ainu_rejected_puppet:0 "§RThe Ainu rejected our most generous offer.§!"
+ JPN_ainu_accepted_puppet:0 "§CThe Ainu accepted our offer of protection.§!"
+ 
+ JPN_nullify_the_ezo_treaty:0 "Demand Ainu Submission"

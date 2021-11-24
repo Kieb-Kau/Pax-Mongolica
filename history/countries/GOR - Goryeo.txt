@@ -1,0 +1,60 @@
+capital = 729 # Macau - acts as Kaesong
+
+oob = "GOR_1936"
+
+set_cosmetic_tag = GOR_ZD
+
+
+set_stability = 0.5
+set_war_support = 0.5
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	tech_support = 1
+
+
+}
+add_ideas = {
+	GOR_the_fine_balance
+	GOR_ethnic_tension
+	GOR_archaic_industry
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 13
+	liberal = 0
+	communism = 8
+	fascism = 16
+	neutrality = 60
+	nomadic = 3
+}
+
+create_country_leader = {
+	name = "Kim Yoo Sung" # Obviously change this later
+	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+	picture = "Portrait_China_Chiang_Kai_Shek.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Guyugiin Luvsan" # Obviously change this later
+	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+	picture = "Portrait_China_Chiang_Kai_Shek.dds"
+	expire = "1965.1.1"
+	ideology = established_government_horde
+	traits = {
+		
+	}
+}

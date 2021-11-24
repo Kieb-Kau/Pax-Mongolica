@@ -1,0 +1,96 @@
+ideas = {
+	
+	country = {
+		LIA_the_kan_clique = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.5
+				stability_factor = 0.05
+				war_support_factor = 0.05
+
+			}
+		}
+		LIA_unstable_domain = { # incompetent army
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+				army_speed_factor = -0.2
+				army_morale_factor = -0.2
+				army_org_factor = -0.2
+
+
+
+
+
+			}
+		}
+
+		LIA_archaic_industry = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.66
+				industrial_capacity_factory = -0.66
+				industrial_capacity_dockyard = -0.66
+				production_factory_max_efficiency_factor = -0.66
+				research_speed_factor = -0.66
+
+			}
+		}
+		LYM_collapse = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.8
+				army_defence_factor = -0.8
+				army_speed_factor = -0.4
+				ai_focus_defense_factor = 10.0
+			}
+		}
+
+	}
+	
+
+
+
+
+}

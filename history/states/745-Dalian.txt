@@ -1,0 +1,31 @@
+
+state={
+	id=745 # Tsushima
+	name="STATE_745"
+
+	history={
+		owner = YUA
+		add_core_of = YUA
+
+		buildings = {
+			infrastructure = 2
+			10011 = {
+				naval_base = 1
+			}
+
+
+
+		}
+		victory_points = {
+			10011 1 
+		}
+
+	}
+
+	provinces={
+		10011 
+	}
+	manpower=31384
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+}

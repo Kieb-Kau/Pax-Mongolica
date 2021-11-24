@@ -1,0 +1,22 @@
+﻿l_english:
+ #WAS the Evenki, but now used for Daguur, because i am stupid
+ SEV_fascism: "Daguur"
+ SEV_fascism_DEF: "Daguur"
+ SEV_neutrality: "Daguur"
+ SEV_neutrality_DEF: "Daguur"
+ SEV_democratic: "Daguur"
+ SEV_democratic_DEF: "Daguur"
+ SEV_communism: "Daguur"
+ SEV_communism_DEF: "Daguur"
+ SEV_fascism_ADJ: "Daguur"
+ SEV_neutrality_ADJ: "Daguur"
+ SEV_democratic_ADJ: "Daguur"
+ SEV_communism_ADJ: "Daguur"
+ 
+ SEV_liberal:0 "Daguur"
+ SEV_liberal_DEF:0 "Daguur"
+ SEV_liberal_ADJ:0 "Daguur"
+ SEV_nomadic:0 "Daguur"
+ SEV_nomadic_DEF:0 "Daguur"
+ SEV_nomadic_ADJ:0 "Daguur"
+ 

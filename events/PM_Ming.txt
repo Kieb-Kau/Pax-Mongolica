@@ -1,0 +1,1276 @@
+###########################
+# Ming Events - Doesn't cover Tungning
+###########################
+
+add_namespace = ming
+
+country_event = {
+	id = ming.1 #Victory over the Yuan!
+    title = ming.1.t
+    desc = ming.1.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Victory is ours!
+		name = ming.1.a
+		custom_effect_tooltip = MIN_disbanding_tt
+		set_cosmetic_tag = MIN_greatming
+		hidden_effect = {
+			delete_unit_template_and_units = {
+    				division_template = "Revolutionary Infantry"
+    				disband = no
+			}
+			delete_unit_template_and_units = {
+    				division_template = "Revolutionary Militia"
+    				disband = no
+			}
+			delete_unit_template_and_units = {
+    				division_template = "Northern Volunteers"
+    				disband = no
+			}
+
+		}
+		add_popularity = {
+    			ideology = neutrality
+    			popularity = 0.05
+		}
+		hidden_effect = {
+			country_event = {
+				id = ming.2
+				days = 3
+			}
+			country_event = {
+				id = ming.7
+				days = 20
+			}
+		}
+		set_country_flag = MIN_won_in_china
+
+
+	}
+    
+}
+
+country_event = {
+	id = ming.2 #Anarchy in China
+    title = ming.2.t
+    desc = ming.2.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Well then, we will have to sort that out
+		name = ming.2.a
+		add_stability = -0.5
+		add_war_support = -0.5
+		add_political_power = -300
+		hidden_effect = {
+			country_event = {
+				id = ming.3
+				days = 10000 #Ordos revolt temporarily suspended
+			}
+		}
+
+
+	}
+    
+}
+
+country_event = {
+	id = ming.3 #Revolt of the Ordos mongols
+    title = ming.3.t
+    desc = ming.3.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Well then, we will have to sort that out
+		name = ming.3.a
+		add_stability = -0.01
+		add_war_support = -0.01
+		ORD = {
+			transfer_state = 746
+			add_state_core = 746
+		}
+		declare_war_on = {
+    			target = ORD
+    			type = annex_everything
+		}
+		IF = {
+			limit = {
+				SHA = {
+					exists = yes
+				}
+			}
+			SHA = {
+				declare_war_on = {
+    					target = ORD
+    					type = annex_everything
+				}
+			}
+			else = {
+				TNG = {
+					declare_war_on = {
+    						target = ORD
+    						type = annex_everything
+					}
+				}
+			}
+		}
+
+
+		hidden_effect = {
+			ORD = {
+				country_event = {
+					id = ordos.1
+					days = 1
+				}
+			}
+		}
+
+
+
+	}
+    
+}
+
+country_event = {
+	id = ming.4 #Ming Intro Event
+    title = ming.4.t
+    desc = ming.4.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Cool
+		name = ming.4.a
+
+
+
+	}
+    
+}
+
+country_event = {
+	id = ming.5 #A capital for a new empire
+    	title = ming.5.t
+    	desc = ming.5.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Hangzhou! Dongjing
+		name = ming.5.a
+		ai_chance = {
+			base = 30
+		}
+		set_country_flag = hangzhou_chosen
+		custom_effect_tooltip = MIN_anger_traditionalists_tt
+		custom_effect_tooltip = MIN_two_to_zheng
+		add_to_variable = {
+			var = MIN_zheng_power
+			value = 2
+		}
+		
+		596 = {
+			set_province_name = { id = 7191 name = "Dongjing" }
+			add_building_construction = {
+    				type = infrastructure 
+    				level = 1
+    				instant_build = yes
+			}
+
+		}
+
+		hidden_effect = {
+			613 = {
+				set_state_name = "Nanjing"
+				set_province_name = { id = 11913 name = "Nanjing" }
+
+			}
+
+
+		}
+
+
+
+	}
+	option = {  # Nanjing!
+		name = ming.5.b
+		ai_chance = {
+			base = 40
+		}
+		set_country_flag = nanjing_chosen
+
+		custom_effect_tooltip = MIN_compromise_tt
+		custom_effect_tooltip = MIN_one_each
+		add_to_variable = {
+			var = MIN_zheng_power
+			value = 1
+		}
+		add_to_variable = {
+			var = MIN_emperor_power
+			value = 1
+		}
+
+		set_capital = 613
+		613 = {
+			set_state_name = "Nanjing"
+			set_province_name = { id = 11913 name = "Nanjing" }
+			add_building_construction = {
+    				type = infrastructure 
+    				level = 1
+    				instant_build = yes
+			}
+
+		}
+
+	}
+	option = {  # Xian
+		name = ming.5.c
+		ai_chance = {
+			base = 30
+		}
+		set_country_flag = xian_chosen
+
+		custom_effect_tooltip = MIN_anger_zheng_clique_tt
+		custom_effect_tooltip = MIN_two_to_emperor
+		add_to_variable = {
+			var = MIN_emperor_power
+			value = 2
+		}
+		set_capital = 744
+		744 = {
+			set_state_name = "Xijing"
+			set_province_name = { id = 7301 name = "Xijing" }
+			add_building_construction = {
+    				type = infrastructure 
+    				level = 1
+    				instant_build = yes
+			}
+
+		}
+
+		hidden_effect = {
+			613 = {
+				set_state_name = "Nanjing"
+				set_province_name = { id = 11913 name = "Nanjing" }
+
+			}
+
+		}
+
+
+	}
+    
+}
+
+country_event = {
+	id = ming.6 #The Changan incident - Anti-emperor Coup by Zhengists
+    title = ming.6.t
+    desc = ming.6.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Oh dear
+		name = ming.6.a
+		custom_effect_tooltip = MIN_zheng_revolt_tt
+		hidden_effect = { # bracket start
+		load_oob = "MIN_ming_revolts"
+
+
+		remove_ideas = MIN_the_ming_fleet
+		remove_ideas = MIN_zheng_kefang_military_government
+		add_ideas = zheng_war_no_surrender_idea
+
+		TNG = { # By default, Zheng starts with Jiangxi and Tungning
+			transfer_state = 592
+			transfer_state = 593
+			transfer_state = 600
+			transfer_state = 524
+			add_state_core = 592
+			add_state_core = 593
+			add_state_core = 600
+			add_state_core = 524
+			load_oob = "TNG_default"
+			add_ideas = MIN_the_ming_fleet
+			add_ideas = zheng_war_no_surrender_idea
+			add_timed_idea = {
+				idea = zheng_high_war_momentum
+				days = 90
+			}
+			country_event = {
+				id = ming.18
+				days = 90
+			}
+
+
+		}
+		transfer_navy = {
+    			target = TNG
+		}
+		IF = {
+			limit = {
+				OR = {
+					has_country_flag = MIN_provincial_armies_crushed
+					has_country_flag = hangzhou_chosen
+					has_country_flag = nanjing_chosen
+
+				}
+			}
+			TNG = {
+				transfer_state = 595
+				transfer_state = 596
+				add_state_core = 595
+				add_state_core = 596
+				load_oob = "TNG_jiangzhe"
+			}
+		}
+		TNG = {
+			create_faction = MIN_TNG_faction
+		}
+		declare_war_on = {
+    			target = TNG
+    			type = annex_everything
+		}
+
+		SIC = {
+			transfer_state = 605
+			add_state_core = 605
+			load_oob = "SIC_default"
+
+
+
+		}
+		IF = {
+			limit = {
+				has_country_flag = MIN_provincial_armies_kept
+			}
+			SIC = {
+				transfer_state = 753
+				add_state_core = 753
+				load_oob = "SIC_gannan"
+
+
+			}
+		}
+		IF = {
+			limit = {
+				NOT = {
+					has_country_flag = xian_chosen
+				}
+			}
+			SHA = {
+				transfer_state = 622
+				add_state_core = 622
+				load_oob = "SHA_default"
+
+
+			}
+			TNG = {
+				add_to_faction = SHA
+			}
+			SHA = {
+				add_to_war = { 
+    					targeted_alliance = TNG 
+    					enemy = MIN 
+    					hostility_reason = asked_to_join
+				}
+			}
+		}
+		IF = {
+			limit = {
+				NOT = {
+					has_country_flag = xian_chosen
+				}
+				has_country_flag = MIN_provincial_armies_kept
+
+			}
+			SHA = {
+				transfer_state = 283
+				add_state_core = 283
+				load_oob = "SHA_gansu"
+
+
+			}
+		}
+		IF = {
+			limit = {
+				OR = {
+					has_country_flag = MIN_provincial_armies_crushed
+					has_country_flag = xian_chosen
+
+				}
+
+			}
+			SHD = {
+				transfer_state = 597
+				add_state_core = 597
+				load_oob = "SHD_default"
+
+
+			}
+			TNG = {
+				add_to_faction = SHD
+			}
+			SHD = {
+				add_to_war = { 
+    					targeted_alliance = TNG 
+    					enemy = MIN 
+    					hostility_reason = asked_to_join
+				}
+			}
+
+		}
+
+		TNG = {
+			add_to_faction = SIC
+		}
+		SIC = {
+			add_to_war = { 
+    				targeted_alliance = TNG 
+    				enemy = MIN 
+    				hostility_reason = asked_to_join
+			}
+		}
+		hidden_effect = {
+			IF = {
+				limit = {
+					LYM = {
+						has_war_with = LIA
+					}
+				}
+				LYM = {
+					country_event = {
+						id = liaoyangtribal.16
+					}
+				}
+			}
+			country_event = {
+				id = ming.3
+				days = 5
+			}
+			
+		}
+		} # end of hidden effect
+
+
+
+	}
+}
+
+country_event = {
+	id = ming.7 #Struggle between Zheng and the emperor
+    	title = ming.7.t
+    	desc = ming.7.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # They must be dealt with
+		name = ming.7.a
+		add_stability = -0.1
+		add_political_power = -100
+		hidden_effect = {
+			country_event = {
+				id = ming.8
+				days = 20
+			}
+		}
+
+
+
+	}
+    
+}
+country_event = {
+	id = ming.8 #A conference planned between Zheng and the emperor
+    	title = ming.8.t
+    	desc = ming.8.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Hopefully this will be helpful
+		name = ming.8.a
+		add_stability = 0.05
+		custom_effect_tooltip = MIN_conference_tt
+		hidden_effect = {
+			country_event = {
+				id = ming.5
+				days = 10
+			}
+			country_event = {
+				id = ming.9
+				days = 25
+			}
+			country_event = {
+				id = ming.10
+				days = 40
+			}
+			country_event = {
+				id = ming.11
+				days = 65
+			}
+			country_event = {
+				id = ming.12
+				days = 80
+			}
+		}
+		set_country_flag = MIN_conference_start
+
+	}
+    
+}
+
+country_event = {
+	id = ming.9 # Rebuilding efforts in China?
+    	title = ming.9.t
+    	desc = ming.9.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # We must siphon from the military budget 
+		name = ming.9.a
+		ai_chance = {
+			base = 50
+		}
+		set_country_flag = MIN_military_budget_siphoned
+		custom_effect_tooltip = MIN_military_budget_siphoned_tt
+		custom_effect_tooltip = MIN_one_to_emperor
+		add_to_variable = {
+			var = MIN_emperor_power
+			value = 1
+		}
+		add_war_support = -0.1
+	}
+	option = {  # The military budget is too important
+		name = ming.9.b
+		ai_chance = {
+			base = 50
+		}
+		set_country_flag = MIN_military_budget_kept
+		custom_effect_tooltip = MIN_military_budget_kept_tt
+		custom_effect_tooltip = MIN_one_to_zheng
+		add_to_variable = {
+			var = MIN_zheng_power
+			value = 1
+		}
+		add_stability = -0.1
+	}
+}
+
+country_event = {
+	id = ming.10 # The archaic province system
+    	title = ming.10.t
+    	desc = ming.10.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # We can maintain the yuan provincial system, currently favouring the emperor's faction
+		name = ming.10.a
+		ai_chance = {
+			base = 50
+		}
+		custom_effect_tooltip = MIN_provincial_system_kept_tt
+
+		custom_effect_tooltip = MIN_one_to_emperor
+		add_to_variable = {
+			var = MIN_emperor_power
+			value = 1
+		}
+		add_political_power = 100
+	}
+	option = {  # The provincial system must be changed
+		name = ming.10.b
+		ai_chance = {
+			base = 50
+		}
+		custom_effect_tooltip = MIN_provincial_system_changed_tt
+
+		custom_effect_tooltip = MIN_one_to_zheng
+		add_to_variable = {
+			var = MIN_zheng_power
+			value = 1
+		}
+		add_political_power = -50
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = ming.11 # The role of the provincial governors [Sichuan, Shandong, and 'Yanan'
+    	title = ming.11.t
+    	desc = ming.11.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Replace them and disband their personal armies
+		name = ming.11.a
+		ai_chance = {
+			base = 50
+		}
+		set_country_flag = MIN_provincial_armies_crushed
+		custom_effect_tooltip = MIN_provincial_armies_crushed_tt
+
+		custom_effect_tooltip = MIN_one_to_emperor
+		add_to_variable = {
+			var = MIN_emperor_power
+			value = 1
+		}
+		add_political_power = -50
+		add_stability = -0.05
+		add_manpower = -200000
+		hidden_effect = {
+			country_event = {
+				id = ming.17
+				days = 20
+			}
+		}
+	}
+	option = {  # Allow the governors to keep their positions
+		name = ming.11.b
+		ai_chance = {
+			base = 50
+		}
+		set_country_flag = MIN_provincial_armies_kept
+		custom_effect_tooltip = MIN_provincial_armies_kept_tt
+
+		custom_effect_tooltip = MIN_one_to_zheng
+		add_to_variable = {
+			var = MIN_zheng_power
+			value = 1
+		}
+		add_stability = -0.1
+		add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = ming.12 # A tolerance of constitutionalism?
+    	title = ming.12.t
+    	desc = ming.12.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # All hail the emperor!
+		name = ming.12.a
+		ai_chance = {
+			base = 50
+		}
+		custom_effect_tooltip = MIN_imperial_only_tt
+
+		custom_effect_tooltip = MIN_one_to_emperor
+		add_to_variable = {
+			var = MIN_emperor_power
+			value = 1
+		}
+		add_stability = -0.05
+		add_political_power = 50
+		add_popularity = {
+    			ideology = neutrality
+    			popularity = 0.05
+		}
+
+	}
+	option = {  # Zheng is right. The emperor must concede some power
+		name = ming.12.b
+		ai_chance = {
+			base = 50
+		}
+		custom_effect_tooltip = MIN_constitional_chance_tt
+
+		custom_effect_tooltip = MIN_one_to_zheng
+		add_to_variable = {
+			var = MIN_zheng_power
+			value = 1
+		}
+		add_stability = 0.05
+		add_political_power = -50
+		add_popularity = {
+    			ideology = democratic
+    			popularity = 0.05
+		}
+	}
+}
+
+country_event = {
+	id = ming.13 # The Fuzhou conference
+    	title = ming.13.t
+    	desc = ming.13.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # The outcome will be decided in the future
+		name = ming.13.a
+		custom_effect_tooltip = MIN_conference_outcome_tt
+		set_country_flag = MIN_conference_ended
+		hidden_effect = {
+			IF = {
+				limit = {
+					check_variable = {
+    						var = MIN_zheng_power
+    						value = 3
+    						compare = greater_than
+					}
+				}
+				country_event = {
+					id = ming.15 # Zheng declares supreme control
+					days = 2
+				}
+			}
+			IF = {
+				limit = {
+					check_variable = {
+    						var = MIN_zheng_power
+    						value = 3
+    						compare = less_than
+					}
+				}
+				country_event = {
+					id = ming.16 # Imperial faction ousts Zhengists
+					days = 2
+				}
+			}
+			IF = {
+				limit = {
+					check_variable = {
+    						var = MIN_zheng_power
+    						value = 3
+    						compare = equals
+					}
+				}
+				country_event = {
+					id = ming.14 # The Fuzhou Front
+					days = 2
+				}
+			}
+		}
+
+
+	}
+}
+country_event = {
+	id = ming.14 # The Fuzhou Front
+    	title = ming.14.t
+    	desc = ming.14.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # A good compromise
+		name = ming.14.a
+		add_political_power = 100
+		add_ideas = MIN_fuzhou_front
+		set_country_flag = MIN_fuzhou_front_flag
+
+	}
+}
+country_event = {
+	id = ming.15 # Zhengists declare supreme control
+    	title = ming.15.t
+    	desc = ming.15.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # The troubles continue...
+		name = ming.15.a
+		add_political_power = -100	
+		add_stability = -0.1
+		add_ideas = MIN_zheng_supremacy
+		hidden_effect = {
+			country_event = {
+				id = ming.25
+				days = 30
+			}
+		}
+
+
+	}
+}
+country_event = {
+	id = ming.16 # Imperials oust Zhengists
+    	title = ming.16.t
+    	desc = ming.16.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # The troubles continue...
+		name = ming.16.a
+		add_political_power = -100	
+		add_stability = -0.1
+		add_ideas = MIN_imperial_supremacy
+		hidden_effect = {
+			country_event = {
+				id = ming.6
+				days = 30
+			}
+		}
+
+
+	}
+}
+country_event = {
+	id = ming.17 # Defeat in Shandong to provincial governor
+    	title = ming.17.t
+    	desc = ming.17.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Oh dear
+		name = ming.17.a
+		add_political_power = -30	
+		add_stability = -0.03
+	}
+}
+
+country_event = {
+	id = ming.18 # Loss of momentum
+    	title = ming.18.t
+    	desc = ming.18.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Oh dear
+		name = ming.18.a
+		add_timed_idea = {
+			idea = zheng_neutral_war_momentum
+			days = 90
+		}
+		hidden_effect = {
+			country_event = {
+				id = ming.19
+				days = 90
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ming.19 # Loss of momentum
+    	title = ming.19.t
+    	desc = ming.19.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Oh dear
+		name = ming.19.a
+		add_ideas = zheng_low_war_momentum
+		MIN = {
+			country_event = {
+				id = ming.20
+			}
+		}
+	}
+}
+country_event = {
+	id = ming.20 # Counter-momentum
+    	title = ming.20.t
+    	desc = ming.20.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Oh yes
+		name = ming.20.a
+		add_ideas = MIN_high_war_momentum
+	}
+}
+country_event = {
+	id = ming.21 # the zheng clique retreats to Dongning
+    	title = ming.21.t
+    	desc = ming.21.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Oh god oh zheng
+		name = ming.21.a
+		add_political_power = -150
+		add_stability = -0.15
+		add_war_support = -0.15
+		MIN = {
+			country_event = {
+				id = ming.22
+			}
+		}		
+	}
+}
+country_event = {
+	id = ming.22 # the zheng clique retreats to Dongning
+    	title = ming.22.t
+    	desc = ming.22.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Now, with that out of the way...
+		name = ming.22.a
+		add_political_power = 50
+		add_stability = -0.1
+		add_war_support = -0.1
+		white_peace = TNG
+		TNG = {
+			dismantle_faction = yes
+
+			every_owned_state = {
+				limit = {
+					NOT = {
+						state = 524
+					}
+				}
+				MIN = {
+					transfer_state = PREV
+				}
+				remove_core_of = TNG
+			}
+
+		}
+		SHA = {
+			every_owned_state = {
+				MIN = {
+					transfer_state = PREV
+				}
+				remove_core_of = SHA
+			}
+		}
+		SHD = {
+			every_owned_state = {
+				MIN = {
+					transfer_state = PREV
+				}
+				remove_core_of = SHD
+			}
+		}
+		SIC = {
+			every_owned_state = {
+				MIN = {
+					transfer_state = PREV
+				}
+				remove_core_of = SIC
+			}
+		}
+
+
+	}
+}
+country_event = {
+	id = ming.23 # Zhengist victory
+    	title = ming.23.t
+    	desc = ming.23.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Oh god oh ming
+		name = ming.23.a
+		add_political_power = -150
+		add_stability = -0.15
+		add_war_support = -0.15
+		TNG = {
+			country_event = {
+				id = ming.24
+			}
+		}		
+	}
+}
+country_event = {
+	id = ming.24 # the zheng clique victorious
+    	title = ming.24.t
+    	desc = ming.24.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Now, with that out of the way...
+		name = ming.24.a
+		add_political_power = 100
+		add_stability = -0.15
+		add_war_support = -0.15
+		white_peace = MIN
+		dismantle_faction = yes
+
+		SHA = {
+			every_owned_state = {
+				TNG = {
+					transfer_state = PREV
+				}
+				remove_core_of = SHA
+			}
+		}
+		SHD = {
+			every_owned_state = {
+				TNG = {
+					transfer_state = PREV
+				}
+				remove_core_of = SHD
+			}
+		}
+		SIC = {
+			every_owned_state = {
+				TNG = {
+					transfer_state = PREV
+				}
+				remove_core_of = SIC
+			}
+		}
+		MIN = {
+			every_owned_state = {
+				TNG = {
+					transfer_state = PREV
+				}
+			}
+		}
+
+
+	}
+}
+
+country_event = {
+	id = ming.25 #The Changan incident - Imperials storm Changan garrison, declare independence!
+    title = ming.25.t
+    desc = ming.25.d
+	picture = GFX_report_event_ITA_mussolini_1
+
+	is_triggered_only = yes 
+
+
+	fire_only_once = yes 
+
+	option = {  # Oh dear
+		name = ming.25.a
+		custom_effect_tooltip = MIN_imperial_revolt_tt
+		hidden_effect = { # bracket start
+		load_oob = "MIN_ming_revolts"
+
+
+		remove_ideas = MIN_the_ming_fleet
+		remove_ideas = MIN_zheng_kefang_military_government
+		add_ideas = zheng_war_no_surrender_idea
+
+		TNG = { # By default, Zheng starts with Jiangxi and Tungning
+			transfer_state = 592
+			transfer_state = 593
+			transfer_state = 600
+			transfer_state = 524
+			add_state_core = 592
+			add_state_core = 593
+			add_state_core = 600
+			add_state_core = 524
+			load_oob = "TNG_default"
+			add_ideas = MIN_the_ming_fleet
+			add_ideas = zheng_war_no_surrender_idea
+			add_timed_idea = {
+				idea = zheng_high_war_momentum
+				days = 90
+			}
+			country_event = {
+				id = ming.18
+				days = 90
+			}
+
+
+		}
+		TNG = {
+			transfer_state = 595
+			transfer_state = 596
+			add_state_core = 595
+			add_state_core = 596
+			load_oob = "TNG_jiangzhe"
+			create_faction = MIN_TNG_faction_defender
+
+
+		}
+		IF = {
+			limit = {
+				has_country_flag = xian_chosen
+			}
+			TNG = {
+				transfer_state = 749
+				transfer_state = 598
+				add_state_core = 749
+				add_state_core = 598
+			}
+		}
+		IF = {
+			limit = {
+				has_country_flag = nanjing_chosen
+			}
+			TNG = {
+				transfer_state = 613
+				add_state_core = 613
+			}
+		}
+		transfer_navy = {
+    			target = TNG
+		}
+
+		declare_war_on = {
+    			target = TNG
+    			type = annex_everything
+		}
+		create_faction = MIN_MIN_faction
+
+
+		SIC = {
+			transfer_state = 605
+			add_state_core = 605
+			load_oob = "SIC_default"
+
+		}
+		IF = {
+			limit = {
+				has_country_flag = MIN_provincial_armies_kept
+			}
+			SIC = {
+				transfer_state = 753
+				add_state_core = 753
+				load_oob = "SIC_gannan"
+			}
+		}
+
+		IF = {
+			limit = {
+				has_country_flag = MIN_provincial_armies_kept
+
+			}
+			SHD = {
+				transfer_state = 597
+				add_state_core = 597
+				load_oob = "SHD_default"
+
+
+			}
+			TNG = {
+				add_to_faction = SHD
+			}
+			SHD = {
+				add_to_war = { 
+    					targeted_alliance = TNG 
+    					enemy = MIN 
+    					hostility_reason = asked_to_join
+				}
+			}
+
+		}
+
+		TNG = {
+			add_to_faction = SIC
+		}
+		SIC = {
+			add_to_war = { 
+    				targeted_alliance = TNG 
+    				enemy = MIN 
+    				hostility_reason = asked_to_join
+			}
+		}
+		hidden_effect = {
+			IF = {
+				limit = {
+					LYM = {
+						has_war_with = LIA
+					}
+				}
+				LYM = {
+					country_event = {
+						id = liaoyangtribal.16
+					}
+				}
+			}
+			country_event = {
+				id = ming.3
+				days = 5
+			}
+			
+		}
+		} # end of hidden effect
+		TNG = { change_tag_from = ROOT }
+
+
+
+	}
+}

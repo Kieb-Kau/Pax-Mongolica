@@ -1,0 +1,54 @@
+capital = 137 # Qirim
+
+oob = "NOG_1936"
+
+
+
+set_stability = 0.5
+set_war_support = 0.5
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_engineers = 1
+	fuel_silos = 1
+	superior_firepower = 1
+
+}
+
+add_ideas = {
+	NOG_western_influenced_lands
+	NOG_undisciplined_army
+	NOG_somewhat_bad_industry
+
+}
+
+set_politics = {
+	ruling_party = nomadic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 22
+	liberal = 6
+	communism = 7
+	fascism = 0
+	neutrality = 14
+	nomadic = 51
+}
+
+create_country_leader = {
+	name = "Torai Khan" # Descendant of the Line of Teval-Nogay
+	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+	picture = "Portrait_China_Chiang_Kai_Shek.dds"
+	expire = "1965.1.1"
+	ideology = khanism
+	traits = {
+		
+	}
+}
+

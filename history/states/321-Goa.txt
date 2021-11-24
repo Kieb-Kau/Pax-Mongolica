@@ -1,0 +1,24 @@
+
+state={
+	id=321
+	name="STATE_321"
+
+	history={
+		owner = BRJ
+		add_core_of = BRJ
+
+		buildings = {
+			infrastructure = 3
+
+
+		}
+
+	}
+
+	provinces={
+		4557 4883 4950 7430 7619 10030 10401 10872 12420 12781 12799 12854 
+	}
+	manpower=4533952
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

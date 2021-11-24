@@ -1,0 +1,21 @@
+state={
+	id=45
+	name="STATE_45"
+
+	history={
+		owner = THO
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = THO
+
+	}
+
+	provinces={
+		619 3617 3623 9608 9621
+	}
+	manpower=518621
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

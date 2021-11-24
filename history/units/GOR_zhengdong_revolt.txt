@@ -1,0 +1,55 @@
+
+units = {
+	##### Suwei #####
+
+	division= {	
+		name = "1st Militia Division"
+		location = 7221
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		name = "2nd Militia Division"
+		location = 4056
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		name = "3rd Militia Division"
+		location = 7221
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		name = "4th Militia Division"
+		location = 4056
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		name = "5th Militia Division"
+		location = 7221
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		name = "6th Militia Division"
+		location = 4056
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.8
+
+	}
+
+
+}

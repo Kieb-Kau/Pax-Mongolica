@@ -1,0 +1,333 @@
+ideologies = {
+	
+	democratic = { #Used for CONSERVATISM
+	
+		types = {
+			
+			liberal_conservatism = {
+			}
+		
+			national_liberalism = {
+			}
+		
+			centrism = {
+			}
+
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+		
+		color = { 50 140 255 }
+		
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = no
+			can_join_factions = no
+		}
+		can_collaborate = yes
+		ai_neutral = yes
+		can_be_boosted = no
+		can_host_government_in_exile = yes
+		
+		modifiers = {
+			generate_wargoal_tension = 0.7
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5
+			lend_lease_tension = 0.50
+			send_volunteers_tension = 0.50
+			guarantee_tension = 0.25
+		}
+		
+		faction_modifiers = {
+		}
+	}
+
+	liberal = { 
+	
+		types = {
+			
+			liberalism = {
+			}
+
+			liberal_centrism = {
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+		
+		color = { 255 170 0 }
+		
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = no
+			can_join_factions = no
+		}
+		can_collaborate = yes
+		ai_neutral = yes
+		can_be_boosted = no
+		can_host_government_in_exile = yes
+		
+		modifiers = {
+			generate_wargoal_tension = 0.7
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5
+			lend_lease_tension = 0.50
+			send_volunteers_tension = 0.50
+			guarantee_tension = 0.25
+		}
+		
+		faction_modifiers = {
+		}
+	}
+
+
+
+
+	communism = { # Socialism - No commies in this universe!
+		
+		types = {
+		
+			socialism = {
+			}
+			
+			revolutionary_socialism = {
+			}
+			
+			anarchy = {
+			}
+			
+			mao_zedong_ideology = { #'Nongminism'
+			}
+			
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_COMMUNIST_1"
+			"FACTION_NAME_COMMUNIST_2"
+			"FACTION_NAME_COMMUNIST_3"
+			"FACTION_NAME_COMMUNIST_4"
+			"FACTION_NAME_COMMUNIST_5"
+		}
+		
+		color = { 135 0 0 }
+
+		
+		
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = no
+			can_join_factions = no
+		}
+		
+		can_collaborate = yes
+		ai_neutral = yes
+		can_be_boosted = no
+		can_host_government_in_exile = yes
+
+		
+		modifiers = {
+			generate_wargoal_tension = 0.5
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 7.5
+			navy_intel_to_others = 12.5
+			airforce_intel_to_others = 7.5
+		}
+		
+		faction_modifiers = {
+			
+		}
+
+	}
+
+	fascism = { # Fringe at best
+	
+		types = {
+		
+			ultranationalist = {
+			}
+
+			military_junta = {
+			}
+			
+			proto_fascism = {
+			}
+			
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_FASCIST_1"
+			"FACTION_NAME_FASCIST_2"
+			"FACTION_NAME_FASCIST_3"
+			"FACTION_NAME_FASCIST_4"
+			"FACTION_NAME_FASCIST_5"
+		}
+		
+		color = { 5 5 5 }
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = no
+			can_join_factions = no
+		}
+		
+		can_collaborate = yes
+		ai_neutral = yes
+		can_be_boosted = no
+		can_host_government_in_exile = yes
+
+
+
+		
+		modifiers = {
+			generate_wargoal_tension = 0.4
+			civilian_intel_to_others = 15.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
+		}
+
+	}
+	
+	neutrality = { # Monarchism!
+	
+		types = {
+		
+			despotism  = {
+			}
+			
+			semi_constitutional_despotism  = {
+			}
+
+			
+			warlordism = {
+			}
+			
+			theocratic = {
+			}
+
+			juntaism  = {
+			}
+
+			pirates  = {
+			}
+
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_NONALIGNED_1"
+			"FACTION_NAME_NONALIGNED_2"
+			"FACTION_NAME_NONALIGNED_3"
+			"FACTION_NAME_NONALIGNED_4"
+			"FACTION_NAME_NONALIGNED_5"
+		}
+		
+		color = { 130 130 130 }
+		
+	
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = no
+			can_join_factions = no
+		}
+		
+		modifiers = {
+			generate_wargoal_tension = 0.5
+			civilian_intel_to_others = 15.0
+			army_intel_to_others = 6.0
+			navy_intel_to_others = 15.0
+			airforce_intel_to_others = 6.0
+			lend_lease_tension = 0.4
+			send_volunteers_tension = 0.4
+			guarantee_tension = 0.4
+		}
+		
+		faction_modifiers = {
+		}
+
+		can_be_boosted = no
+		can_host_government_in_exile = yes
+		can_collaborate = yes
+		ai_neutral = yes
+	}
+
+	
+	nomadic = { # Tribes, khanates etc
+	
+		types = {
+		
+			khanism  = {
+			}
+			
+			hordeism  = {
+			}
+
+			
+			established_government_horde = {
+			}
+			
+			tribe = {
+			}
+			native_american = {
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_NONALIGNED_1"
+			"FACTION_NAME_NONALIGNED_2"
+			"FACTION_NAME_NONALIGNED_3"
+			"FACTION_NAME_NONALIGNED_4"
+			"FACTION_NAME_NONALIGNED_5"
+		}
+		
+		color = { 94 138 95 }
+		
+	
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = no
+			can_join_factions = no
+		}
+		
+		modifiers = {
+			generate_wargoal_tension = 0.5
+			civilian_intel_to_others = 15.0
+			army_intel_to_others = 6.0
+			navy_intel_to_others = 15.0
+			airforce_intel_to_others = 6.0
+			lend_lease_tension = 0.4
+			send_volunteers_tension = 0.4
+			guarantee_tension = 0.4
+		}
+		
+		faction_modifiers = {
+		}
+
+		can_be_boosted = no
+		can_host_government_in_exile = yes
+		can_collaborate = yes
+		ai_neutral = yes
+	}
+}

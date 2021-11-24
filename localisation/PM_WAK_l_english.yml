@@ -1,0 +1,22 @@
+﻿l_english:
+ #Wakao Pirates
+ WAK_fascism: "Wakao"
+ WAK_fascism_DEF: "Wakao"
+ WAK_neutrality: "Wakao"
+ WAK_neutrality_DEF: "Wakao"
+ WAK_democratic: "Wakao"
+ WAK_democratic_DEF: "Wakao"
+ WAK_communism: "Wakao"
+ WAK_communism_DEF: "Wakao"
+ WAK_fascism_ADJ: "Wakao"
+ WAK_neutrality_ADJ: "Wakao"
+ WAK_democratic_ADJ: "Wakao"
+ WAK_communism_ADJ: "Wakao"
+ 
+ WAK_liberal:0 "Wakao"
+ WAK_liberal_DEF:0 "Wakao"
+ WAK_liberal_ADJ:0 "Wakao"
+ WAK_noWakaodic:0 "Wakao"
+ WAK_noWakaodic_DEF:0 "Wakao"
+ WAK_noWakaodic_ADJ:0 "Wakao"
+ 

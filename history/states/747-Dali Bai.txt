@@ -1,0 +1,42 @@
+
+state={
+	id=747
+	name="STATE_747"
+
+	history={
+		owner = YUA
+		add_core_of = YUA
+		victory_points = {
+			7909 1
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		1938.10.25 = {
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = Waking
+						the Tiger 
+					}
+
+				}
+				CHI = {
+					transfer_state = PREV
+
+				}
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1488 1990 4175 4496 4568 7103 7647 7675 7909 7974 8045 10330 10371 10456 12317 
+	}
+	manpower=731000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

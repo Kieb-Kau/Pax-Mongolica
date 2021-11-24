@@ -1,0 +1,26 @@
+
+state={
+	id=414
+	name="STATE_414"
+
+	history={
+		owner = ILK
+		buildings = {
+			infrastructure = 1
+
+		}
+
+		victory_points = {
+			7990 1 
+		}
+		add_core_of = ILK
+
+	}
+
+	provinces={
+		2062 7990 10759 10890 12739 12852 
+	}
+	manpower=236013
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

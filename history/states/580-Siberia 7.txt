@@ -1,0 +1,22 @@
+
+state={
+	id=580
+	name="STATE_580"
+
+	history={
+		owner = SBW
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SBW
+
+	}
+
+	provinces={
+		1659 1771 1812 1841 4710 4846 7733 7833 7867 10620 10720 12602 12630 12700 
+	}
+	manpower=21126
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

@@ -1,0 +1,32 @@
+﻿l_english:
+ #Ordos Revolt
+ ORD_fascism:0 "Ordos"
+ ORD_fascism_DEF:0 "Ordos"
+ ORD_neutrality:0 "Ordos"
+ ORD_neutrality_DEF:0 "Ordos"
+ ORD_democratic:0 "Ordos"
+ ORD_democratic_DEF:0 "Ordos"
+ ORD_communism:0 "Ordos"
+ ORD_communism_DEF:0 "Ordos"
+ ORD_fascism_ADJ:0 "Ordos"
+ ORD_neutrality_ADJ:0 "Ordos"
+ ORD_democratic_ADJ:0 "Ordos"
+ ORD_communism_ADJ:0 "Ordos"
+ 
+ ORD_liberal:0 "Ordos"
+ ORD_liberal_DEF:0 "Ordos"
+ ORD_liberal_ADJ:0 "Ordos"
+ ORD_nomadic:0 "Ordos"
+ ORD_nomadic_DEF:0 "Ordos"
+ ORD_nomadic_ADJ:0 "Ordos"
+ 
+ ORD_war_of_independence:0 "Ordos Rebellion"
+ 
+ ordos.1.t:0 "The Rebellion"
+ ordos.1.d:0 "The Rebellion against the Ming Empire has begun! The Yuan Empire has abandoned us, so we must stand for ourselves! We must drive the Ming invaders back from our sacred land!"
+ ordos.1.a:0 "The Ming shall be expulsed!"
+ ordos.2.t:0 "The Ordos Rebellion"
+ ordos.2.d:0 "Following the Yellow River truce, Ordos, south of the Yellow River, were placed as part of the Ming Domain. In response to this, the ethnic Mongol population of the territory has revolted against Ming rule, and proclaimed a local leader Khan of Ordos. Ming forces have in response rapidly mobilized to quell the revolt. Only one thing is certain, and that is that the Ming Empire is not as powerful as some may have seen it as..."
+ ordos.2.a:0 "We will drive them back!"
+ ordos.2.b:0 "They shall be crushed!"
+ ordos.2.c:0 "It appears the Ming have yet to solidify."

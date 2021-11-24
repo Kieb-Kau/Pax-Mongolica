@@ -1,0 +1,22 @@
+
+state={
+	id=83
+	name="STATE_83"
+	manpower = 212900
+	
+	state_category = pastoral
+
+	history={
+		owner = THO
+		buildings = {
+			infrastructure = 3
+
+		}
+
+		add_core_of = THO
+	}
+
+	provinces={
+		696 6682 6697 9640 
+	}
+}

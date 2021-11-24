@@ -1,0 +1,727 @@
+focus_tree = {
+	id = TUV_focus_subutai
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TUV
+		}
+
+	}
+	default = no
+	continuous_focus_position = { x = 80 y = 3000 }
+	shared_focus = TUV_the_rise_of_subutai
+
+}
+
+shared_focus = {
+	id = TUV_the_rise_of_subutai # The rise of Subutai
+	icon = GFX_focus_Grab_Money
+	x = 10
+	y = 0
+	cost = 0
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		has_country_flag = TUV_subutai_tt
+		
+	}	
+	bypass = {
+	}
+	completion_reward = {
+		custom_effect_tooltip = rise_of_subutai_tt
+	}
+}
+
+shared_focus = {
+	id = TUV_subutais_speech # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = TUV_the_rise_of_subutai
+	}
+	x = 0
+	y = 1
+	relative_position_id = TUV_the_rise_of_subutai
+	cost = 1
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		country_event = {
+			id = subutai.11
+		}
+
+	}
+}
+
+shared_focus = {
+	id = TUV_call_nomadic_host # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = TUV_subutais_speech
+	}
+	x = 0
+	y = 2
+	relative_position_id = TUV_the_rise_of_subutai
+	cost = 5
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		custom_effect_tooltip = TUV_2_cav_tt
+		hidden_effect = {
+			division_template = {
+				name = "Uriankhai Tumen" # Cav 
+
+				regiments = {
+					cavalry = { x = 0 y = 0 }
+					cavalry = { x = 0 y = 1 }
+					cavalry = { x = 0 y = 2 }
+					cavalry = { x = 0 y = 3 }
+					cavalry = { x = 0 y = 4 }
+					cavalry = { x = 1 y = 0 }
+					cavalry = { x = 1 y = 1 }
+					cavalry = { x = 1 y = 2 }
+					cavalry = { x = 1 y = 3 }
+					cavalry = { x = 1 y = 4 }
+				}
+				is_locked = yes
+			}
+			329 = {
+				create_unit = {
+    					division = "name = \"1. Uriankhai Tumen\" division_template = \"Uriankhai Tumen\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = TUV
+				}
+				create_unit = {
+    					division = "name = \"2. Uriankhai Tumen\" division_template = \"Uriankhai Tumen\" start_experience_factor = 0.5 start_equipment_factor = 0.5"
+    owner = TUV
+				}
+			}
+		}
+
+	}
+}
+
+shared_focus = {
+	id = TUV_ally_the_altay # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = TUV_call_nomadic_host
+	}
+	x = -2
+	y = 3
+	relative_position_id = TUV_the_rise_of_subutai
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		ALT = {
+			exists = yes
+		}
+		is_neighbor_of = ALT
+
+	}
+	bypass = {
+		ALT = {
+			exists = no
+		}
+	}
+
+	completion_reward = {
+		ALT = {
+			country_event = {
+				id = subutai.13
+				days = 2
+			}
+		}		
+
+	}
+}
+
+shared_focus = {
+	id = TUV_talk_with_the_tumed # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = TUV_call_nomadic_host
+	}
+	x = 2
+	y = 3
+	relative_position_id = TUV_the_rise_of_subutai
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		TUM = {
+			exists = yes
+		}
+		
+		is_neighbor_of = TUM
+
+	}
+	bypass = {
+		TUM = {
+			exists = no
+		}
+	}
+
+	completion_reward = {
+		TUM = {
+			country_event = {
+				id = subutai.13
+				days = 2
+			}
+		}
+		
+
+	}
+}
+
+shared_focus = {
+	id = TUV_consolidate_tuva # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = TUV_call_nomadic_host
+	}
+	x = 0
+	y = 3
+	relative_position_id = TUV_the_rise_of_subutai
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		country_event = {
+			id = subutai.12
+		}
+
+	}
+}
+
+shared_focus = {
+	id = TUV_gur_khan # Changed to proclaim the tuna empire
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = TUV_ally_the_altay
+	}
+	prerequisite = { 
+		focus = TUV_talk_with_the_tumed
+	}
+	prerequisite = { 
+		focus = TUV_consolidate_tuva
+	}
+	x = 0
+	y = 4
+	relative_position_id = TUV_the_rise_of_subutai
+	cost = 1
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		owns_state = 566
+		owns_state = 567
+		owns_state = 654
+		owns_state = 568
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		country_event = {
+			id = subutai.1
+		}
+
+	}
+}
+
+shared_focus = {
+	id = TUV_restoring_genghis_empire # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = TUV_gur_khan
+	}
+	x = 0
+	y = 5
+	relative_position_id = TUV_the_rise_of_subutai
+	cost = 2
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		YUA = {
+			add_opinion_modifier = {
+    				target = ROOT
+    				modifier = subutais_ambitions
+			}
+		}
+		MAQ = {
+			add_opinion_modifier = {
+    				target = ROOT
+    				modifier = subutais_ambitions
+			}
+		}
+		NAI = {
+			add_opinion_modifier = {
+    				target = ROOT
+    				modifier = subutais_ambitions
+			}
+		}
+		CHK = {
+			add_opinion_modifier = {
+    				target = ROOT
+    				modifier = subutais_ambitions
+			}
+		}
+
+	}
+}
+
+shared_focus = {
+	id = TUV_align_the_buryats # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = TUV_restoring_genghis_empire
+	}
+	x = -1
+	y = 6
+	relative_position_id = TUV_the_rise_of_subutai
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		BRY = {
+			exists = yes
+		}
+		has_war = no
+		is_neighbor_of = BRY
+	}
+	bypass = {
+		BRY = {
+			exists = no
+		}
+	}
+
+	completion_reward = {
+		BRY = {
+			country_event = {
+				id = subutai.13
+				days = 2
+			}
+		}
+		
+
+	}
+}
+
+shared_focus = {
+	id = TUV_defeat_the_naiman_khan # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = TUV_restoring_genghis_empire
+	}
+	x = 1
+	y = 6
+	relative_position_id = TUV_the_rise_of_subutai
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		has_war = no
+		is_neighbor_of = NAI
+
+	}
+	bypass = {
+		NAI = {
+			exists = no
+		}
+	}
+
+	completion_reward = {
+		add_state_core = 728
+		add_state_claim = 760
+		create_wargoal = {
+    			type = annex_everything
+    			target = NAI
+		}
+
+	}
+}
+
+shared_focus = {
+	id = TUV_end_the_yuan # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = TUV_align_the_buryats
+	}
+	prerequisite = { 
+		focus = TUV_defeat_the_naiman_khan
+	}
+	x = 0
+	y = 7
+	relative_position_id = TUV_the_rise_of_subutai
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		has_war = no
+		owns_state = 728
+		owns_state = 760
+		owns_state = 564
+		owns_state = 565
+		is_neighbor_of = YUA
+
+	}
+	bypass = {
+		YUA = {
+			exists = no
+		}
+	}
+
+	completion_reward = {
+		add_state_core = 330
+		add_state_core = 563
+		add_state_core = 621
+		add_state_core = 612
+		add_state_core = 761
+		create_wargoal = {
+    			type = annex_everything
+    			target = YUA
+		}
+		
+
+	}
+}
+
+shared_focus = {
+	id = TUV_invade_liaoyang # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = TUV_end_the_yuan
+	}
+	x = -2
+	y = 8
+	relative_position_id = TUV_the_rise_of_subutai
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		owns_state = 330
+		is_neighbor_of = LIA
+		has_war = no
+
+	}
+	bypass = {
+		LIA = {
+			exists = no
+		}
+	}
+
+	completion_reward = {
+		every_state = {
+			limit = {
+				is_core_of = LIA
+			}
+			add_claim_by = ROOT
+		}
+		every_state = {
+			limit = {
+				is_core_of = JUR
+			}
+			add_claim_by = ROOT
+		}
+		create_wargoal = {
+    			type = annex_everything
+    			target = LIA
+		}
+		create_wargoal = {
+    			type = annex_everything
+    			target = JUR
+		}
+		
+
+	}
+}
+
+shared_focus = {
+	id = TUV_bring_in_east_siberian_tribes # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = TUV_end_the_yuan
+	}
+	x = 0
+	y = 8
+	relative_position_id = TUV_the_rise_of_subutai
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		SEV = {
+			exists = yes
+		}
+		has_war = no
+		owns_state = 330
+
+		is_neighbor_of = SEV
+	}
+	bypass = {
+		SEV = {
+			exists = no
+		}
+	}
+
+	completion_reward = {
+		SEV = {
+			country_event = {
+				id = subutai.13
+				days = 2
+			}
+		}
+		
+
+	}
+}
+
+shared_focus = {
+	id = TUV_conquer_the_chagatai_remnant # Changed to defeat the ma 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = TUV_end_the_yuan
+	}
+	x = 2
+	y = 8
+	relative_position_id = TUV_the_rise_of_subutai
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		owns_state = 728
+		owns_state = 330
+		is_neighbor_of = MAQ
+		has_war = no
+
+	}
+	bypass = {
+		MAQ = {
+			exists = no
+		}
+	}
+
+	completion_reward = {
+		every_state = {
+			limit = {
+				is_core_of = MAQ
+			}
+			add_claim_by = ROOT
+		}
+		create_wargoal = {
+    			type = annex_everything
+    			target = MAQ
+		}
+		
+
+	}
+}
+
+shared_focus = {
+	id = TUV_conquest_of_khanbaliq # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = TUV_bring_in_east_siberian_tribes
+	}
+	prerequisite = { 
+		focus = TUV_invade_liaoyang
+	}
+	prerequisite = { 
+		focus = TUV_conquer_the_chagatai_remnant
+
+	}
+	x = 0
+	y = 9
+	relative_position_id = TUV_the_rise_of_subutai
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		owns_state = 616
+		owns_state = 716
+		owns_state = 330
+		has_war = no
+		is_neighbor_of = KHN
+	}
+	bypass = {
+		KHN = {
+			exists = no
+		}
+	}
+
+	completion_reward = {
+		add_state_core = 611
+		add_state_claim = 610
+		add_state_claim = 609
+		add_state_claim = 608
+		add_state_claim = 614
+		add_state_claim = 615
+		
+		create_wargoal = {
+    			type = annex_everything
+    			target = KHN
+		}
+		
+
+	}
+}
+
+shared_focus = {
+	id = TUV_retake_zhengdong # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = TUV_conquest_of_khanbaliq
+	}
+
+	x = 3
+	y = 10
+	relative_position_id = TUV_the_rise_of_subutai
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		owns_state = 716
+		owns_state = 328
+		owns_state = 608
+		has_war = no
+		is_neighbor_of = GOR
+	}
+	bypass = {
+	}
+
+	completion_reward = {
+		GOR = {	
+			country_event = {
+				id = subutai.16
+				days = 3
+			}
+		}
+		
+
+	}
+}
+
+shared_focus = {
+	id = TUV_conquest_of_tibet # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = TUV_conquest_of_khanbaliq
+	}
+
+	x = -3
+	y = 10
+	relative_position_id = TUV_the_rise_of_subutai
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		owns_state = 616
+		owns_state = 760
+		owns_state = 756
+		owns_state = 608
+
+		has_war = no
+		is_neighbor_of = XZY
+		
+	}
+	bypass = {
+		
+	}
+
+	completion_reward = {
+		every_state = {
+			limit = {
+				is_core_of = XZY
+			}
+			add_claim_by = ROOT
+		}
+		create_wargoal = {
+    			type = annex_everything
+    			target = XZY
+		}
+				
+
+	}
+}
+
+shared_focus = {
+	id = TUV_destroy_the_ming # 
+	icon = GFX_focus_Military_Government
+	prerequisite = { 
+		focus = TUV_conquest_of_khanbaliq
+	}
+
+	x = 0
+	y = 10
+	relative_position_id = TUV_the_rise_of_subutai
+	cost = 8
+	ai_will_do = {
+		factor = 8
+	}
+	available = {
+		owns_state = 608
+		has_war = no
+		is_neighbor_of = MIN
+		
+	}
+	bypass = {
+		
+	}
+
+	completion_reward = {
+		every_state = {
+			limit = {
+				is_core_of = MIN
+			}
+			add_claim_by = ROOT
+		}
+		create_wargoal = {
+    			type = annex_everything
+    			target = MIN
+		}
+				
+
+	}
+}
+
+

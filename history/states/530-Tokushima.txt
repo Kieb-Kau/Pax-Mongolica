@@ -1,0 +1,26 @@
+state=
+{
+	id=530
+	name="STATE_530" # Shikoku
+	manpower = 1410000
+	state_category = town
+	history=
+	{
+		owner = JPN
+		add_core_of = JPN
+		buildings = {
+			infrastructure = 3
+			air_base = 2
+			
+			industrial_complex = 1
+
+		}
+		
+		victory_points = {
+			7197 5
+		}
+	}
+	provinces={
+		4094 4179 7046 7197 9965 11997 12028
+	}
+}

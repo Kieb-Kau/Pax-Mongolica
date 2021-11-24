@@ -1,0 +1,222 @@
+
+division_template = {
+	name = "Infantry Division"				# Imperial Guards 
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	support = {
+
+	}
+}
+division_template = {
+	name = "Ulagchid Kheshig"				# Mongol Cavalry 
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 3 y = 0 }
+		cavalry = { x = 3 y = 1 }
+		cavalry = { x = 4 y = 0 }
+		cavalry = { x = 4 y = 1 }
+
+	}
+	support = {
+	}
+	is_locked = yes
+}
+division_template = {
+	name = "Ulagchid Tumen"				# Mongol Cavalry 
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 3 y = 0 }
+		cavalry = { x = 3 y = 1 }
+		cavalry = { x = 4 y = 0 }
+		cavalry = { x = 4 y = 1 }
+
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "Militia Division"				# Militia 
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 0 y = 3 }
+		militia = { x = 0 y = 4 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 1 y = 3 }
+		militia = { x = 1 y = 4 }
+
+
+
+	}
+}
+
+units = {
+	##### Armies #####
+	division= {	
+		name = "1. Infantry Division"
+		location = 11455 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "2. Infantry Division"
+		location = 3538 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "3. Infantry Division"
+		location = 477 
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "Ulagchid Kheshig"
+		location = 11455 
+		division_template = "Ulagchid Kheshig"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "1. Ulagchid Tumen"
+		location = 470 
+		division_template = "Ulagchid Tumen"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "2. Ulagchid Tumen"
+		location = 273 
+		division_template = "Ulagchid Tumen"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "3. Ulagchid Tumen"
+		location = 10299 
+		division_template = "Ulagchid Tumen"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "4. Ulagchid Tumen"
+		location = 9292 
+		division_template = "Ulagchid Tumen"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "5. Ulagchid Tumen"
+		location = 4824 
+		division_template = "Ulagchid Tumen"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "6. Ulagchid Tumen"
+		location = 4659 
+		division_template = "Ulagchid Tumen"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "7. Ulagchid Tumen"
+		location = 12179 
+		division_template = "Ulagchid Tumen"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "8. Ulagchid Tumen"
+		location = 7392 
+		division_template = "Ulagchid Tumen"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "9. Ulagchid Tumen"
+		location = 10696 
+		division_template = "Ulagchid Tumen"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "10. Ulagchid Tumen"
+		location = 10546 
+		division_template = "Ulagchid Tumen"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "11. Ulagchid Tumen"
+		location = 508 
+		division_template = "Ulagchid Tumen"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "1. Militia Division"
+		location = 11473 
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "2. Militia Division"
+		location = 11469 
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "3. Militia Division"
+		location = 3357 
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "4. Militia Division"
+		location = 10286 
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "5. Militia Division"
+		location = 4824 
+		division_template = "Militia Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.5
+	}
+
+}
